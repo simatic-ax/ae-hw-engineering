@@ -1,11 +1,55 @@
-name: "ax_hw_engineering_v0.12"
+name: "ae-hw-engineering-demo"
 version: 0.0.0
 type: app
 targets:
   - "1500"
-  - llvm
+  - plcsim
 variables:
   APAX_BUILD_ARGS:
     - "--debug" # Generate debug information for target "1500"
+  PLC_IP: 192.168.0.15
+  TLS_PFX_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.pfx
+  TLS_PUBLIC_KEY_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.crt
+  WEB_USER: Admin
+  WEB_USER_PW: Demo#123
+  MASTER_PW: Demo#123
+  FULL_ACCESS_PW: Demo#123
+  PFX_CERT_PW: S71500
+
 devDependencies:
   "@ax/sdk": 2311.0.1
+dependencies:
+  "@ax/hwc": ^0.12.217
+  "@ax/hwld": ^0.8.23
+
+scripts:
+  # install the GSDML files of the PROFINET IO devices that the PLC is to operate
+  hw_install_gsdml: hwc install-gsd -i hwcfg/gsd
+  
+  # create a text file containing all modules can be used. Pls. recall after you've added further GSDML files 
+  hw_print_catalog: hwc get-supported-devices > hw_catalog.txt
+  
+  # setup all security relevant data for a specific PLC
+  hw_setup_security:
+    # create a file made to stores all confidential data (certificates, passwords, users, rights etc.) in a secure format so that it can be added to Git
+    - hwc setup-secure-communication --name cpu1516 --input hwcfg/cpu1516.hwl.json --password $MASTER_PW
+    # add a TLS certificate for the PLC as a server, that allows a client (e.g. SIMATIC AX, or an HMI) to verify the PLC's identity when accessing it
+    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose TLS
+    # add a certificate for the PLC's Web server, that allows a Web client (e.g. a browser) to verify the server identity
+    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW  --purpose WebServer
+    # add the access level password for accessing the PLC, e.g. for any modification
+    - hwc set-accessprotection-password --name cpu1516 --input hwcfg/cpu1516.hwl.json  --level FullAccess --password $FULL_ACCESS_PW
+    # add a password for a user who can access the PLC web pages according to his access authorizations after logging on with his password
+    - hwc manage-users set-password -u $WEB_USER -p "$WEB_USER_PW" --moduleName cpu1516 -i hwcfg/cpu1516.hwl.json
+
+   # compile and load the hardware configuration
+  hw_load:
+    # compile the hardware description (input:sources) to target specific data (output:binaries) and update the IO- and HwIdent mapping (SystemConstants)
+    - hwc compile --input hwcfg --input hwcfg_templates --output hwbin
+    # load the target specific hardware data (binaries) to the PLC
+    - hwld --input hwbin/cpu1516 -t $PLC_IP -p:$FULL_ACCESS_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -M:$MASTER_PW
+  
+  # compile and load the automation program
+  sw_load:
+    - apax build
+    - sld load --input ./bin/plcsim --target $PLC_IP -p $FULL_ACCESS_PW  --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -r

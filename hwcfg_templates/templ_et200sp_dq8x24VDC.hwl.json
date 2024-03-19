@@ -1,0 +1,16 @@
+{
+  "Templates": {
+    "Modules": [
+      {
+        "Name": "et200sp_dq8x24vdc_templ",
+        "Content": {
+          "Name": "dq8",
+          "TypeIdentifier": {
+            "GsdId": "DQ 8x24VDC/0,5A ST V1.1",
+            "FileName": "GSDML-V2.42-SIEMENS-ET200SP-20230812.XML"
+          }
+        }
+      }
+    ]
+  }
+}

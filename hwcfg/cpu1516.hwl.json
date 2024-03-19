@@ -1,0 +1,89 @@
+{
+  "Devices": [
+    {
+      "Name": "plc_device",
+      "Modules": [
+        {
+          "Name": "cpu1516",
+          "TypeIdentifier": {
+            "OrderNumber": "6ES7 516-3AP03-0AB0",
+            "Version": "V3.0"
+          },
+          "AccessProtection": {
+            "AccessLevel": "NoAccess"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet_interface_x1",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  {
+                    "IPv4": "192.168.0.15/24"
+                  }
+                ]
+              },
+              "Parameters": {
+                "IECV22LLDPMode": true
+              }
+            },
+            {
+              "Name": "opcua_interface_x2",
+              "Label": "X2",
+              "Addresses": {
+                "Configured": [
+                  {
+                    "IPv4": "192.168.1.15/24"
+                  }
+                ]
+              }
+            }
+          ],
+          "Ports": [
+            {
+              "Name": "x1p1",
+              "Label": "X1 P1"
+            },
+            {
+              "Name": "x1p2",
+              "Label": "X1 P2"
+            }
+          ],
+          "Services": [
+            {
+              "Type": "WebServer",
+              "Enabled": true,
+              "Parameters": {
+                "HttpsOnly": true
+              }
+            }
+          ],
+          "UserManagement": {
+            "Users": [
+              {
+                "Name": "Admin",
+                "AssignedRoles": [
+                  "admin"
+                ]
+              }
+            ],
+            "Roles": [
+              {
+                "Name": "admin",
+                "FunctionRights": [
+                  "ReadPlcVariables",
+                  "WritePlcVariables",
+                  "QueryDiagnostics"
+                ]
+              }
+            ]
+          },
+          "Parameters": {
+            "CycleMaximumCycleTime": 150,
+            "CycleMinimumCycleTime": 2
+          }
+        }
+      ]
+    }
+  ]
+}

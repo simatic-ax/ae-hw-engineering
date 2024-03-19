@@ -1,0 +1,28 @@
+{
+    "PortInterconnections": [
+        {
+            "Ports": [
+                {"Ref": "scalancex208_device/scalancex208/x1p1"},
+                {"Ref": "plc_device/cpu1516/x1p1"}
+            ]
+        },
+        {
+            "Ports": [
+                {"Ref": "scalancex208_device/scalancex208/x1p2"},
+                {"Ref": "et200sp1_device/et200sp1/x1p1"}
+            ]
+        },
+        {
+            "Ports": [
+                {"Ref": "scalancex208_device/scalancex208/x1p3"},
+                {"Ref": "et200sp2_device/et200sp2/x1p1"}
+            ]
+        },
+        {
+            "Ports": [
+                {"Ref": "scalancex208_device/scalancex208/x1p4"},
+                {"Ref": "et200s_device/et200s/x1p1"}
+            ]
+        }
+    ]
+}

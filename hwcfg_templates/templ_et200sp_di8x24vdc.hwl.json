@@ -1,0 +1,24 @@
+{
+  "Templates": {
+    "Modules": [
+      {
+        "Name": "et200sp_di8x24vdc_templ",
+        "Content": {
+          "Name": "di8",
+          "TypeIdentifier": {
+            "GsdId": "DI 8x24VDC ST V1.1",
+            "FileName": "GSDML-V2.42-SIEMENS-ET200SP-20230812.XML"
+          },
+          "Parameters": {
+            "RecordDataList": [
+              {
+                "Index": 243,
+                "RawValue": "0x01 00 00 00" //Light base module
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

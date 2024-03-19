@@ -1,0 +1,66 @@
+{
+    "Devices": [
+        {
+            "Name": "scalancex208_device",
+            "Modules": [
+                {
+                    "Name": "scalancex208",
+                    "TypeIdentifier": {
+                        "GsdId": "DAP 3D",
+                        "FileName": "GSDML-V2.33-Siemens-002A-SCALANCE_X200-20170328-103700.XML"
+                    },
+                    "Interfaces": [
+                        {
+                            "Name": "x1",
+                            "Label": "X1",
+                            "Addresses": {
+                                "Configured": [
+                                    {
+                                        "IPv4": "192.168.0.88/24"
+                                    },
+                                    {
+                                        "ProfinetDeviceName": "scalancex208"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "Ports": [
+                        {
+                            "Name": "x1p1",
+                            "Label": "X1 P1"
+                        },
+                        {
+                            "Name": "x1p2",
+                            "Label": "X1 P2"
+                        },
+                        {
+                            "Name": "x1p3",
+                            "Label": "X1 P3"
+                        },
+                        {
+                            "Name": "x1p4",
+                            "Label": "X1 P4"
+                        },
+                        {
+                            "Name": "x1p5",
+                            "Label": "X1 P5"
+                        },
+                        {
+                            "Name": "x1p6",
+                            "Label": "X1 P6"
+                        },
+                        {
+                            "Name": "x1p7",
+                            "Label": "X1 P7"
+                        },
+                        {
+                            "Name": "x1p8",
+                            "Label": "X1 P8"
+                        }
+                    ],
+                }
+            ]
+        }
+    ]
+}
