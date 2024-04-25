@@ -46,12 +46,18 @@
         },
         {
           "Apply": {
-            "TemplateName": "et200sp_dq8x24vdc_templ"
+            "TemplateName": "et200sp_dq8x24vdc_templ",
+            "Arguments": {
+              "moduleName": "dq8"
+            }
           }
         },
         {
           "Apply": {
-            "TemplateName": "et200sp_servermod_templ"
+            "TemplateName": "et200sp_servermod_templ",
+            "Arguments": {
+              "moduleName": "servermodule"
+            }
           }
         }
       ]

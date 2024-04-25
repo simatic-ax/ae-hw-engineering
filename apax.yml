@@ -8,27 +8,30 @@ variables:
   APAX_BUILD_ARGS:
     - "--debug" # Generate debug information for target "1500"
   PLC_IP: 192.168.0.15
-  TLS_PFX_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.pfx
+  TLS_PFX_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.pfx #this is a archive file including a privat and a public key 
   TLS_PUBLIC_KEY_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.crt
-  WEB_USER: Admin
-  WEB_USER_PW: Demo#123
+  USER1: Admin
+  USER1_PW: Demo#123
+  USER2: Operator
+  USER2_PW: Demo#123
   MASTER_PW: Demo#123
   FULL_ACCESS_PW: Demo#123
-  PFX_CERT_PW: S71500
+  PFX_CERT_PW: S71500 # this is the password to open the file TLS_Server_Certificate_for_S71500.pfx 
 
 devDependencies:
-  "@ax/sdk": 2311.0.1
+  "@ax/sdk": 2311.1.1
 dependencies:
-  "@ax/hwc": ^0.12.217
-  "@ax/hwld": ^0.8.23
+  "@ax/hwc": 0.13.375
+  "@ax/hwld": 0.9.479
+  "@ax/opcua-server-config": 0.7.0
 
 scripts:
   # install the GSDML files of the PROFINET IO devices that the PLC is to operate
   hw_install_gsdml: hwc install-gsd -i hwcfg/gsd
-  
+
   # create a text file containing all modules can be used. Pls. recall after you've added further GSDML files 
   hw_print_catalog: hwc get-supported-devices > hw_catalog.txt
-  
+
   # setup all security relevant data for a specific PLC
   hw_setup_security:
     # create a file made to stores all confidential data (certificates, passwords, users, rights etc.) in a secure format so that it can be added to Git
@@ -37,19 +40,27 @@ scripts:
     - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose TLS
     # add a certificate for the PLC's Web server, that allows a Web client (e.g. a browser) to verify the server identity
     - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW  --purpose WebServer
-    # add the access level password for accessing the PLC, e.g. for any modification
-    - hwc set-accessprotection-password --name cpu1516 --input hwcfg/cpu1516.hwl.json  --level FullAccess --password $FULL_ACCESS_PW
-    # add a password for a user who can access the PLC web pages according to his access authorizations after logging on with his password
-    - hwc manage-users set-password -u $WEB_USER -p "$WEB_USER_PW" --moduleName cpu1516 -i hwcfg/cpu1516.hwl.json
+       # add a certificate for the PLC's OPC UA server, that allows an OPC UA client (e.g. a HMI) to verify the server identity
+    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose OpcUAServer 
+      # add a password for a users who can access the PLC and it services (Webs erver, OPC UA server) according to the access authorizations after logging on with his password
+    - hwc manage-users set-password -u $USER1 -p "$USER1_PW" --moduleName cpu1516 -i hwcfg/cpu1516.hwl.json
+    - hwc manage-users set-password -u $USER2 -p "$USER2_PW" --moduleName cpu1516 -i hwcfg/cpu1516.hwl.json
 
-   # compile and load the hardware configuration
+  # compile and load the hardware configuration
   hw_load:
     # compile the hardware description (input:sources) to target specific data (output:binaries) and update the IO- and HwIdent mapping (SystemConstants)
     - hwc compile --input hwcfg --input hwcfg_templates --output hwbin
     # load the target specific hardware data (binaries) to the PLC
-    - hwld --input hwbin/cpu1516 -t $PLC_IP -p:$FULL_ACCESS_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -M:$MASTER_PW
-  
+    - hwld --input hwbin/cpu1516 -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -M:$MASTER_PW
+
   # compile and load the automation program
   sw_load:
     - apax build
-    - sld load --input ./bin/plcsim --target $PLC_IP -p $FULL_ACCESS_PW  --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -r
+    - sld load --input ./bin/plcsim --target $PLC_IP -u:$USER1 -p:$USER1_PW  --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -r
+
+  # load the OPC UA interface to expose variables accessible for an OPC UA client
+  opcua_load:
+    - apax oscr interface install ./bin/plcsim/ae-hw-engineering-demo.app -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -sr
+  # verify the the interface was added
+  opcua_list:
+    - apax oscr interface list -t $PLC_IP -u:$USER1 -p:$USER1_PW -C $TLS_PUBLIC_KEY_CERTFILE

@@ -13,7 +13,23 @@
             "RecordDataList": [
               {
                 "Index": 243,
-                "RawValue": "0x01 00 00 00" //Light base module
+                //"RawValue": "0x01 00 00 00" //Light base module
+                "Values": [
+                  {
+                    "OffsetName": "Potential group", //0.0
+                    "ValueName": "Enable new potential group (light BaseUnit)" //1
+                  }
+                ]
+              },
+              {
+                "Index":128,
+                "Values": [
+                  {
+                    "OffsetName": "Channel 0 Input delay", //3.0
+                    "ValueName": "0.4 ms" //3
+                  }
+
+                ]
               }
             ]
           }

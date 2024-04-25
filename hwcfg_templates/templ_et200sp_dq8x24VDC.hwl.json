@@ -3,11 +3,86 @@
     "Modules": [
       {
         "Name": "et200sp_dq8x24vdc_templ",
+        "Placeholders": [
+          {
+            "Name": "moduleName",
+            "Value": "dq8_default"
+          }
+        ],
         "Content": {
-          "Name": "dq8",
+          "Name": "${moduleName}",
           "TypeIdentifier": {
             "GsdId": "DQ 8x24VDC/0,5A ST V1.1",
             "FileName": "GSDML-V2.42-SIEMENS-ET200SP-20230812.XML"
+          },
+          "Parameters": {
+            "RecordDataList": [
+              {
+                "Index": 128,
+                "Values": [
+                  {
+                    "OffsetName": "Diagnostics: No supply voltage L+",
+                    "Value": false //0 = false (d), 1 = true
+                  },
+                  {
+                    "OffsetName": "Diagnostics: Short circuit to ground",
+                    "Value": false //0 = false (d), 1 = true
+                  },
+                  {
+                    "OffsetName": "Diagnostics: Short circuit to L+",
+                    "Value": false //0 = false(d), 1 = true
+                  },
+                  {
+                    "OffsetName": "Diagnostics: Wire break",
+                    "Value": false //0 = false(d), 1 = true
+                  },
+                  {
+                    "OffsetName": "Channel 0 activated",
+                    "Value": true //0 = false, 1 = true (d)
+                  },
+                  {
+                    "OffsetName": "Channel 0 Reaction to CPU STOP",
+                    "ValueName": "Shutdown" //0=Shutdown (d), 2=Keep last value, 11=Output substitute value 1
+                  },
+                  {
+                    "OffsetName": "Channel 1 activated",
+                    "Value": false //0 = false, 1 = true (d)
+                  },
+                  {
+                    "OffsetName": "Channel 1 Reaction to CPU STOP",
+                    "ValueName": "Shutdown"
+                  },
+                  {
+                    "OffsetName": "Channel 2 activated",
+                    "Value": true //0 = false, 1 = true (d)
+                  },
+                  {
+                    "OffsetName": "Channel 2 Reaction to CPU STOP",
+                    "ValueName": "Shutdown"
+                  },
+                  {
+                    "OffsetName": "Channel 3 Reaction to CPU STOP",
+                    "ValueName": "Shutdown"
+                  },
+                  {
+                    "OffsetName": "Channel 4 Reaction to CPU STOP",
+                    "ValueName": "Shutdown"
+                  },
+                  {
+                    "OffsetName": "Channel 5 Reaction to CPU STOP",
+                    "ValueName": "Shutdown"
+                  },
+                  {
+                    "OffsetName": "Channel 6 Reaction to CPU STOP",
+                    "ValueName": "Shutdown"
+                  },
+                  {
+                    "OffsetName": "Channel 7 Reaction to CPU STOP",
+                    "ValueName": "Shutdown"
+                  }
+                ]
+              }
+            ]
           }
         }
       }

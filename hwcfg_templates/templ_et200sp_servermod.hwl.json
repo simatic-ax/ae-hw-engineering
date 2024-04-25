@@ -3,8 +3,14 @@
         "Modules": [
             {
                 "Name": "et200sp_servermod_templ",
+                "Placeholders": [
+                    {
+                        "Name": "moduleName",
+                        "Value": "servermodule"
+                    }
+                ],
                 "Content": {
-                    "Name": "servermod",
+                    "Name": "${moduleName}",
                     "TypeIdentifier": {
                         "GsdId": "Servermodule_without_io",
                         "FileName": "GSDML-V2.42-SIEMENS-ET200SP-20230812.XML"

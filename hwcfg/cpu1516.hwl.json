@@ -1,34 +1,33 @@
 {
-  "Devices": [
+  "Devices": [  // This is a list of devices which can contain modules- so call them modulare devices. 
+                // You can add all your devices of your automation, but it makes to spread them over several files. 
+                // That makes it modular, easier to read, to mainain and to reuse.
     {
-      "Name": "plc_device",
+      "Name": "plc_device", // This is the name I assigned to the device where my PLC is contained. I could add also additional modules, like IO boards.
       "Modules": [
         {
-          "Name": "cpu1516",
-          "TypeIdentifier": {
+          "Name": "cpu1516", // This is the name I assigned to the PLC module. Even though the PLC is the target of all efforts, from a hardware model perspective it is just another module within a device.
+          "TypeIdentifier": { // This tells the hardware compiler which type of specific hardware model is to be taken into account
             "OrderNumber": "6ES7 516-3AP03-0AB0",
-            "Version": "V3.0"
+            "Version": "V3.1"
           },
-          "AccessProtection": {
-            "AccessLevel": "NoAccess"
-          },
-          "Interfaces": [
+          "Interfaces": [ // This module has interfaces, they can be configured and parametrized 
             {
-              "Name": "profinet_interface_x1",
-              "Label": "X1",
+              "Name": "profinet_interface_x1", // This is the name I assigned to a PLC Profinet interface
+              "Label": "X1", // this selects the concrete interface since a module migth have more then one
               "Addresses": {
-                "Configured": [
-                  {
-                    "IPv4": "192.168.0.15/24"
+                "Configured": [ //this means, the interface address I configure here is the one to be used after the configuration gets loaded to the PLC
+                  {             
+                    "IPv4": "192.168.0.15/24" // The 
                   }
                 ]
               },
-              "Parameters": {
+              "Parameters": {// I add parameter from the interface I want to change from default to a user value
                 "IECV22LLDPMode": true
               }
             },
             {
-              "Name": "opcua_interface_x2",
+              "Name": "opcua_interface_x2", // This is the name I assigned to an other PLC Profinet interface
               "Label": "X2",
               "Addresses": {
                 "Configured": [
@@ -39,47 +38,78 @@
               }
             }
           ],
-          "Ports": [
-            {
-              "Name": "x1p1",
-              "Label": "X1 P1"
+          "Ports": [ // On an ethernet subnet  all cables are physically pluged into ports.
+            {         // I configure them so that I can use them to define an expected topology, which will help me reducing commissioning effort
+              "Name": "x1p1", // This is the name I assigned to the physical ethernet port "X1 P1"
+              "Label": "X1 P1" // This identifies the port, you might find this label next to the physical port
             },
             {
               "Name": "x1p2",
               "Label": "X1 P2"
             }
           ],
-          "Services": [
+          "Services": [ // The PLC hosts certain services. I need to configure those I want to use.
             {
-              "Type": "WebServer",
-              "Enabled": true,
+              "Type": "WebServer", // The PLC is hosting a web server
+              "Enabled": true, // The Web server should be enabled
               "Parameters": {
-                "HttpsOnly": true
+                "HttpsOnly": true // The Web server should accept HTTPS (SSL/TLS based secure connection) requests only
               }
+            },
+            {
+              "Type":"OpcUaServer", // The PLC is hosting a OPC UA server
+              "Enabled": true // The OPC UA server should be enabled
             }
           ],
-          "UserManagement": {
+          "UserManagement": { // The PLC supports a management of users, assigned roles and rights
             "Users": [
               {
-                "Name": "Admin",
+                "Name": "Admin", // This is the name I called a user, who would act as an Administrator, but it can be any other name too
+                "AssignedRoles": [ // A list of roles whereby one or more functional rights are assigned to each role
+                  "access_administrator", 
+                  "webserver_administrator",
+                  "opcua_server_access"
+                ]
+              },
+              {
+                "Name": "Operator", // This is the name I called a user who would act as an Operator.
                 "AssignedRoles": [
-                  "admin"
+                  "access_operator"
                 ]
               }
             ],
-            "Roles": [
+            "Roles": [ //Here I define roles and give them names as I found it appropriate
               {
-                "Name": "admin",
+                "Name": "access_administrator", // I called this "access_administrator", to bundle the necessary PLC access rights for someone who acts like an administrator
                 "FunctionRights": [
-                  "ReadPlcVariables",
-                  "WritePlcVariables",
-                  "QueryDiagnostics"
+                 "AccessProtectionFullAccess" // by granting this function right the user has unrestricted access to the PLC
                 ]
-              }
+              },
+              {
+                "Name": "webserver_administrator", // I called this "webserver_administrator", to bundle the necessary Webserver access rights for someone who acts like an administrator
+                "FunctionRights": [
+                  "ReadPlcVariables", // by granting this function right the user can read PLC variables via Web browser
+                  "WritePlcVariables", // by granting this function right the user can write PLC variables via Web browser
+                  "QueryDiagnostics" //by granting this function right the user can open PLC diagnostic pages via Web browser
+                ]
+              },
+              {
+                "Name": "opcua_server_access", // I called this "opcua_server_access", 
+                "FunctionRights": [
+                 "OpcUAServerAccess" // by granting this function right the user can access PLC variables exposed by the OPC UA server interface (see oscr)
+                ]
+              },
+              {
+                "Name": "access_operator", // I called this "access_operator", which is intended to bundle the necessary function rights for someone who acts like an operator
+                "FunctionRights": [
+                 "AccessProtectionReadAccess", // by granting this function right the user has read only access to the PLC
+                 "QueryDiagnostics" //..
+                ]
+              },
             ]
           },
-          "Parameters": {
-            "CycleMaximumCycleTime": 150,
+          "Parameters": { // Here I add parameter I want to change from default to a user value
+            "CycleMaximumCycleTime": 148,
             "CycleMinimumCycleTime": 2
           }
         }

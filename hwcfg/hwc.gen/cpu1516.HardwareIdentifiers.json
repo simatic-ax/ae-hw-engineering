@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "HardwareIdentifiers": [
+    {
+      "Name": "PROFINET IO-System",
+      "Value": 256
+    },
+    {
+      "Name": "et200s_device",
+      "Value": 273
+    },
+    {
+      "Name": "et200s_device~2DI_1~2DI DC24V HF",
+      "Value": 277
+    },
+    {
+      "Name": "et200s_device~2DI_2~2DI DC24V HF",
+      "Value": 276
+    },
+    {
+      "Name": "et200s_device~2DQ_1~2DO DC24V/0.5A HF",
+      "Value": 279
+    },
+    {
+      "Name": "et200s_device~2DQ_2~2DO DC24V/0.5A HF",
+      "Value": 278
+    },
+    {
+      "Name": "et200s_device~PM~PM-E DC24V",
+      "Value": 280
+    },
+    {
+      "Name": "et200s_device~Rack",
+      "Value": 274
+    },
+    {
+      "Name": "et200s_device~et200s",
+      "Value": 275
+    },
+    {
+      "Name": "et200s_device~et200s~IM151-3 PN HF V7.0",
+      "Value": 281
+    },
+    {
+      "Name": "et200s_device~et200s~x1",
+      "Value": 270
+    },
+    {
+      "Name": "et200s_device~et200s~x1~Port 2",
+      "Value": 272
+    },
+    {
+      "Name": "et200s_device~et200s~x1~x1p1",
+      "Value": 271
+    },
+    {
+      "Name": "et200sp1_device",
+      "Value": 295
+    },
+    {
+      "Name": "et200sp1_device~Rack",
+      "Value": 296
+    },
+    {
+      "Name": "et200sp1_device~di8~DI 8x24VDC ST V1.1",
+      "Value": 300
+    },
+    {
+      "Name": "et200sp1_device~dq8~DQ 8x24VDC/0.5A ST V1.1",
+      "Value": 299
+    },
+    {
+      "Name": "et200sp1_device~et200sp1",
+      "Value": 297
+    },
+    {
+      "Name": "et200sp1_device~et200sp1~IM 155-6 PN HF V3.3",
+      "Value": 301
+    },
+    {
+      "Name": "et200sp1_device~et200sp1~x1",
+      "Value": 292
+    },
+    {
+      "Name": "et200sp1_device~et200sp1~x1p1",
+      "Value": 293
+    },
+    {
+      "Name": "et200sp1_device~et200sp1~x1p2",
+      "Value": 294
+    },
+    {
+      "Name": "et200sp1_device~servermodule~Server module V1.1 (0 bytes)",
+      "Value": 298
+    },
+    {
+      "Name": "et200sp2_device",
+      "Value": 285
+    },
+    {
+      "Name": "et200sp2_device~Rack",
+      "Value": 286
+    },
+    {
+      "Name": "et200sp2_device~di8~DI 8x24VDC ST V1.1",
+      "Value": 290
+    },
+    {
+      "Name": "et200sp2_device~dq8~DQ 8x24VDC/0.5A ST V1.1",
+      "Value": 289
+    },
+    {
+      "Name": "et200sp2_device~et200sp2",
+      "Value": 287
+    },
+    {
+      "Name": "et200sp2_device~et200sp2~IM 155-6 PN ST V4.1",
+      "Value": 291
+    },
+    {
+      "Name": "et200sp2_device~et200sp2~x1",
+      "Value": 282
+    },
+    {
+      "Name": "et200sp2_device~et200sp2~x1p1",
+      "Value": 283
+    },
+    {
+      "Name": "et200sp2_device~et200sp2~x1p2",
+      "Value": 284
+    },
+    {
+      "Name": "et200sp2_device~servermodule~Server module V1.1 (0 bytes)",
+      "Value": 288
+    },
+    {
+      "Name": "plc_device",
+      "Value": 32
+    },
+    {
+      "Name": "plc_device~Rail_0",
+      "Value": 302
+    },
+    {
+      "Name": "plc_device~cpu1516",
+      "Value": 48
+    },
+    {
+      "Name": "plc_device~cpu1516~ cpu1516",
+      "Value": 49
+    },
+    {
+      "Name": "plc_device~cpu1516~CPU display_1",
+      "Value": 54
+    },
+    {
+      "Name": "plc_device~cpu1516~CPU exec unit_1",
+      "Value": 52
+    },
+    {
+      "Name": "plc_device~cpu1516~Card reader/writer_1",
+      "Value": 51
+    },
+    {
+      "Name": "plc_device~cpu1516~DP interface_1",
+      "Value": 60
+    },
+    {
+      "Name": "plc_device~cpu1516~LicenseManager_1",
+      "Value": 42
+    },
+    {
+      "Name": "plc_device~cpu1516~OPC UA_1",
+      "Value": 117
+    },
+    {
+      "Name": "plc_device~cpu1516~Virtual communication interface",
+      "Value": 135
+    },
+    {
+      "Name": "plc_device~cpu1516~cpu1516",
+      "Value": 50
+    },
+    {
+      "Name": "plc_device~cpu1516~opcua_interface_x2",
+      "Value": 72
+    },
+    {
+      "Name": "plc_device~cpu1516~opcua_interface_x2~Port_1",
+      "Value": 73
+    },
+    {
+      "Name": "plc_device~cpu1516~profinet_interface_x1",
+      "Value": 64
+    },
+    {
+      "Name": "plc_device~cpu1516~profinet_interface_x1~x1p1",
+      "Value": 65
+    },
+    {
+      "Name": "plc_device~cpu1516~profinet_interface_x1~x1p2",
+      "Value": 66
+    },
+    {
+      "Name": "scalancex208_device",
+      "Value": 266
+    },
+    {
+      "Name": "scalancex208_device~Rack",
+      "Value": 267
+    },
+    {
+      "Name": "scalancex208_device~scalancex208",
+      "Value": 268
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~SCALANCE X208",
+      "Value": 269
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~x1",
+      "Value": 257
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~x1~x1p1",
+      "Value": 258
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~x1~x1p2",
+      "Value": 259
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~x1~x1p3",
+      "Value": 260
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~x1~x1p4",
+      "Value": 261
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~x1~x1p5",
+      "Value": 262
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~x1~x1p6",
+      "Value": 263
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~x1~x1p7",
+      "Value": 264
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~x1~x1p8",
+      "Value": 265
+    }
+  ]
+}
