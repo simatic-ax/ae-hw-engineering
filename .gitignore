@@ -1,7 +1,7 @@
 .apax
 .env
 bin
-gsd
+gsd/hwc/import-cache
 hwbin
 
 obj
