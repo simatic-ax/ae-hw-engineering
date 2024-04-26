@@ -20,7 +20,6 @@ variables:
 
 devDependencies:
   "@ax/sdk": 2311.1.1
-dependencies:
   "@ax/hwc": 0.13.375
   "@ax/hwld": 0.9.479
   "@ax/opcua-server-config": 0.7.0
