@@ -1204,14 +1204,3 @@
  xB6 AC400V/0.5A || GsdFileName: GSDML-V2.25-SIEMENS-ET200S-20191007.XML || OrderNumber: 3RK1 903-0CK00 || GsdId: 286	
  xB6 AC400V/0.5A* || GsdFileName: GSDML-V2.25-SIEMENS-ET200S-20191007.XML || OrderNumber: 3RK1 903-0CK00 || GsdId: 553	
 
-**CPPNDriver 
- PN Driver CP1625 Host Submodule Interface || OrderNumber: CP1625 Host || FwVersion: V3.0
- PN Driver CP1627 Submodule Interface || OrderNumber: CP1627 || FwVersion: V3.0
- PN Driver Linux Native Submodule Interface || OrderNumber: Linux Native || FwVersion: V3.0
- PN Driver Linux Native Submodule Interface || OrderNumber: Linux Native || FwVersion: V2.2
- PN Driver Windows Submodule Interface || OrderNumber: Windows || FwVersion: V3.0
-
-**PNDriver 
- PROFINET Driver || OrderNumber: 6ES7 195-3AA00-0YA1 || FwVersion: V3.0
- PROFINET Driver || OrderNumber: PROFINET-JUPITER || FwVersion: V2.2
-

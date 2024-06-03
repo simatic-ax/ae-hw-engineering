@@ -14,11 +14,11 @@
           "Interfaces": [ // This module has interfaces, they can be configured and parametrized 
             {
               "Name": "profinet_interface_x1", // This is the name I assigned to a PLC Profinet interface
-              "Label": "X1", // this selects the concrete interface since a module migth have more then one
+              "Label": "X1", // This selects the concrete interface since a module migth have more then one
               "Addresses": {
-                "Configured": [ //this means, the interface address I configure here is the one to be used after the configuration gets loaded to the PLC
+                "Configured": [ //This means, the interface address I configure here is the one to be used after the configuration gets loaded to the PLC
                   {             
-                    "IPv4": "192.168.0.15/24" // The 
+                    "IPv4": "192.168.0.15/24" // The IP address (host address and subnet mask in CIDR notation)
                   }
                 ]
               },
@@ -105,7 +105,7 @@
                  "AccessProtectionReadAccess", // by granting this function right the user has read only access to the PLC
                  "QueryDiagnostics" //..
                 ]
-              },
+              }
             ]
           },
           "Parameters": { // Here I add parameter I want to change from default to a user value

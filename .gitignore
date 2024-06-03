@@ -3,6 +3,5 @@
 bin
 gsd/hwc/import-cache
 hwbin
-
 obj
 testresult
