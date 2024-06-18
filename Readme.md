@@ -1,4 +1,4 @@
-# Application Example Hardware Engineering Demo
+# Application Example Hardware Engineering
 
 ## Description
 This repo contains an example project to demonstrate how to IT-like hardware configuration with SIMATIX AX.
