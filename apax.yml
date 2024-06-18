@@ -1,9 +1,22 @@
-name: "ae-hw-engineering-demo"
+# General information
+name: "ae-hw-engineering"
 version: 0.0.0
 type: app
+# Description will be displayed in the apax extension
+description: This reposetory contains an example project to demonstrate how to IT-like hardware configuration with SIMATIX AX.
+# Build targets
 targets:
   - "1500"
-  - plcsim
+
+# Install Setting
+installStrategy: strict
+apaxVersion: 3.2.1
+# Dependencies
+devDependencies:
+  "@ax/sdk": 2405.0.0
+  "@ax/opcua-server-config": 1.0.0
+
+# Project variables
 variables:
   APAX_BUILD_ARGS:
     - "--debug" # Generate debug information for target "1500"
@@ -29,10 +42,7 @@ variables:
   # To transfer it to the PLC, it must be passed as an argument during the first hardware download. It can be omitted in further hardware download calls.
   MASTER_PW: Demo#123
 
-devDependencies:
-  "@ax/sdk": 2405.0.0
-  "@ax/opcua-server-config": 1.0.0
-
+# Apax scripts
 scripts:
   # install the GSDML files of the PROFINET IO devices that the PLC is to operate
   hw_install_gsdml: hwc install-gsd -i hwcfg/gsd
@@ -40,14 +50,14 @@ scripts:
   # create a text file containing all modules can be used. Pls. recall after you've added further GSDML files 
   hw_print_catalog: hwc get-supported-devices > hw_catalog.txt
 
-  # setup all security relevant data for a specific PLC
+  # setup all security relevant data for a specific PLC - when you want to run it in the project again you need to delte the folder hwcfg/hwc.gen/cpu1516.SecurityConfiguration.json
   hw_setup_security:
     # create a file made to stores all confidential data (certificates, passwords, users, rights etc.) in a secure format so that it can be added to Git
     - hwc setup-secure-communication --name cpu1516 --input hwcfg/cpu1516.hwl.json --password $MASTER_PW
     # add a TLS certificate for the PLC as a server, that allows a client (e.g. SIMATIC AX, or an HMI) to verify the PLC's identity when accessing it
     - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose TLS
     # add a certificate for the PLC's Web server, that allows a Web client (e.g. a browser) to verify the server identity
-    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW  --purpose WebServer 
+    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW  --purpose WebServer
     # add a certificate for the PLC's OPC UA server, that allows an OPC UA client (e.g. a HMI) to verify the server identity
     - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose OpcUAServer
     # add a password for a users who can access the PLC and it services (Webs erver, OPC UA server) according to the access authorizations after logging on with his password

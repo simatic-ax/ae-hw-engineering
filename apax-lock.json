@@ -1,22 +1,22 @@
 {
-  "name": "ae-hw-engineering-demo",
+  "name": "ae-hw-engineering",
   "version": "0.0.0",
   "lockFileVersion": "2",
   "installStrategy": "strict",
   "root": {
-    "name": "ae-hw-engineering-demo",
+    "name": "ae-hw-engineering",
     "version": "0.0.0",
     "devDependencies": {
-      "@ax/sdk": "^2405.0.0-rc.9",
-      "@ax/opcua-server-config": "^1.0.0"
+      "@ax/sdk": "2405.0.0",
+      "@ax/opcua-server-config": "1.0.0"
     }
   },
   "packages": {
     "@ax/sdk": {
       "name": "@ax/sdk",
-      "version": "2405.0.0-rc.9",
-      "integrity": "sha512-wZ3vay/SzX0YXk4H0Xpgg5oKPK95dQrz5KXjhdhu8BpPpyPcKwFnbAdFF/o+JSbSuWkW/YG/pWHEtBpNuCrleA==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/sdk/-/sdk-2405.0.0-rc.9.tgz",
+      "version": "2405.0.0",
+      "integrity": "sha512-Gm+Et1l37wDwHr4tpa0TqB71TwudQaXJpR53NI7PGh+uEljyu1xzArZorj0NUiMSi/GMj2xi//JWsfS8iWDkbg==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/sdk/-/sdk-2405.0.0.tgz",
       "dependencies": {
         "@ax/apax-build": "1.0.0",
         "@ax/axunitst": "5.0.74",
@@ -31,7 +31,7 @@
         "@ax/plc-info": "2.4.0",
         "@ax/sdb": "1.2.2",
         "@ax/simatic-pragma-stc-plugin": "4.0.18",
-        "@ax/sld": "2.5.6",
+        "@ax/sld": "2.5.7",
         "@ax/st-ls": "7.0.52",
         "@ax/stc": "7.0.52",
         "@ax/target-llvm": "7.0.52",
@@ -177,9 +177,9 @@
     },
     "@ax/sld": {
       "name": "@ax/sld",
-      "version": "2.5.6",
-      "integrity": "sha512-o/yd/POIqXB8Ov0CUYddrDVzLnOH7iPrld+OE/hn/oI9r8S8EKqfK6dgImMsjvBx9MZKOxoT5K2k7lhXu8pzpA==",
-      "resolved": "https://registry.simatic-ax.siemens.io/@ax/sld/-/sld-2.5.6.tgz",
+      "version": "2.5.7",
+      "integrity": "sha512-LSa6MtCF/l1J/S5c8NsaQTE84X+nAHoLjdqwRRLX97zHs3GVuan6sfC+VhyniiXrI201Bvwky4po18pT7IeY2Q==",
+      "resolved": "https://registry.simatic-ax.siemens.io/@ax/sld/-/sld-2.5.7.tgz",
       "cpu": [
         "x64"
       ],
