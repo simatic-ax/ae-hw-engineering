@@ -30,8 +30,8 @@ variables:
   MASTER_PW: Demo#123
 
 devDependencies:
-  "@ax/sdk": ^2405.0.0-rc.9
-  "@ax/opcua-server-config": ^1.0.0
+  "@ax/sdk": 2405.0.0
+  "@ax/opcua-server-config": 1.0.0
 
 scripts:
   # install the GSDML files of the PROFINET IO devices that the PLC is to operate
