@@ -90,13 +90,24 @@
         }
       }
     },
+    "apax-yml-keyword-and-keyword-order": {
+      "level": "error",
+      "rule": {
+        "type": "file-contents",
+        "options": {
+          "globsAll": [ "apax.yml" ],
+          "content": "name*verion*type*description*targets*installStrategy*apaxVersion*Dependencies*variables*scripts",
+          "flags": "i"
+        }
+      }
+    },
     "gitignore-yml-exit": {
       "level": "error",
       "rule": {
         "type": "file-existence",
         "options": {
           "globsAny": [
-            ".gitignore.yml"
+            ".gitignore"
           ]
         }
       }
