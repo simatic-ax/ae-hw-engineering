@@ -12,7 +12,7 @@
       "rule": {
         "type": "file-existence",
         "options": {
-          "globsAny": ["LICENSE*", "COPYING*"],
+          "globsAny": [ "LICENSE.md" ],
           "nocase": true
         }
       }
@@ -22,7 +22,7 @@
       "rule": {
         "type": "file-existence",
         "options": {
-          "globsAny": ["README*"],
+          "globsAny": [ "README*.md" ],
           "nocase": true
         }
       }
@@ -32,7 +32,7 @@
       "rule": {
         "type": "file-contents",
         "options": {
-          "globsAll": ["README*"],
+          "globsAll": [ "README*" ],
           "content": "license",
           "flags": "i"
         }
@@ -43,7 +43,7 @@
       "rule": {
         "type": "file-type-exclusion",
         "options": {
-          "type": ["**/*.exe", "**/*.dll", "!node_modules/**"]
+          "type": [ "**/*.exe", "**/*.dll", "!node_modules/**" ]
         }
       }
     },
@@ -52,7 +52,7 @@
       "rule": {
         "type": "directory-existence",
         "options": {
-          "globsAny": ["**/test*", "**/specs"],
+          "globsAny": [ "**/test*", "**/specs" ],
           "nocase": true
         }
       }
@@ -63,16 +63,40 @@
         "type": "file-existence",
         "options": {
           "globsAny": [
-            ".gitlab-ci.yml",
-            ".travis.yml",
-            "appveyor.yml",
-            ".appveyor.yml",
-            "circle.yml",
-            ".circleci/config.yml",
-            "Jenkinsfile",
-            ".drone.yml",
-            ".github/workflows/*",
-            "azure-pipelines.yml"
+            ".github/workflows/*"
+          ]
+        }
+      }
+    },
+    "markdownlint-config-exit": {
+      "level": "error",
+      "rule": {
+        "type": "file-existence",
+        "options": {
+          "globsAny": [
+            ".markdownlint.yml"
+          ]
+        }
+      }
+    },
+    "apax-yml-exit": {
+      "level": "error",
+      "rule": {
+        "type": "file-existence",
+        "options": {
+          "globsAny": [
+            "apax.yml"
+          ]
+        }
+      }
+    },
+    "gitignore-yml-exit": {
+      "level": "error",
+      "rule": {
+        "type": "file-existence",
+        "options": {
+          "globsAny": [
+            ".gitignore.yml"
           ]
         }
       }
