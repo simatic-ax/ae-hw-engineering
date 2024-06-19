@@ -1,6 +1,6 @@
 # General information
 name: "ae-hw-engineering"
-version: 0.0.0
+version: 1.0.0
 type: app
 # Description will be displayed in the apax extension
 description: This reposetory contains an example project to demonstrate how to IT-like hardware configuration with SIMATIX AX.
