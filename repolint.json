@@ -116,9 +116,7 @@
         "type": "file-contents",
         "options": {
           "globsAll": [ "apax.yml" ],
-          "content": [
-            "name:.*verion:.*type:.*description:.*targets:.*installStrategy:.*apaxVersion:.*Dependencies:"
-          ],
+          "content": "name:.*verion:.*type:.*description:.*targets:.*installStrategy:.*apaxVersion:.*Dependencies:",
           "flags": "i"
         }
       }
