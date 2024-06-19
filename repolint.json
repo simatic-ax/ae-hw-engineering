@@ -48,11 +48,31 @@
       }
     },
     "test-directory-exists": {
-      "level": "error",
+      "level": "warning",
       "rule": {
         "type": "directory-existence",
         "options": {
-          "globsAny": [ "**/test*", "**/specs" ],
+          "globsAny": [ "**/test*" ],
+          "nocase": true
+        }
+      }
+    },
+    "source-directory-exists": {
+      "level": "warning",
+      "rule": {
+        "type": "directory-existence",
+        "options": {
+          "globsAny": [ "**/src*" ],
+          "nocase": true
+        }
+      }
+    },
+    "additional-docs-directory-exists": {
+      "level": "warning",
+      "rule": {
+        "type": "directory-existence",
+        "options": {
+          "globsAny": [ "**/docs*" ],
           "nocase": true
         }
       }
@@ -101,13 +121,46 @@
         }
       }
     },
-    "gitignore-yml-exit": {
+    "gitignore-exit": {
       "level": "error",
       "rule": {
         "type": "file-existence",
         "options": {
           "globsAny": [
             ".gitignore"
+          ]
+        }
+      }
+    },
+    "gitattributes-exit": {
+      "level": "error",
+      "rule": {
+        "type": "file-existence",
+        "options": {
+          "globsAny": [
+            ".gitattributes"
+          ]
+        }
+      }
+    },
+    "apax-files-section-exit": {
+      "level": "error",
+      "rule": {
+        "type": "file-existence",
+        "options": {
+          "globsAny": [
+            "apax-files-section.yml"
+          ]
+        }
+      }
+    },
+    "CODEOWNERS-exit": {
+      "level": "error",
+      "rule": {
+        "type": "file-existence",
+        "options": {
+          "globsAny": [
+            "CODEOWNERS"
           ]
         }
       }
