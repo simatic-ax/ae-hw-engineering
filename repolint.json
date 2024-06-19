@@ -110,13 +110,24 @@
         }
       }
     },
-    "apax-yml-keyword-and-keyword-order": {
+    "apax-yml-keywords": {
       "level": "error",
       "rule": {
         "type": "file-contents",
         "options": {
           "globsAll": [ "apax.yml" ],
-          "content": "name*verion*type*description*targets*installStrategy*apaxVersion*Dependencies*variables*scripts",
+          "content": [
+            "name",
+            "verion",
+            "type",
+            "description",
+            "targets",
+            "installStrategy",
+            "apaxVersion",
+            "Dependencies",
+            "variables",
+            "scripts"
+          ],
           "flags": "i"
         }
       }
