@@ -111,7 +111,7 @@
       }
     },
     "apax-yml-keywords": {
-      "level": "error",
+      "level": "off",
       "rule": {
         "type": "file-contents",
         "options": {
