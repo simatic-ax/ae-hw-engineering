@@ -117,16 +117,7 @@
         "options": {
           "globsAll": [ "apax.yml" ],
           "content": [
-            "name",
-            "verion",
-            "type",
-            "description",
-            "targets",
-            "installStrategy",
-            "apaxVersion",
-            "Dependencies",
-            "variables",
-            "scripts"
+            "name:.*verion:.*type:.*description:.*targets:.*installStrategy:.*apaxVersion:.*Dependencies:"
           ],
           "flags": "i"
         }
