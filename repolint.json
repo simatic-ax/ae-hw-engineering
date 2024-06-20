@@ -110,17 +110,6 @@
         }
       }
     },
-    "apax-yml-keywords": {
-      "level": "off",
-      "rule": {
-        "type": "file-contents",
-        "options": {
-          "globsAll": [ "apax.yml" ],
-          "content": "name:.*verion:.*type:.*description:.*targets:.*installStrategy:.*apaxVersion:.*Dependencies:",
-          "flags": "i"
-        }
-      }
-    },
     "gitignore-exit": {
       "level": "error",
       "rule": {
