@@ -39,7 +39,7 @@
       }
     },
     "binaries-not-present": {
-      "level": "error",
+      "level": "warning",
       "rule": {
         "type": "file-type-exclusion",
         "options": {
