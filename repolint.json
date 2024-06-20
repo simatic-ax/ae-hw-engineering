@@ -154,11 +154,5 @@
         }
       }
     },
-    "best-practices-badge-present": {
-      "level": "off",
-      "rule": {
-        "type": "best-practices-badge-present"
-      }
-    }
   }
 }
