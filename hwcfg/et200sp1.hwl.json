@@ -54,6 +54,14 @@
         },
         {
           "Apply": {
+            "TemplateName": "et200sp_di8x24vdc_hf_templ",
+            "Arguments": {
+              "moduleName": "di8_hf"
+            }
+          }
+        },
+        {
+          "Apply": {
             "TemplateName": "et200sp_servermod_templ",
             "Arguments": {
               "moduleName": "servermodule"

@@ -7,30 +7,45 @@ targets:
 variables:
   APAX_BUILD_ARGS:
     - "--debug" # Generate debug information for target "1500"
+
+  # Folder where to find the compiled HW artefacts
+  HW_BIN_FOLDER: ./hwbin
+
+  # Folder where to find the compiled SW artefacts
+  SW_BIN_FOLDER: ./bin/plcsim
+
+  # IP Address of the PLC to be loaded
   PLC_IP: 192.168.0.15
+
   # SIMATIC PLCs support TLS/certificate based communication (secure communication between the PLC and Enginieering System/SIMATIC AX or and HMI, web server and OPC UA server)
   # At least one TLS certificate must be provided and can be used for all PLC communication services.
   # Alternatively, a separate certificate can be provided for each service.
   # This is a archive file (PKCS #12)  used to bundle a private key with its X.509 certificate (public key)
   TLS_PFX_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.pfx
+
+  # DISCLAIMER:Storing and publishing passwords in readable form is not best practice. It was only done here to simplify the demonstration
   # this is the password to open the file TLS_Server_Certificate_for_S71500.pfx
   PFX_CERT_PW: S71500
+
   # this is the X.509 certificate (public key) to be passed with a call accessing the PLC (e.g. hwld, sld) to let AX verifying the PLCs idendity (authentication)
   TLS_PUBLIC_KEY_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.crt
 
   # SIMATIC PLCs support role based user management
   # In this example I configure 2 users (I call them "Admin" and "Operator") with different roles and rights
+  # A user is identified by a name and a password 
+  # DISCLAIMER:Storing and publishing passwords in readable form is not best practice. It was only done here to simplify the demonstration
   USER1: Admin
   USER1_PW: Demo#123
   USER2: Operator
   USER2_PW: Demo#123
 
+  # DISCLAIMER:Storing and publishing passwords in readable form is not best practice. It was only done here to simplify the demonstration
   # The master passwort is known as "Passwort for protection of confidential PLC configuration data". 
   # To transfer it to the PLC, it must be passed as an argument during the first hardware download. It can be omitted in further hardware download calls.
   MASTER_PW: Demo#123
 
 devDependencies:
-  "@ax/sdk": ^2405.0.0-rc.9
+  "@ax/sdk": 2405.0.0
   "@ax/opcua-server-config": ^1.0.0
 
 scripts:
@@ -40,6 +55,10 @@ scripts:
   # create a text file containing all modules can be used. Pls. recall after you've added further GSDML files 
   hw_print_catalog: hwc get-supported-devices > hw_catalog.txt
 
+  # this call returns all properties/parameters a user can change in module (in this case: the PLC 1516 V3.1)
+  hw_get_properties:
+    - hwc get-supported-device-properties -o  "6ES7 516-3AP03-0AB0" -v "V3.1" > params.txt
+
   # setup all security relevant data for a specific PLC
   hw_setup_security:
     # create a file made to stores all confidential data (certificates, passwords, users, rights etc.) in a secure format so that it can be added to Git
@@ -47,7 +66,7 @@ scripts:
     # add a TLS certificate for the PLC as a server, that allows a client (e.g. SIMATIC AX, or an HMI) to verify the PLC's identity when accessing it
     - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose TLS
     # add a certificate for the PLC's Web server, that allows a Web client (e.g. a browser) to verify the server identity
-    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW  --purpose WebServer 
+    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW  --purpose WebServer
     # add a certificate for the PLC's OPC UA server, that allows an OPC UA client (e.g. a HMI) to verify the server identity
     - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose OpcUAServer
     # add a password for a users who can access the PLC and it services (Webs erver, OPC UA server) according to the access authorizations after logging on with his password
@@ -57,18 +76,18 @@ scripts:
   # compile and load the hardware configuration
   hw_load:
     # compile the hardware description (input:sources) to target specific data (output:binaries) and update the IO- and HwIdent mapping (SystemConstants)
-    - hwc compile --input hwcfg --input hwcfg_templates --output hwbin
+    - hwc compile --input hwcfg --input hwcfg_templates --output $HW_BIN_FOLDER
     # load the target specific hardware data (binaries) to the PLC
-    - hwld --input hwbin/cpu1516 -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -M:$MASTER_PW
+    - hwld --input $HW_BIN_FOLDER/cpu1516 -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -M:$MASTER_PW
 
-  # compile and load the automation program
+    # compile and load the automation program
   sw_load:
     - apax build
-    - sld load --input ./bin/plcsim --target $PLC_IP -u:$USER1 -p:$USER1_PW  --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -r
+    - sld load --input $SW_BIN_FOLDER --target $PLC_IP -u:$USER1 -p:$USER1_PW  --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -r
 
   # load the OPC UA interface to expose variables accessible for an OPC UA client
   opcua_load:
-    - apax oscr interface install ./bin/plcsim/ae-hw-engineering-demo.app -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -sr
+    - apax oscr interface install $SW_BIN_FOLDER/ae-hw-engineering-demo.app -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -sr
   # verify the the interface was added
   opcua_list:
     - apax oscr interface list -t $PLC_IP -u:$USER1 -p:$USER1_PW -C $TLS_PUBLIC_KEY_CERTFILE

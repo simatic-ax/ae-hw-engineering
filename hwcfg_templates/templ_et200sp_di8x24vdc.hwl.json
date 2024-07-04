@@ -3,8 +3,14 @@
     "Modules": [
       {
         "Name": "et200sp_di8x24vdc_templ",
+        "Placeholders": [
+          {
+            "Name": "moduleName",
+            "Value": "di8"
+          }
+        ],
         "Content": {
-          "Name": "di8",
+          "Name": "${moduleName}",
           "TypeIdentifier": {
             "GsdId": "DI 8x24VDC ST V1.1",
             "FileName": "GSDML-V2.42-SIEMENS-ET200SP-20230812.XML"

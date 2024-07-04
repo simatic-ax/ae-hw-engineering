@@ -1,33 +1,46 @@
 {
-  "Devices": [  // This is a list of devices which can contain modules- so call them modulare devices. 
-                // You can add all your devices of your automation, but it makes to spread them over several files. 
-                // That makes it modular, easier to read, to mainain and to reuse.
+  // This is a list of devices which can contain modules- so call them modulare devices. 
+  // You can add all your devices of your automation, but it makes to spread them over several files. 
+  // That makes it modular, easier to read, to mainain and to reuse.
+  "Devices": [
     {
-      "Name": "plc_device", // This is the name I assigned to the device where my PLC is contained. I could add also additional modules, like IO boards.
+      // A name to be assigned to the device where the PLC is contained. Additional modules- like IO boards- can  be added
+      "Name": "plc_device", 
+      // A list of modules, with the order corresponding to the position of the slot
       "Modules": [
         {
-          "Name": "cpu1516", // This is the name I assigned to the PLC module. Even though the PLC is the target of all efforts, from a hardware model perspective it is just another module within a device.
-          "TypeIdentifier": { // This tells the hardware compiler which type of specific hardware model is to be taken into account
+          // A name to be assigned to the PLC module. Even though the PLC is the target of all efforts, from a hardware model perspective it is just another module within a device.
+          "Name": "cpu1516", 
+           // The hardware compiler need to know which type of specific hardware model is to be taken into account
+          "TypeIdentifier": {
             "OrderNumber": "6ES7 516-3AP03-0AB0",
             "Version": "V3.1"
           },
-          "Interfaces": [ // This module has interfaces, they can be configured and parametrized 
+          // This module has interfaces, they can be configured and parametrized 
+          "Interfaces": [ 
             {
-              "Name": "profinet_interface_x1", // This is the name I assigned to a PLC Profinet interface
-              "Label": "X1", // This selects the concrete interface since a module migth have more then one
+              // A name to be assigned to a PLC Profinet interface
+              "Name": "profinet_interface_x1",
+              // Select the concrete interface X1 since a module can have more then one
+              "Label": "X1", 
               "Addresses": {
-                "Configured": [ //This means, the interface address I configure here is the one to be used after the configuration gets loaded to the PLC
-                  {             
-                    "IPv4": "192.168.0.15/24" // The IP address (host address and subnet mask in CIDR notation)
+                //This means, the interface address configure here is the one to be used after the configuration gets loaded to the PLC
+                "Configured": [ 
+                  {
+                     // The IP address (host address and subnet mask in CIDR notation)
+                    "IPv4": "192.168.0.15/24"
                   }
                 ]
               },
-              "Parameters": {// I add parameter from the interface I want to change from default to a user value
+              // Parameters whose value is to be set user-specifically
+              // Setting parameters is optional, as they all already have default values
+              "Parameters": { 
                 "IECV22LLDPMode": true
               }
             },
             {
-              "Name": "opcua_interface_x2", // This is the name I assigned to an other PLC Profinet interface
+              // A name to be assigned to an other PLC Profinet interface
+              "Name": "opcua_interface_x2", 
               "Label": "X2",
               "Addresses": {
                 "Configured": [
@@ -38,10 +51,16 @@
               }
             }
           ],
-          "Ports": [ // On an ethernet subnet  all cables are physically pluged into ports.
-            {         // I configure them so that I can use them to define an expected topology, which will help me reducing commissioning effort
-              "Name": "x1p1", // This is the name I assigned to the physical ethernet port "X1 P1"
-              "Label": "X1 P1" // This identifies the port, you might find this label next to the physical port
+          // On an ethernet subnet  all cables are physically pluged into ports.
+          // Configure them so that they can be used for an expected network topology (see PortInterconnections)
+          // If the expected topology is equal to the actual topology the PROFINET-Controller will set the PROFINET-Device name automatically to all concerned IO-Devices
+          // This feature eliminates the need to manually assign the PROFINET-Device names
+          "Ports": [ 
+            { 
+               // A name to be assigned to the physical ethernet port "X1 P1"
+              "Name": "x1p1",
+              // To identify the port, find this label printed on the devices next to the physical port
+              "Label": "X1 P1" 
             },
             {
               "Name": "x1p2",
@@ -57,7 +76,7 @@
               }
             },
             {
-              "Type":"OpcUaServer", // The PLC is hosting a OPC UA server
+              "Type": "OpcUaServer", // The PLC is hosting a OPC UA server
               "Enabled": true // The OPC UA server should be enabled
             }
           ],
@@ -66,7 +85,7 @@
               {
                 "Name": "Admin", // This is the name I called a user, who would act as an Administrator, but it can be any other name too
                 "AssignedRoles": [ // A list of roles whereby one or more functional rights are assigned to each role
-                  "access_administrator", 
+                  "access_administrator",
                   "webserver_administrator",
                   "opcua_server_access"
                 ]
@@ -82,7 +101,7 @@
               {
                 "Name": "access_administrator", // I called this "access_administrator", to bundle the necessary PLC access rights for someone who acts like an administrator
                 "FunctionRights": [
-                 "AccessProtectionFullAccess" // by granting this function right the user has unrestricted access to the PLC
+                  "AccessProtectionFullAccess" // by granting this function right the user has unrestricted access to the PLC
                 ]
               },
               {
@@ -96,20 +115,20 @@
               {
                 "Name": "opcua_server_access", // I called this "opcua_server_access", 
                 "FunctionRights": [
-                 "OpcUAServerAccess" // by granting this function right the user can access PLC variables exposed by the OPC UA server interface (see oscr)
+                  "OpcUAServerAccess" // by granting this function right the user can access PLC variables exposed by the OPC UA server interface (see oscr)
                 ]
               },
               {
                 "Name": "access_operator", // I called this "access_operator", which is intended to bundle the necessary function rights for someone who acts like an operator
                 "FunctionRights": [
-                 "AccessProtectionReadAccess", // by granting this function right the user has read only access to the PLC
-                 "QueryDiagnostics" //..
+                  "AccessProtectionReadAccess", // by granting this function right the user has read only access to the PLC
+                  "QueryDiagnostics" //..
                 ]
               }
             ]
           },
           "Parameters": { // Here I add parameter I want to change from default to a user value
-            "CycleMaximumCycleTime": 148,
+            "CycleMaximumCycleTime": 99999,
             "CycleMinimumCycleTime": 2
           }
         }
