@@ -1,6 +1,6 @@
 CONFIGURATION MyConfiguration
     TASK Main(Interval := T#1000ms, Priority := 1);
-    PROGRAM P1 WITH Main: MyProgram;
+    PROGRAM P1 WITH Main: MainProgram;
 
     VAR_GLOBAL
         et200s_device_2DI_1_InputAddress AT %IB1: BYTE;

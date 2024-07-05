@@ -1,11 +1,11 @@
 {
-  "name": "ae-hw-engineering-demo",
-  "version": "0.0.0",
+  "name": "ae-hw-engineering",
+  "version": "1.0.0",
   "lockFileVersion": "2",
   "installStrategy": "strict",
   "root": {
-    "name": "ae-hw-engineering-demo",
-    "version": "0.0.0",
+    "name": "ae-hw-engineering",
+    "version": "1.0.0",
     "devDependencies": {
       "@ax/sdk": "2405.0.0",
       "@ax/opcua-server-config": "^1.0.0"

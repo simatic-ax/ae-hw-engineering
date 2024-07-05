@@ -1,9 +1,22 @@
-name: "ae-hw-engineering-demo"
-version: 0.0.0
+# General information
+name: "ae-hw-engineering"
+version: 1.0.0
 type: app
+# Description will be displayed in the apax extension
+description: This reposetory contains an example project to demonstrate how to IT-like hardware configuration with SIMATIX AX.
+# Build targets
 targets:
   - "1500"
-  - plcsim
+
+# Install Setting
+installStrategy: strict
+apaxVersion: 3.2.1
+# Dependencies
+devDependencies:
+  "@ax/sdk": 2405.0.0
+  "@ax/opcua-server-config": 1.0.0
+
+# Project variables
 variables:
   APAX_BUILD_ARGS:
     - "--debug" # Generate debug information for target "1500"
@@ -44,10 +57,8 @@ variables:
   # To transfer it to the PLC, it must be passed as an argument during the first hardware download. It can be omitted in further hardware download calls.
   MASTER_PW: Demo#123
 
-devDependencies:
-  "@ax/sdk": 2405.0.0
-  "@ax/opcua-server-config": ^1.0.0
 
+# Apax scripts
 scripts:
   # install the GSDML files of the PROFINET IO devices that the PLC is to operate
   hw_install_gsdml: hwc install-gsd -i hwcfg/gsd

@@ -1,4 +1,4 @@
-PROGRAM MyProgram
+PROGRAM MainProgram
     VAR_EXTERNAL
         et200sp1_device_dq8_OutputAddress : BYTE;
         et200sp2_device_dq8_OutputAddress : BYTE;
