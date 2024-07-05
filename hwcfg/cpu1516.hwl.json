@@ -128,7 +128,7 @@
             ]
           },
           "Parameters": { // Here I add parameter I want to change from default to a user value
-            "CycleMaximumCycleTime": 99999,
+            "CycleMaximumCycleTime": 148,
             "CycleMinimumCycleTime": 2
           }
         }

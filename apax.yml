@@ -25,7 +25,7 @@ variables:
   HW_BIN_FOLDER: ./hwbin
 
   # Folder where to find the compiled SW artefacts
-  SW_BIN_FOLDER: ./bin/plcsim
+  SW_BIN_FOLDER: ./bin/1500
 
   # IP Address of the PLC to be loaded
   PLC_IP: 192.168.0.15
@@ -98,7 +98,7 @@ scripts:
 
   # load the OPC UA interface to expose variables accessible for an OPC UA client
   opcua_load:
-    - apax oscr interface install $SW_BIN_FOLDER/ae-hw-engineering-demo.app -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -sr
+    - apax oscr interface install $SW_BIN_FOLDER/ae-hw-engineering.app -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -sr
   # verify the the interface was added
   opcua_list:
     - apax oscr interface list -t $PLC_IP -u:$USER1 -p:$USER1_PW -C $TLS_PUBLIC_KEY_CERTFILE
