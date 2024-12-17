@@ -36,9 +36,9 @@ variables:
   # This is a archive file (PKCS #12)  used to bundle a private key with its X.509 certificate (public key)
   TLS_PFX_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.pfx
 
-  # DISCLAIMER:Storing and publishing passwords in readable form is not best practice. It was only done here to simplify the demonstration
-  # this is the password to open the file TLS_Server_Certificate_for_S71500.pfx
-  PFX_CERT_PW: S71500
+  # DISCLAIMER:Storing and publishing passphrase in readable form is not best practice. It was only done here to simplify the demonstration
+  # this is the passphrase to open the file TLS_Server_Certificate_for_S71500.pfx
+  PFX_CERT_PASSPHRASE: S71500
 
   # this is the X.509 certificate (public key) to be passed with a call accessing the PLC (e.g. hwld, sld) to let AX verifying the PLCs idendity (authentication)
   TLS_PUBLIC_KEY_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.crt
@@ -75,11 +75,11 @@ scripts:
     # create a file made to stores all confidential data (certificates, passwords, users, rights etc.) in a secure format so that it can be added to Git
     - hwc setup-secure-communication --name cpu1516 --input hwcfg/cpu1516.hwl.yml --password $MASTER_PW
     # add a TLS certificate for the PLC as a server, that allows a client (e.g. SIMATIC AX, or an HMI) to verify the PLC's identity when accessing it
-    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.yml --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose TLS
+    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.yml --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PASSPHRASE --purpose TLS
     # add a certificate for the PLC's Web server, that allows a Web client (e.g. a browser) to verify the server identity
-    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.yml --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW  --purpose WebServer
+    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.yml --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PASSPHRASE  --purpose WebServer
     # add a certificate for the PLC's OPC UA server, that allows an OPC UA client (e.g. a HMI) to verify the server identity
-    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.yml --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose OpcUAServer
+    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.yml --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PASSPHRASE --purpose OpcUAServer
     # add a password for a users who can access the PLC and it services (Webs erver, OPC UA server) according to the access authorizations after logging on with his password
     - hwc manage-users set-password -u $USER1 -p "$USER1_PW" --moduleName cpu1516 -i hwcfg/cpu1516.hwl.yml
     - hwc manage-users set-password -u $USER2 -p "$USER2_PW" --moduleName cpu1516 -i hwcfg/cpu1516.hwl.yml
