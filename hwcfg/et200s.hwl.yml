@@ -1,0 +1,39 @@
+Devices:
+- Name: et200s_device
+  Modules:
+  - Name: et200s
+    TypeIdentifier:
+      GsdId: DIM 20
+      FileName: GSDML-V2.25-SIEMENS-ET200S-20191007.XML
+    Interfaces:
+    - Name: x1
+      Label: X1
+      Addresses:
+        Configured:
+        - IPv4: 192.168.0.18/24
+        - ProfinetDeviceName: et200s
+    Ports:
+    - Name: x1p1
+      Label: X1 P1
+  - Name: PM
+    TypeIdentifier:
+      GsdId: '7'
+      FileName: GSDML-V2.25-SIEMENS-ET200S-20191007.XML
+  - Name: 2DQ_1
+    TypeIdentifier:
+      GsdId: '161'
+      FileName: GSDML-V2.25-SIEMENS-ET200S-20191007.XML
+  - Name: 2DQ_2
+    TypeIdentifier:
+      GsdId: '161'
+      FileName: GSDML-V2.25-SIEMENS-ET200S-20191007.XML
+    IoConfiguration:
+      OutputAddress: '66'
+  - Name: 2DI_1
+    TypeIdentifier:
+      GsdId: '1'
+      FileName: GSDML-V2.25-SIEMENS-ET200S-20191007.XML
+  - Name: 2DI_2
+    TypeIdentifier:
+      GsdId: '1'
+      FileName: GSDML-V2.25-SIEMENS-ET200S-20191007.XML

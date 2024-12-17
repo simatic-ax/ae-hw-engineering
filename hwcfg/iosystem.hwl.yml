@@ -1,0 +1,9 @@
+IoSystems:
+- Name: profinet_io_system
+  ControllerInterfaces:
+  - Ref: plc_device/cpu1516/profinet_interface_x1
+  DeviceInterfaces:
+  - Ref: et200sp1_device/et200sp1/x1
+  - Ref: et200sp2_device/et200sp2/x1
+  - Ref: et200s_device/et200s/x1
+  - Ref: scalancex208_device/scalancex208/x1
