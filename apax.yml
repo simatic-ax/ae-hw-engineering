@@ -13,7 +13,7 @@ installStrategy: strict
 apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2405.0.0
+  "@ax/sdk": 2411.0.0
   "@ax/opcua-server-config": 1.0.0
 
 # Project variables
