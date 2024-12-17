@@ -1,0 +1,83 @@
+# This is a list of devices which can contain modules- so call them modulare devices. 
+# You can add all your devices of your automation, but it makes to spread them over several files. 
+# That makes it modular, easier to read, to mainain and to reuse.
+Devices:
+# A name to be assigned to the device where the PLC is contained. Additional modules- like IO boards- can  be added
+- Name: plc_device
+  # A list of modules, with the order corresponding to the position of the slot
+  Modules:
+  # A name to be assigned to the PLC module. Even though the PLC is the target of all efforts, from a hardware model perspective it is just another module within a device.
+  - Name: cpu1516
+    # The hardware compiler need to know which type of specific hardware model is to be taken into account
+    TypeIdentifier:
+      OrderNumber: 6ES7 516-3AP03-0AB0
+      Version: V3.1
+    # This module has interfaces, they can be configured and parametrized 
+    Interfaces:
+    # A name to be assigned to a PLC Profinet interface
+    - Name: profinet_interface_x1
+      # Select the concrete interface X1 since a module can have more then one
+      Label: X1
+      Addresses:
+        # This means, the interface address configure here is the one to be used after the configuration gets loaded to the PLC
+        Configured:
+        # The IP address (host address and subnet mask in CIDR notation)
+        - IPv4: 192.168.0.15/24
+      # Parameters whose value is to be set user-specifically
+      # Setting parameters is optional, as they all already have default values
+      Parameters:
+        IECV22LLDPMode: true
+    # A name to be assigned to an other PLC Profinet interface
+    - Name: opcua_interface_x2
+      Label: X2
+      Addresses:
+        Configured:
+        - IPv4: 192.168.1.15/24
+    # On an ethernet subnet  all cables are physically pluged into ports.
+    # Configure them so that they can be used for an expected network topology (see PortInterconnections)
+    # If the expected topology is equal to the actual topology the PROFINET-Controller will set the PROFINET-Device name automatically to all concerned IO-Devices
+    # This feature eliminates the need to manually assign the PROFINET-Device names
+    Ports:
+    # A name to be assigned to the physical ethernet port "X1 P1"
+    - Name: x1p1
+    # To identify the port, find this label printed on the devices next to the physical port
+      Label: X1 P1
+    - Name: x1p2
+      Label: X1 P2
+    Services: # The PLC hosts certain services. I need to configure those I want to use.
+    - Type: WebServer # The PLC is hosting a web server
+      Enabled: true # The Web server should be enabled
+      Parameters:
+        HttpsOnly: true # The Web server should accept HTTPS (SSL/TLS based secure connection) requests only
+    - Type: OpcUaServer # The PLC is hosting a OPC UA server
+      Enabled: true # The OPC UA server should be enabled
+    UserManagement: # The PLC supports a management of users, assigned roles and rights
+      Users:
+      - Name: Admin # This is the name I called a user, who would act as an Administrator, but it can be any other name too
+        AssignedRoles: # A list of roles whereby one or more functional rights are assigned to each role
+        - access_administrator
+        - webserver_administrator
+        - opcua_server_access
+      - Name: Operator # This is the name I called a user who would act as an Operator.
+        AssignedRoles:
+        - access_operator
+      Roles: # Here I define roles and give them names as I found it appropriate
+      - Name: access_administrator # I called this "access_administrator", to bundle the necessary PLC access rights for someone who acts like an administrator
+        FunctionRights:
+        - AccessProtectionFullAccess # by granting this function right the user has unrestricted access to the PLC
+      - Name: webserver_administrator # I called this "webserver_administrator", to bundle the necessary Webserver access rights for someone who acts like an administrator
+        FunctionRights:
+        - ReadPlcVariables # by granting this function right the user can read PLC variables via Web browser
+        - WritePlcVariables # by granting this function right the user can write PLC variables via Web browser
+        - QueryDiagnostics # by granting this function right the user can open PLC diagnostic pages via Web browser
+      - Name: opcua_server_access # I called this "opcua_server_access"
+        FunctionRights:
+        - OpcUAServerAccess # by granting this function right the user can access PLC variables exposed by the OPC UA server interface (see oscr)
+      - Name: access_operator # I called this "access_operator", which is intended to bundle the necessary function rights for someone who acts like an operator
+        FunctionRights:
+        - AccessProtectionReadAccess # by granting this function right the user has read only access to the PLC
+        - QueryDiagnostics
+    Parameters:
+      # Here I add parameter I want to change from default to a user value
+      CycleMaximumCycleTime: 148
+      CycleMinimumCycleTime: 2
