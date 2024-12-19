@@ -1,0 +1,59 @@
+Templates:
+  Modules:
+  - Name: et200sp_di8x24vdc_hf_templ
+    Placeholders:
+    - Name: moduleName
+      Value: di8_hf
+    Content:
+      Name: "${moduleName}"
+      TypeIdentifier:
+        GsdId: DI 8x24VDC HF V1.1
+        FileName: GSDML-V2.42-SIEMENS-ET200SP-20230812.XML
+      # Parameters for Profinet devices are grouped together in parameter record data, which are arrays of bytes.
+      Parameters:
+        RecordDataList:
+        # A parameter record data is identified by an index value, given by the device's vendor
+        # Parameter record 243 contains the potential group
+        - Index: 243
+        # By this line the whole parameter record data was constructed as raw byt array. By aware, that by notation this there is no check if the  parameter record data is correct
+        # "RawValue": "0x00 00 00 00" //"Use potential group of the left module (dark BaseUnit)"
+        # It is better readable to type each parameter in the form of "OffsetName" and "ValueName". 
+          Values:
+          - OffsetName: Potential group # 0.0
+            ValueName: Use potential group of the left module (dark BaseUnit) # 0 = Use potential group of the left module (dark BaseUnit) (d), 1 = Enable new potential group (light BaseUnit)
+        # Parameter record 128 contains the channel parameters
+        - Index: 128
+          Values:
+          - OffsetName: 'Channel 0 Diagnostics: No supply voltage L+'
+            Value: false # 0 = false (d), 1 = true
+          - OffsetName: 'Channel 0 Diagnostics: Short circuit to ground'
+            Value: true # 0 = false, 1 = true (d)
+          - OffsetName: 'Channel 0 Diagnostics: Wire break'
+            Value: false # 0 = false (d), 1 = true
+          - OffsetName: Channel 0 activated
+            Value: true # 0 = false, 1 = true (d)
+          - OffsetName: Channel 0 Input delay
+            ValueName: 0.4 ms # 15 = None, 0 = 0.05 ms, 1 = 0.1 ms, 3 = 0.4 ms, 4 = 0.8 ms, 5 = 1.6 ms, 6 = 3.2 ms (d), 9 = 12.8 ms, 10 = 20 ms
+          - OffsetName: Channel 0 Pulse stretching
+            ValueName: None # 0 = None (d), 1 = 0.5 s, 2 = 1 s, 3 = 2 s
+          - OffsetName: Channel 0 Hardware interrupt on rising edge
+            Value: false # 0 = false(d), 1 = true
+          - OffsetName: Channel 0 Hardware interrupt on falling edge
+            Value: false # 0 = false(d), 1 = true
+          - OffsetName: 'Channel 1 Diagnostics: No supply voltage L+'
+            Value: false # 0 = false(d), 1 = true
+          - OffsetName: 'Channel 1 Diagnostics: Short circuit to ground'
+            Value: false # 0 = false(d), 1 = true
+          - OffsetName: 'Channel 1 Diagnostics: Wire break'
+            Value: false # 0 = false(d), 1 = true
+          - OffsetName: Channel 1 activated
+            Value: true # 0 = false, 1 = true (d)
+          - OffsetName: Channel 1 Input delay
+            ValueName: 0.4 ms # 15 = None, 0 = 0.05 ms, 1 = 0.1 ms, 3 = 0.4 ms, 4 = 0.8 ms, 5 = 1.6 ms, 6 = 3.2 ms (d), 9 = 12.8 ms, 10 = 20 ms
+          - OffsetName: Channel 1 Pulse stretching
+            ValueName: None # 0 = None (d), 1 = 0.5 s, 2 = 1 s, 3 = 2 s
+          - OffsetName: Channel 1 Hardware interrupt on rising edge
+            Value: false # 0 = false (d), 1 = true
+          - OffsetName: Channel 1 Hardware interrupt on falling edge
+            Value: false # 0 = false (d), 1 = true
+          # add here the parameters for the channels 2 - 7 
