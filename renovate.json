@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>simatic-ax/renovate-config"
+    "local>simatic-ax/renovate-config",
+    "https://github.com/simatic-ax/renovate-config/blob/main/config.js"
   ]
 }
