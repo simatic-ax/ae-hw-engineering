@@ -2,12 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "local>simatic-ax/renovate-config"
-  ],
-  "hostRules": [
-    {
-      "hostType": "npm",
-      "matchHost": "registry.simatic-ax.siemens.io",
-      "token": "process.env.RENOVATE_APAX_TOKEN"
-    }
   ]
 }
