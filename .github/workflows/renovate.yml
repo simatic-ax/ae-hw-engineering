@@ -1,6 +1,7 @@
 on:
-  schedule:
-    - cron: '1 1 * * SUN' # Run every Sunday at 1:01
+  # schedule:
+  #   - cron: '1 1 * * SUN' # Run every Sunday at 1:01
+  push
 
 jobs:
   renovate:
