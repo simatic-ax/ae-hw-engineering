@@ -6,3 +6,8 @@ on:
 jobs:
   renovate:
     uses: simatic-ax/actions/.github/workflows/renovate.yml@chore/setup_renovate_workflow
+    secrets:
+      APAX_TOKEN: ${{ secrets.APAX_TOKEN }}
+      SIMATIC_AX_TOKEN: ${{ secrets.DEPLOY_KEY }}
+    with:
+      LOGIN_SIMATIC_AX: true
