@@ -1,0 +1,7 @@
+on:
+  schedule:
+    - cron: '1 1 * * SUN' # Run every Sunday at 1:01
+
+jobs:
+  lint-repo-and-markdown:
+    uses: simatic-ax/actions/.github/workflows/renovate.yml@stable
