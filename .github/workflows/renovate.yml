@@ -1,5 +1,5 @@
 on:
-  # schedulea:
+  # schedule:
   #   - cron: '1 1 * * SUN' # Run every Sunday at 1:01
   push
 
