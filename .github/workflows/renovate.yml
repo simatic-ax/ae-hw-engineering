@@ -5,4 +5,4 @@ on:
 
 jobs:
   renovate:
-    uses: simatic-ax/actions/.github/workflows/renovate.yml@stable
+    uses: simatic-ax/actions/.github/workflows/renovate.yml@chore/setup_renovate_workflow
