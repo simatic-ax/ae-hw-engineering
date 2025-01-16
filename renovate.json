@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>simatic-ax/renovate-config"
+    "local>simatic-ax/renovate-config/Optional-configs/Pull-Request-settings.json"
   ]
 }
