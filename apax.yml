@@ -14,7 +14,7 @@ apaxVersion: 3.2.1
 # Dependencies
 devDependencies:
   "@ax/sdk": 2405.0.0
-  "@ax/opcua-server-config": 1.0.0
+  "@ax/opcua-server-config": 2.0.0
 
 # Project variables
 variables:
