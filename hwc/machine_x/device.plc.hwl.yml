@@ -1,0 +1,11 @@
+Devices:
+- Name: 'plc_device'
+  Modules:
+  - Apply:
+      TemplateName: 'cpu1516_v3_1_Template'
+      Arguments:
+        NAME: 'cpu1516v31'
+        IP_ADDRESS_X1: '192.168.0.10/24'
+        PROFINET_DEVICE_NAME_X1: 'cpu1516v31'
+
+    

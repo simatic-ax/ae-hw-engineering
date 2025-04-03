@@ -1,0 +1,48 @@
+Templates:
+  Modules:
+  - Name: 'et200s_im151_3_pn_hf_v7_0_Template'
+    Placeholders:
+      - Name: NAME
+      - Name: IP_ADDRESS_X1
+      - Name: PROFINET_DEVICE_NAME_X1
+    Content:
+      Name: "${NAME}"
+      #Name: 'IM151-3PN'
+      TypeIdentifier:
+        FileName: 'GSDML-V2.25-SIEMENS-ET200S-20191007.XML'
+        GsdId: 'DIM 20'
+      Interfaces:
+      - Name: 'PN-IO'
+        Label: 'X1'
+        Addresses:
+          Configured:
+          - IPv4: "${IP_ADDRESS_X1}"
+          - ProfinetDeviceName: "${PROFINET_DEVICE_NAME_X1}"
+        Parameters:
+          # IECV22LLDPMode: True
+          # TsnDomainName: null
+      Ports:
+      - Name: 'Port_1'
+        Label: 'X1 P1'
+      - Name: 'Port_2'
+        Label: 'X1 P2'
+      Parameters:
+        RecordDataList:
+        - IndexName: 'General head parameters'
+          Values:
+          - OffsetName: 'Interference frequency suppression'
+            # Possible ValueNames: 50 Hz | 60 Hz
+            ValueName: '50 Hz'
+          - OffsetName: 'Bus length'
+            # Possible ValueNames: smaller or equal to 1m | larger than 1m
+            ValueName: 'smaller or equal to 1m'
+          - OffsetName: 'Slot reference junction'
+            # Possible ValueNames: no cold junction | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59 | 60 | 61 | 62 | 63
+            ValueName: 'no cold junction'
+          - OffsetName: 'Input reference junction'
+            # Possible ValueNames: RTD on channel 0 | RTD on channel 1
+            ValueName: 'RTD on channel 0'
+        - IndexName: 'Option handling'
+          Values:
+          - OffsetName: 'Option handling'
+            Value: False

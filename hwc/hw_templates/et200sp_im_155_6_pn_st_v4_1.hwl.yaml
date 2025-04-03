@@ -1,0 +1,34 @@
+Templates:
+  Modules:
+  - Name: 'et200sp_im_155_6_pn_st_v4_1_Template'
+    Placeholders:
+      - Name: NAME
+      - Name: IP_ADDRESS_X1
+      - Name: PROFINET_DEVICE_NAME_X1
+    Content:
+      Name: "${NAME}"
+      #Name: 'ET200SP'
+      TypeIdentifier:
+        FileName: 'GSDML-V2.45-SIEMENS-ET200SP-20241104.XML'
+        GsdId: 'DIM ST V4.1'
+      Interfaces:
+      - Name: 'PN-IO'
+        Label: 'X1'
+        Addresses:
+          Configured:
+          - IPv4: "${IP_ADDRESS_X1}"
+          - ProfinetDeviceName: "${PROFINET_DEVICE_NAME_X1}"
+        Parameters:
+          IECV22LLDPMode: TRUE
+          # TsnDomainName: null
+      Ports:
+      - Name: 'Port_1'
+        Label: 'X1 P1'
+      - Name: 'Port_2'
+        Label: 'X1 P2'
+      Parameters:
+        RecordDataList:
+        - IndexName: 'Configuration control'
+          Values:
+          - OffsetName: 'Configuration control'
+            Value: False

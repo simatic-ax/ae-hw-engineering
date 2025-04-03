@@ -1,0 +1,31 @@
+Templates:
+  Modules:
+  - Name: 'et200s_dq2x24v_hf_Template'
+    Placeholders:
+      - Name: NAME
+    Content:
+      Name: "${NAME}"
+      TypeIdentifier:
+        FileName: 'GSDML-V2.25-SIEMENS-ET200S-20191007.XML'
+        GsdId: '161'
+      Parameters:
+        RecordDataList:
+        - IndexName: 'General parameters'
+          Values:
+          - OffsetName: 'Reaction to CPU/Master STOP'
+            # Possible ValueNames: Switch substitute value | Keep last value
+            ValueName: 'Switch substitute value'
+          - OffsetName: 'Substitute value O-channel 0'
+            # Possible ValueNames: 0 | 1
+            ValueName: '0'
+          - OffsetName: 'Substitute value O-channel 1'
+            # Possible ValueNames: 0 | 1
+            ValueName: '0'
+          - OffsetName: 'Diag: wire break O-channel 0'
+            Value: False
+          - OffsetName: 'Diag: short-circuit to GND, O-channel 0'
+            Value: False
+          - OffsetName: 'Diag: wire break O-channel 1'
+            Value: False
+          - OffsetName: 'Diag: short-circuit to GND, O-channel 1'
+            Value: False

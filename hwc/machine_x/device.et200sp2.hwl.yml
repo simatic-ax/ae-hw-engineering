@@ -1,0 +1,21 @@
+Devices:
+- Name: 'et200sp2_device'
+  Modules:
+  - Apply:
+      TemplateName: 'et200sp_im_155_6_pn_st_v4_1_Template'
+      Arguments:
+        NAME: 'im155stv41'
+        IP_ADDRESS_X1: '192.168.0.17/24'
+        PROFINET_DEVICE_NAME_X1: 'et200sp2'
+  - Apply:
+      TemplateName: 'et200sp_di8x24vdcst_v1_1_Template'
+      Arguments:
+        NAME: 'di8'
+  - Apply:
+      TemplateName: 'et200sp_dq8x24VDC_v1_1_Template'
+      Arguments:
+        NAME: 'dq8'
+  - Apply:
+      TemplateName: 'et200sp_servermod_wo_io_Template'
+      Arguments:
+        NAME: 'servermodule'

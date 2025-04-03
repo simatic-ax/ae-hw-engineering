@@ -1,0 +1,65 @@
+Templates:
+  Modules:
+  - Name: 'et200sp_di8x24vdcst_v1_1_Template'
+    Placeholders:
+      - Name: NAME
+    Content:
+      Name: "${NAME}"
+      TypeIdentifier:
+        FileName: 'GSDML-V2.45-SIEMENS-ET200SP-20241104.XML'
+        GsdId: 'DI 8x24VDC ST V1.1'
+      Parameters:
+        RecordDataList:
+        - IndexName: 'Inputs'
+          Values:
+          - OffsetName: 'Diagnostics: No supply voltage L+'
+            Value: False
+          - OffsetName: 'Diagnostics: Short circuit to ground'
+            Value: False
+          - OffsetName: 'Diagnostics: Wire break'
+            Value: False
+          - OffsetName: 'Channel 0 Input delay'
+            # Possible ValueNames: None | 0.05 ms | 0.1 ms | 0.4 ms | 0.8 ms | 1.6 ms | 3.2 ms | 12.8 ms | 20 ms
+            ValueName: '3.2 ms'
+          - OffsetName: 'Channel 0 activated'
+            Value: True
+          - OffsetName: 'Channel 1 Input delay'
+            # Possible ValueNames: None | 0.05 ms | 0.1 ms | 0.4 ms | 0.8 ms | 1.6 ms | 3.2 ms | 12.8 ms | 20 ms
+            ValueName: '3.2 ms'
+          - OffsetName: 'Channel 1 activated'
+            Value: True
+          - OffsetName: 'Channel 2 Input delay'
+            # Possible ValueNames: None | 0.05 ms | 0.1 ms | 0.4 ms | 0.8 ms | 1.6 ms | 3.2 ms | 12.8 ms | 20 ms
+            ValueName: '3.2 ms'
+          - OffsetName: 'Channel 2 activated'
+            Value: True
+          - OffsetName: 'Channel 3 Input delay'
+            # Possible ValueNames: None | 0.05 ms | 0.1 ms | 0.4 ms | 0.8 ms | 1.6 ms | 3.2 ms | 12.8 ms | 20 ms
+            ValueName: '3.2 ms'
+          - OffsetName: 'Channel 3 activated'
+            Value: True
+          - OffsetName: 'Channel 4 Input delay'
+            # Possible ValueNames: None | 0.05 ms | 0.1 ms | 0.4 ms | 0.8 ms | 1.6 ms | 3.2 ms | 12.8 ms | 20 ms
+            ValueName: '3.2 ms'
+          - OffsetName: 'Channel 4 activated'
+            Value: True
+          - OffsetName: 'Channel 5 Input delay'
+            # Possible ValueNames: None | 0.05 ms | 0.1 ms | 0.4 ms | 0.8 ms | 1.6 ms | 3.2 ms | 12.8 ms | 20 ms
+            ValueName: '3.2 ms'
+          - OffsetName: 'Channel 5 activated'
+            Value: True
+          - OffsetName: 'Channel 6 Input delay'
+            # Possible ValueNames: None | 0.05 ms | 0.1 ms | 0.4 ms | 0.8 ms | 1.6 ms | 3.2 ms | 12.8 ms | 20 ms
+            ValueName: '3.2 ms'
+          - OffsetName: 'Channel 6 activated'
+            Value: True
+          - OffsetName: 'Channel 7 Input delay'
+            # Possible ValueNames: None | 0.05 ms | 0.1 ms | 0.4 ms | 0.8 ms | 1.6 ms | 3.2 ms | 12.8 ms | 20 ms
+            ValueName: '3.2 ms'
+          - OffsetName: 'Channel 7 activated'
+            Value: True
+        - IndexName: 'Potential group'
+          Values:
+          - OffsetName: 'Potential group'
+            # Possible ValueNames: Use potential group of the left module (dark BaseUnit) | Enable new potential group (light BaseUnit)
+            ValueName: 'Enable new potential group (light BaseUnit)'

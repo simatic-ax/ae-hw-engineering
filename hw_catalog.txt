@@ -1,0 +1,1315 @@
+Built-in devices:
+                    Controllers                     
+┌──────────────────┬─────────────────────┬─────────┐
+│ Type             │ OrderNumber         │ Version │
+├──────────────────┼─────────────────────┼─────────┤
+│ CPU 1511-1 PN    │ 6ES7 511-1AL03-0AB0 │ V3.0    │
+│ CPU 1511-1 PN    │ 6ES7 511-1AL03-0AB0 │ V3.1    │
+│ CPU 1511-1 PN    │ 6ES7 511-1AL03-0AB0 │ V4.0    │
+│ CPU 1513-1 PN    │ 6ES7 513-1AM03-0AB0 │ V3.0    │
+│ CPU 1513-1 PN    │ 6ES7 513-1AM03-0AB0 │ V3.1    │
+│ CPU 1513-1 PN    │ 6ES7 513-1AM03-0AB0 │ V4.0    │
+│ CPU 1515-2 PN    │ 6ES7 515-2AN03-0AB0 │ V3.0    │
+│ CPU 1515-2 PN    │ 6ES7 515-2AN03-0AB0 │ V3.1    │
+│ CPU 1515-2 PN    │ 6ES7 515-2AN03-0AB0 │ V4.0    │
+│ CPU 1516-3 PN/DP │ 6ES7 516-3AN01-0AB0 │ V2.9    │
+│ CPU 1516-3 PN/DP │ 6ES7 516-3AP03-0AB0 │ V3.0    │
+│ CPU 1516-3 PN/DP │ 6ES7 516-3AP03-0AB0 │ V3.1    │
+│ CPU 1516-3 PN/DP │ 6ES7 516-3AP03-0AB0 │ V4.0    │
+│ CPU 1517-3 PN    │ 6ES7 517-3AQ10-0AB0 │ V4.0    │
+│ CPU 1517-3 PN/DP │ 6ES7 517-3AP00-0AB0 │ V3.0    │
+│ CPU 1517-3 PN/DP │ 6ES7 517-3AP00-0AB0 │ V3.1    │
+│ CPU 1517V-1 PN   │ 6ES7 587-1AP00-0AB0 │ V3.1    │
+│ CPU 1518-3 PN    │ 6ES7 518-3AT10-0AB0 │ V4.0    │
+│ CPU 1518-4 PN/DP │ 6ES7 518-4AP00-0AB0 │ V2.9    │
+│ CPU 1518-4 PN/DP │ 6ES7 518-4AP00-0AB0 │ V3.0    │
+│ CPU 1518-4 PN/DP │ 6ES7 518-4AP00-0AB0 │ V3.1    │
+└──────────────────┴─────────────────────┴─────────┘
+                    Signal Modules                     
+┌─────────────────────┬─────────────────────┬─────────┐
+│ Type                │ OrderNumber         │ Version │
+├─────────────────────┼─────────────────────┼─────────┤
+│ AI 8xU/I HF         │ 6ES7 531-7NF00-0AB0 │ V1.0    │
+│ AI 8xU/I HF         │ 6ES7 531-7NF00-0AB0 │ V1.1    │
+│ AI 8xU/I HF         │ 6ES7 531-7NF00-0AB0 │ V1.2    │
+│ AI 8xU/I HS         │ 6ES7 531-7NF10-0AB0 │ V1.0    │
+│ AI 8xU/I HS         │ 6ES7 531-7NF10-0AB0 │ V2.0    │
+│ AI 8xU/I HS         │ 6ES7 531-7NF10-0AB0 │ V2.1    │
+│ AI 8xU/I/RTD/TC ST  │ 6ES7 531-7KF00-0AB0 │ V2.2    │
+│ AI 8xU/R/RTD/TC HF  │ 6ES7 531-7PF00-0AB0 │ V1.0    │
+│ AI 8xU/R/RTD/TC HF  │ 6ES7 531-7PF00-0AB0 │ V1.1    │
+│ AI 8xU/R/RTD/TC HF  │ 6ES7 531-7PF00-0AB0 │ V1.2    │
+│ AQ 8xU/I HS         │ 6ES7 532-5HF00-0AB0 │ V2.2    │
+│ DI 16x24VDC BA      │ 6ES7 521-1BH10-0AA0 │ V1.1    │
+│ DI 16x24VDC HF      │ 6ES7 521-1BH00-0AB0 │ V2.2    │
+│ DI 32x24VDC BA      │ 6ES7 521-1BL10-0AA0 │ V1.1    │
+│ DI 32x24VDC HF      │ 6ES7 521-1BL00-0AB0 │ V2.1    │
+│ DI 32x24VDC HF      │ 6ES7 521-1BL00-0AB0 │ V2.2    │
+│ DQ 16x230VAC/2A ST  │ 6ES7 522-5HH00-0AB0 │ V1.1    │
+│ DQ 16x24VDC/0.5A BA │ 6ES7 522-1BH10-0AA0 │ V1.1    │
+│ DQ 16x24VDC/0.5A HF │ 6ES7 522-1BH01-0AB0 │ V1.1    │
+│ DQ 32x24VDC/0.5A BA │ 6ES7 522-1BL10-0AA0 │ V1.1    │
+│ DQ 32x24VDC/0.5A HF │ 6ES7 522-1BL01-0AB0 │ V1.0    │
+│ DQ 32x24VDC/0.5A HF │ 6ES7 522-1BL01-0AB0 │ V1.1    │
+│ DQ 32x24VDC/0.5A ST │ 6ES7 522-1BL00-0AB0 │ V2.0    │
+└─────────────────────┴─────────────────────┴─────────┘
+GSD Devices:
+       GSDML-V2.25-SIEMENS-ET200S-20191007.XML       
+                     Head Modules                    
+┌────────────────────┬─────────────────────┬────────┐
+│ Type               │ OrderNumber         │ GsdId  │
+├────────────────────┼─────────────────────┼────────┤
+│ IM151-3 PN FO V4.0 │ 6ES7 151-3BB21-0AB0 │ DIM 6  │
+│ IM151-3 PN FO V5.0 │ 6ES7 151-3BB22-0AB0 │ DIM 10 │
+│ IM151-3 PN FO V6.1 │ 6ES7 151-3BB23-0AB0 │ DIM 16 │
+│ IM151-3 PN FO V7.0 │ 6ES7 151-3BB23-0AB0 │ DIM 21 │
+│ IM151-3 PN HF      │ 6ES7 151-3BA20-0AB0 │ DIM 4  │
+│ IM151-3 PN HF V4.0 │ 6ES7 151-3BA20-0AB0 │ DIM 7  │
+│ IM151-3 PN HF V5.0 │ 6ES7 151-3BA22-0AB0 │ DIM 9  │
+│ IM151-3 PN HF V6.0 │ 6ES7 151-3BA23-0AB0 │ DIM 12 │
+│ IM151-3 PN HF V6.1 │ 6ES7 151-3BA23-0AB0 │ DIM 15 │
+│ IM151-3 PN HF V7.0 │ 6ES7 151-3BA23-0AB0 │ DIM 20 │
+│ IM151-3 PN HS V2.0 │ 6ES7 151-3BA60-0AB0 │ DIM 14 │
+│ IM151-3 PN HS V2.1 │ 6ES7 151-3BA60-0AB0 │ DIM 17 │
+│ IM151-3 PN HS V3.0 │ 6ES7 151-3BA60-0AB0 │ DIM 22 │
+│ IM151-3 PN ST V4.0 │ 6ES7 151-3AA20-0AB0 │ DIM 5  │
+│ IM151-3 PN ST V5.0 │ 6ES7 151-3AA22-0AB0 │ DIM 11 │
+│ IM151-3 PN ST V6.0 │ 6ES7 151-3AA23-0AB0 │ DIM 13 │
+│ IM151-3 PN ST V6.1 │ 6ES7 151-3AA23-0AB0 │ DIM 18 │
+│ IM151-3 PN ST V7.0 │ 6ES7 151-3AA23-0AB0 │ DIM 19 │
+│ IM151-3 PN V1.0    │ 6ES7 151-3AA00-0AB0 │ DIM 1  │
+│ IM151-3 PN V2.0    │ 6ES7 151-3AA10-0AB0 │ DIM 2  │
+│ IM151-3 PN V3.0    │ 6ES7 151-3AA20-0AB0 │ DIM 3  │
+└────────────────────┴─────────────────────┴────────┘
+                      GSDML-V2.25-SIEMENS-ET200S-20191007.XML                       
+                                   Signal Modules                                   
+┌────────────────────────────────────────┬─────────────────────────────────┬───────┐
+│ Type                                   │ OrderNumber                     │ GsdId │
+├────────────────────────────────────────┼─────────────────────────────────┼───────┤
+│ 1 COUNT 24V counter operation V2.0     │ 6ES7 138-4DA04-0AB0 C           │ 236   │
+│ 1 COUNT 24V Fast Mode V2.0             │ 6ES7 138-4DA04-0AB0 F           │ 239   │
+│ 1 COUNT 24V measurement operation V2.0 │ 6ES7 138-4DA04-0AB0 M           │ 237   │
+│ 1 COUNT 24V position feedback V2.0     │ 6ES7 138-4DA04-0AB0 W           │ 238   │
+│ 1 COUNT 24V/100 kHz C                  │ 6ES7 138-4DA00-0AB0 C           │ 98    │
+│ 1 COUNT 24V/100 kHz C                  │ 6ES7 138-4DA01-0AB0 C           │ 100   │
+│ 1 COUNT 24V/100 kHz C                  │ 6ES7 138-4DA02-0AB0 C           │ 102   │
+│ 1 COUNT 24V/100 kHz C                  │ 6ES7 138-4DA03-0AB0 C           │ 104   │
+│ 1 COUNT 24V/100 kHz C                  │ 6ES7 138-4DA04-0AB0 C           │ 133   │
+│ 1 COUNT 24V/100 kHz M                  │ 6ES7 138-4DA00-0AB0 M           │ 99    │
+│ 1 COUNT 24V/100 kHz M                  │ 6ES7 138-4DA01-0AB0 M           │ 101   │
+│ 1 COUNT 24V/100 kHz M                  │ 6ES7 138-4DA02-0AB0 M           │ 103   │
+│ 1 COUNT 24V/100 kHz M                  │ 6ES7 138-4DA03-0AB0 M           │ 105   │
+│ 1 COUNT 24V/100 kHz M                  │ 6ES7 138-4DA04-0AB0 M           │ 134   │
+│ 1 COUNT 24V/100 kHz W                  │ 6ES7 138-4DA04-0AB0 W           │ 135   │
+│ 1 COUNT 5V counter operation V2.0      │ 6ES7 138-4DE02-0AB0 C           │ 240   │
+│ 1 COUNT 5V Fast Mode V2.0              │ 6ES7 138-4DE02-0AB0 F           │ 243   │
+│ 1 COUNT 5V measurement operation V2.0  │ 6ES7 138-4DE02-0AB0 M           │ 241   │
+│ 1 COUNT 5V position feedback V2.0      │ 6ES7 138-4DE02-0AB0 W           │ 242   │
+│ 1 COUNT 5V/500 kHz C                   │ 6ES7 138-4DE00-0AB0 C           │ 106   │
+│ 1 COUNT 5V/500 kHz C                   │ 6ES7 138-4DE01-0AB0 C           │ 108   │
+│ 1 COUNT 5V/500 kHz C                   │ 6ES7 138-4DE02-0AB0 C           │ 136   │
+│ 1 COUNT 5V/500 kHz M                   │ 6ES7 138-4DE00-0AB0 M           │ 107   │
+│ 1 COUNT 5V/500 kHz M                   │ 6ES7 138-4DE01-0AB0 M           │ 109   │
+│ 1 COUNT 5V/500 kHz M                   │ 6ES7 138-4DE02-0AB0 M           │ 137   │
+│ 1 COUNT 5V/500 kHz W                   │ 6ES7 138-4DE02-0AB0 W           │ 138   │
+│ 1 Pos Inc / Analog                     │ 6ES7 138-4DJ00-0AB0             │ 122   │
+│ 1 Pos Inc / Digital                    │ 6ES7 138-4DG00-0AB0             │ 120   │
+│ 1 Pos SSI / Analog                     │ 6ES7 138-4DK00-0AB0             │ 123   │
+│ 1 Pos SSI / Digital                    │ 6ES7 138-4DH00-0AB0             │ 121   │
+│ 1 PosU 24V                             │ 6ES7 138-4DL00-0AB0             │ 150   │
+│ 1 PosU 5V                              │ 6ES7 138-4DL00-0AB0             │ 149   │
+│ 1 PosU SSI                             │ 6ES7 138-4DL00-0AB0             │ 151   │
+│ 1 SI  3964(R)  (32 Byte)               │ 6ES7 138-4DF01-0AB0             │ 186   │
+│ 1 SI  3964(R)  (4 Byte)                │ 6ES7 138-4DF01-0AB0             │ 142   │
+│ 1 SI  3964(R)  (8 Byte)                │ 6ES7 138-4DF01-0AB0             │ 141   │
+│ 1 SI  ASCII  (32 Byte)                 │ 6ES7 138-4DF01-0AB0             │ 185   │
+│ 1 SI  ASCII  (4 Byte)                  │ 6ES7 138-4DF01-0AB0             │ 140   │
+│ 1 SI  ASCII  (8 Byte)                  │ 6ES7 138-4DF01-0AB0             │ 139   │
+│ 1 SI CANopen 16 Byte                   │ 020570-B                        │ 267   │
+│ 1 SI CANopen 32 Byte                   │ 020570-B                        │ 268   │
+│ 1 SI CANopen 4 Byte                    │ 020570-B                        │ 265   │
+│ 1 SI CANopen 8 Byte                    │ 020570-B                        │ 266   │
+│ 1 SI Modbus Master (32 Byte)           │ 6ES7 138-4DF11-0AB0             │ 188   │
+│ 1 SI Modbus Master (4 Byte)            │ 6ES7 138-4DF11-0AB0             │ 144   │
+│ 1 SI Modbus Master (8 Byte)            │ 6ES7 138-4DF11-0AB0             │ 143   │
+│ 1 SI Modbus Slave (32 Byte)            │ 6ES7 138-4DF11-0AB0             │ 189   │
+│ 1 SI Modbus Slave (4 Byte)             │ 6ES7 138-4DF11-0AB0             │ 146   │
+│ 1 SI Modbus Slave (8 Byte)             │ 6ES7 138-4DF11-0AB0             │ 145   │
+│ 1 SI USS Master (32 Byte)              │ 6ES7 138-4DF11-0AB0             │ 187   │
+│ 1 SI USS Master (4 Byte)               │ 6ES7 138-4DF11-0AB0             │ 148   │
+│ 1 SI USS Master (8 Byte)               │ 6ES7 138-4DF11-0AB0             │ 147   │
+│ 1 SSI                                  │ 6ES7 138-4DB00-0AB0             │ 92    │
+│ 1 SSI                                  │ 6ES7 138-4DB01-0AB0             │ 94    │
+│ 1 SSI                                  │ 6ES7 138-4DB02-0AB0             │ 131   │
+│ 1 SSI                                  │ 6ES7 138-4DB03-0AB0             │ 230   │
+│ 1 SSI Fast-Mode                        │ 6ES7 138-4DB00-0AB0 Fast        │ 93    │
+│ 1 SSI Fast-Mode                        │ 6ES7 138-4DB01-0AB0 Fast        │ 95    │
+│ 1 SSI Fast-Mode                        │ 6ES7 138-4DB02-0AB0 Fast        │ 132   │
+│ 1 SSI Fast-Mode                        │ 6ES7 138-4DB03-0AB0 Fast        │ 231   │
+│ 1 STEP 5V                              │ 6ES7 138-4DC01-0AB0             │ 274   │
+│ 1 STEP 5V/204kHz                       │ 6ES7 138-4DC00-0AB0             │ 96    │
+│ 1 STEP DRIVE                           │ 1-STEP-DRIVE-5A-48V             │ 287   │
+│ 2 Double-Valves 3/2 monost. 4DO        │ 2 Double-Valves 3/2 monost. 4DO │ 197   │
+│ 2 Double-Valves 3/2 monost. 4DO*       │ 2 Double-Valves 3/2 monost. 4DO │ 543   │
+│ 2 PULSE                                │ 6ES7 138-4DD00-0AB0             │ 97    │
+│ 2 PULSE                                │ 6ES7 138-4DD01-0AB0             │ 275   │
+│ 2 PULSE ext. control interface         │ 6ES7 138-4DD01-0AB0             │ 276   │
+│ 2 Valves 3/2, 5/2 monost. 2DO          │ 2 Valves 3/2, 5/2 monost. 2DO   │ 126   │
+│ 2 Valves 3/2, 5/2 monost. 2DO*         │ 2 Valves 3/2, 5/2 monost. 2DO   │ 537   │
+│ 2 Valves 5/3, 5/2 impulse 4DO          │ 2 Valves 5/3, 5/2 impulse 4DO   │ 129   │
+│ 2 Valves 5/3, 5/2 impulse 4DO*         │ 2 Valves 5/3, 5/2 impulse 4DO   │ 538   │
+│ 2/4 AI RTD ST; 2ch; 2-, 3-, 4-wire     │ 6ES7 134-4JB51-0AB0             │ 246   │
+│ 2/4 AI RTD ST; 4ch; 2-wire             │ 6ES7 134-4JB51-0AB0             │ 247   │
+│ 2AI I 2/4WIRE HF                       │ 6ES7 134-4MB00-0AB0             │ 30    │
+│ 2AI I 2/4WIRE HF                       │ 6ES7 134-4MB02-0AB0             │ 199   │
+│ 2AI I 2WIRE HS                         │ 6ES7 134-4GB50-0AB0             │ 25    │
+│ 2AI I 2WIRE HS                         │ 6ES7 134-4GB51-0AB0             │ 26    │
+│ 2AI I 2WIRE HS                         │ 6ES7 134-4GB52-0AB0             │ 219   │
+│ 2AI I 2WIRE ST                         │ 6ES7 134-4GB00-0AB0             │ 24    │
+│ 2AI I 2WIRE ST                         │ 6ES7 134-4GB01-0AB0             │ 172   │
+│ 2AI I 4WIRE HS                         │ 6ES7 134-4GB60-0AB0             │ 28    │
+│ 2AI I 4WIRE HS                         │ 6ES7 134-4GB61-0AB0             │ 29    │
+│ 2AI I 4WIRE HS                         │ 6ES7 134-4GB62-0AB0             │ 220   │
+│ 2AI I 4WIRE ST                         │ 6ES7 134-4GB10-0AB0             │ 27    │
+│ 2AI I 4WIRE ST                         │ 6ES7 134-4GB11-0AB0             │ 174   │
+│ 2AI RTD HF                             │ 6ES7 134-4NB50-0AB0             │ 33    │
+│ 2AI RTD HF                             │ 6ES7 134-4NB51-0AB0             │ 191   │
+│ 2AI RTD ST                             │ 6ES7 134-4JB50-0AB0             │ 31    │
+│ 2AI TC HF                              │ 6ES7 134-4NB00-0AB0             │ 32    │
+│ 2AI TC HF                              │ 6ES7 134-4NB01-0AB0             │ 190   │
+│ 2AI TC ST                              │ 6ES7 134-4JB00-0AB0             │ 6     │
+│ 2AI TC ST                              │ 6ES7 134-4JB01-0AB0             │ 248   │
+│ 2AI U HF                               │ 6ES7 134-4LB00-0AB0             │ 23    │
+│ 2AI U HF                               │ 6ES7 134-4LB02-0AB0             │ 200   │
+│ 2AI U HS                               │ 6ES7 134-4FB50-0AB0             │ 21    │
+│ 2AI U HS                               │ 6ES7 134-4FB51-0AB0             │ 22    │
+│ 2AI U HS                               │ 6ES7 134-4FB52-0AB0             │ 218   │
+│ 2AI U ST                               │ 6ES7 134-4FB00-0AB0             │ 5     │
+│ 2AI U ST                               │ 6ES7 134-4FB01-0AB0             │ 169   │
+│ 2AO I HF                               │ 6ES7 135-4MB00-0AB0             │ 38    │
+│ 2AO I HF                               │ 6ES7 135-4MB01-0AB0             │ 39    │
+│ 2AO I HF                               │ 6ES7 135-4MB02-0AB0             │ 201   │
+│ 2AO I HS                               │ 6ES7 135-4GB52-0AB0             │ 222   │
+│ 2AO I ST                               │ 6ES7 135-4GB00-0AB0             │ 37    │
+│ 2AO I ST                               │ 6ES7 135-4GB01-0AB0             │ 178   │
+│ 2AO U HF                               │ 6ES7 135-4LB00-0AB0             │ 35    │
+│ 2AO U HF                               │ 6ES7 135-4LB01-0AB0             │ 36    │
+│ 2AO U HF                               │ 6ES7 135-4LB02-0AB0             │ 202   │
+│ 2AO U HS                               │ 6ES7 135-4FB52-0AB0             │ 221   │
+│ 2AO U ST                               │ 6ES7 135-4FB00-0AB0             │ 34    │
+│ 2AO U ST                               │ 6ES7 135-4FB01-0AB0             │ 177   │
+│ 2DI AC120V ST                          │ 6ES7 131-4EB00-0AB0             │ 17    │
+│ 2DI AC120V ST*                         │ 6ES7 131-4EB00-0AB0             │ 511   │
+│ 2DI AC230V ST                          │ 6ES7 131-4FB00-0AB0             │ 18    │
+│ 2DI AC230V ST*                         │ 6ES7 131-4FB00-0AB0             │ 512   │
+│ 2DI DC24V HF                           │ 6ES7 131-4BB00-0AB0             │ 1     │
+│ 2DI DC24V HF                           │ 6ES7 131-4BB01-0AB0             │ 154   │
+│ 2DI DC24V HF*                          │ 6ES7 131-4BB00-0AB0             │ 501   │
+│ 2DI DC24V HF*                          │ 6ES7 131-4BB01-0AB0             │ 503   │
+│ 2DI DC24V ST                           │ 6ES7 131-4BB00-0AA0             │ 8     │
+│ 2DI DC24V ST                           │ 6ES7 131-4BB01-0AA0             │ 155   │
+│ 2DI DC24V ST*                          │ 6ES7 131-4BB00-0AA0             │ 500   │
+│ 2DI DC24V ST*                          │ 6ES7 131-4BB01-0AA0             │ 502   │
+│ 2DO AC24..230V/1A                      │ 6ES7 132-4FB00-0AB0             │ 19    │
+│ 2DO AC24..230V/1A                      │ 6ES7 132-4FB01-0AB0             │ 225   │
+│ 2DO AC24..230V/1A*                     │ 6ES7 132-4FB00-0AB0             │ 525   │
+│ 2DO AC24..230V/1A*                     │ 6ES7 132-4FB01-0AB0             │ 544   │
+│ 2DO DC24V/0.5A HF                      │ 6ES7 132-4BB00-0AB0             │ 3     │
+│ 2DO DC24V/0.5A HF                      │ 6ES7 132-4BB01-0AB0             │ 161   │
+│ 2DO DC24V/0.5A HF*                     │ 6ES7 132-4BB00-0AB0             │ 514   │
+│ 2DO DC24V/0.5A HF*                     │ 6ES7 132-4BB01-0AB0             │ 516   │
+│ 2DO DC24V/0.5A ST                      │ 6ES7 132-4BB00-0AA0             │ 9     │
+│ 2DO DC24V/0.5A ST                      │ 6ES7 132-4BB01-0AA0             │ 162   │
+│ 2DO DC24V/0.5A ST*                     │ 6ES7 132-4BB00-0AA0             │ 513   │
+│ 2DO DC24V/0.5A ST*                     │ 6ES7 132-4BB01-0AA0             │ 515   │
+│ 2DO DC24V/2A HF                        │ 6ES7 132-4BB30-0AB0             │ 4     │
+│ 2DO DC24V/2A HF                        │ 6ES7 132-4BB31-0AB0             │ 163   │
+│ 2DO DC24V/2A HF*                       │ 6ES7 132-4BB30-0AB0             │ 518   │
+│ 2DO DC24V/2A HF*                       │ 6ES7 132-4BB31-0AB0             │ 520   │
+│ 2DO DC24V/2A ST                        │ 6ES7 132-4BB30-0AA0             │ 10    │
+│ 2DO DC24V/2A ST                        │ 6ES7 132-4BB31-0AA0             │ 164   │
+│ 2DO DC24V/2A ST*                       │ 6ES7 132-4BB30-0AA0             │ 517   │
+│ 2DO DC24V/2A ST*                       │ 6ES7 132-4BB31-0AA0             │ 519   │
+│ 2RO NO DC24..120V/5A AC24..230V/5A     │ 6ES7 132-4HB00-0AB0             │ 12    │
+│ 2RO NO DC24..120V/5A AC24..230V/5A     │ 6ES7 132-4HB01-0AB0             │ 165   │
+│ 2RO NO DC24..120V/5A AC24..230V/5A*    │ 6ES7 132-4HB00-0AB0             │ 526   │
+│ 2RO NO DC24..120V/5A AC24..230V/5A*    │ 6ES7 132-4HB01-0AB0             │ 527   │
+│ 2RO NO/NC DC24..48V/5A AC24..230V/5A   │ 6ES7 132-4HB10-0AB0             │ 13    │
+│ 2RO NO/NC DC24..48V/5A AC24..230V/5A   │ 6ES7 132-4HB50-0AB0             │ 245   │
+│ 2RO NO/NC DC24..48V/5A AC24..230V/5A   │ 6ES7 132-4HB12-0AB0             │ 271   │
+│ 2RO NO/NC DC24..48V/5A AC24..230V/5A   │ 6ES7 132-4HB13-0AB0             │ 289   │
+│ 2RO NO/NC DC24..48V/5A AC24..230V/5A*  │ 6ES7 132-4HB10-0AB0             │ 528   │
+│ 2RO NO/NC DC24..48V/5A AC24..230V/5A*  │ 6ES7 132-4HB50-0AB0             │ 548   │
+│ 2RO NO/NC DC24..48V/5A AC24..230V/5A*  │ 6ES7 132-4HB12-0AB0             │ 552   │
+│ 2RO NO/NC DC24..48V/5A AC24..230V/5A*  │ 6ES7 132-4HB13-0AB0             │ 554   │
+│ 3 Valves 3/2, 5/2 monost. 4DO          │ 3 Valves 3/2, 5/2 monost. 4DO   │ 128   │
+│ 3 Valves 3/2, 5/2 monost. 4DO*         │ 3 Valves 3/2, 5/2 monost. 4DO   │ 539   │
+│ 4 IQ-SENSE Opto E                      │ 6ES7 138-4GA00-0AB0 E           │ 124   │
+│ 4 IQ-SENSE Opto S                      │ 6ES7 138-4GA00-0AB0 S           │ 125   │
+│ 4 Valves 3/2, 5/2 monost. 4DO          │ 4 Valves 3/2, 5/2 monost. 4DO   │ 127   │
+│ 4 Valves 3/2, 5/2 monost. 4DO*         │ 4 Valves 3/2, 5/2 monost. 4DO   │ 540   │
+│ 4AI I 2WIRE ST                         │ 6ES7 134-4GD00-0AB0             │ 183   │
+│ 4AI TC ST                              │ 6ES7 134-4JD00-0AB0             │ 262   │
+│ 4DI DC24V HF                           │ 6ES7 131-4BD00-0AB0             │ 2     │
+│ 4DI DC24V HF                           │ 6ES7 131-4BD01-0AB0             │ 158   │
+│ 4DI DC24V HF*                          │ 6ES7 131-4BD00-0AB0             │ 505   │
+│ 4DI DC24V HF*                          │ 6ES7 131-4BD01-0AB0             │ 507   │
+│ 4DI DC24V ST                           │ 6ES7 131-4BD00-0AA0             │ 11    │
+│ 4DI DC24V ST                           │ 6ES7 131-4BD01-0AA0             │ 159   │
+│ 4DI DC24V ST*                          │ 6ES7 131-4BD00-0AA0             │ 504   │
+│ 4DI DC24V ST*                          │ 6ES7 131-4BD01-0AA0             │ 506   │
+│ 4DI DC24V/SRC ST                       │ 6ES7 131-4BD50-0AA0             │ 14    │
+│ 4DI DC24V/SRC ST                       │ 6ES7 131-4BD51-0AA0             │ 160   │
+│ 4DI DC24V/SRC ST*                      │ 6ES7 131-4BD50-0AA0             │ 508   │
+│ 4DI DC24V/SRC ST*                      │ 6ES7 131-4BD51-0AA0             │ 509   │
+│ 4DI NAMUR                              │ 6ES7 131-4RD00-0AB0             │ 40    │
+│ 4DI NAMUR                              │ 6ES7 131-4RD02-0AB0             │ 269   │
+│ 4DI UC24..48V HF                       │ 6ES7 131-4CD00-0AB0             │ 20    │
+│ 4DI UC24..48V HF                       │ 6ES7 131-4CD02-0AB0             │ 270   │
+│ 4DI UC24..48V HF*                      │ 6ES7 131-4CD00-0AB0             │ 510   │
+│ 4DI UC24..48V HF*                      │ 6ES7 131-4CD02-0AB0             │ 551   │
+│ 4DO DC24V/0.5A HF                      │ 6ES7 132-4BD00-0AB0             │ 259   │
+│ 4DO DC24V/0.5A HF*                     │ 6ES7 132-4BD00-0AB0             │ 549   │
+│ 4DO DC24V/0.5A SINK OUT                │ 6ES7 132-4BD50-0AA0             │ 226   │
+│ 4DO DC24V/0.5A SINK OUT*               │ 6ES7 132-4BD50-0AA0             │ 545   │
+│ 4DO DC24V/0.5A ST                      │ 6ES7 132-4BD00-0AA0             │ 15    │
+│ 4DO DC24V/0.5A ST                      │ 6ES7 132-4BD01-0AA0             │ 167   │
+│ 4DO DC24V/0.5A ST                      │ 6ES7 132-4BD02-0AA0             │ 244   │
+│ 4DO DC24V/0.5A ST*                     │ 6ES7 132-4BD00-0AA0             │ 521   │
+│ 4DO DC24V/0.5A ST*                     │ 6ES7 132-4BD01-0AA0             │ 522   │
+│ 4DO DC24V/0.5A ST*                     │ 6ES7 132-4BD02-0AA0             │ 547   │
+│ 4DO DC24V/2A HF                        │ 6ES7 132-4BD30-0AB0             │ 260   │
+│ 4DO DC24V/2A HF*                       │ 6ES7 132-4BD30-0AB0             │ 550   │
+│ 4DO DC24V/2A ST                        │ 6ES7 132-4BD30-0AA0             │ 16    │
+│ 4DO DC24V/2A ST                        │ 6ES7 132-4BD31-0AA0             │ 168   │
+│ 4DO DC24V/2A ST                        │ 6ES7 132-4BD32-0AA0             │ 229   │
+│ 4DO DC24V/2A ST*                       │ 6ES7 132-4BD30-0AA0             │ 523   │
+│ 4DO DC24V/2A ST*                       │ 6ES7 132-4BD31-0AA0             │ 524   │
+│ 4DO DC24V/2A ST*                       │ 6ES7 132-4BD32-0AA0             │ 546   │
+│ 4POTDIS, DC 24 .. 48V/AC 24 .. 230V    │ 6ES7 138-4FD00-0AA0             │ 198   │
+│ 4SI IO-Link 16I/16O                    │ 6ES7 138-4GA50-0AB0             │ 250   │
+│ 4SI IO-Link 1I                         │ 6ES7 138-4GA50-0AB0             │ 255   │
+│ 4SI IO-Link 1I/1O                      │ 6ES7 138-4GA50-0AB0             │ 257   │
+│ 4SI IO-Link 1O                         │ 6ES7 138-4GA50-0AB0             │ 256   │
+│ 4SI IO-Link 32I/32O                    │ 6ES7 138-4GA50-0AB0             │ 249   │
+│ 4SI IO-Link 4I                         │ 6ES7 138-4GA50-0AB0             │ 253   │
+│ 4SI IO-Link 4I/4O                      │ 6ES7 138-4GA50-0AB0             │ 252   │
+│ 4SI IO-Link 4O                         │ 6ES7 138-4GA50-0AB0             │ 254   │
+│ 4SI IO-Link 8I/8O                      │ 6ES7 138-4GA50-0AB0             │ 251   │
+│ 4SI SIRIUS 8I/8O                       │ 3RK1 005-0LB00-0AA0             │ 258   │
+│ 8DI DC24V SOURCE IN                    │ 6ES7 131-4BF50-0AA0             │ 228   │
+│ 8DI DC24V ST                           │ 6ES7 131-4BF00-0AA0             │ 223   │
+│ 8DO DC24V/0.5A HF                      │ 6ES7 132-4BF00-0AB0             │ 261   │
+│ 8DO DC24V/0.5A SINK OUT                │ 6ES7 132-4BF50-0AA0             │ 227   │
+│ 8DO DC24V/0.5A ST                      │ 6ES7 132-4BF00-0AA0             │ 224   │
+│ DS                                     │ 3RK1 301-xxB00-0AA0             │ 52    │
+│ DS-x                                   │ 3RK1 301-xxB00-0AA1             │ 53    │
+│ DS-x*                                  │ 3RK1 301-xxB00-0AA1             │ 530   │
+│ DS*                                    │ 3RK1 301-xxB00-0AA0             │ 529   │
+│ DS1-x                                  │ 3RK1 301-xxB00-0AA2             │ 54    │
+│ DS1-x*                                 │ 3RK1 301-xxB00-0AA2             │ 531   │
+│ DS1e-x 0.3-3A HF                       │ 3RK1 301-0AB10-0AA2             │ 58    │
+│ DS1e-x 0.3-3A HF                       │ 3RK1 301-0AB10-0AA3             │ 67    │
+│ DS1e-x 0.3-3A HF                       │ 3RK1 301-0AB10-0AA4             │ 203   │
+│ DS1e-x 2.4-16A HF                      │ 3RK1 301-0CB10-0AA2             │ 60    │
+│ DS1e-x 2.4-16A HF                      │ 3RK1 301-0CB10-0AA3             │ 69    │
+│ DS1e-x 2.4-16A HF                      │ 3RK1 301-0CB10-0AA4             │ 205   │
+│ DS1e-x 2.4-8A HF                       │ 3RK1 301-0BB10-0AA2             │ 59    │
+│ DS1e-x 2.4-8A HF                       │ 3RK1 301-0BB10-0AA3             │ 68    │
+│ DS1e-x 2.4-8A HF                       │ 3RK1 301-0BB10-0AA4             │ 204   │
+│ DS1e-x HF 4DI/BO 16A                   │ 3RK1 301-0CB10-0AB4             │ 279   │
+│ DS1e-x HF 4DI/BO 3A                    │ 3RK1 301-0AB10-0AB4             │ 277   │
+│ DS1e-x HF 4DI/BO 8A                    │ 3RK1 301-0BB10-0AB4             │ 278   │
+│ DSS1e-x 0.3-3A HF                      │ 3RK1 301-0AB20-0AA2             │ 61    │
+│ DSS1e-x 0.3-3A HF                      │ 3RK1 301-0AB20-0AA3             │ 70    │
+│ DSS1e-x 0.3-3A HF                      │ 3RK1 301-0AB20-0AA4             │ 209   │
+│ DSS1e-x 2.4-16A HF                     │ 3RK1 301-0CB20-0AA2             │ 63    │
+│ DSS1e-x 2.4-16A HF                     │ 3RK1 301-0CB20-0AA3             │ 72    │
+│ DSS1e-x 2.4-16A HF                     │ 3RK1 301-0CB20-0AA4             │ 211   │
+│ DSS1e-x 2.4-8A HF                      │ 3RK1 301-0BB20-0AA2             │ 62    │
+│ DSS1e-x 2.4-8A HF                      │ 3RK1 301-0BB20-0AA3             │ 71    │
+│ DSS1e-x 2.4-8A HF                      │ 3RK1 301-0BB20-0AA4             │ 210   │
+│ DSS1e-x HF 4DI/B 16A                   │ 3RK1 301-0CB20-0AB4             │ 285   │
+│ DSS1e-x HF 4DI/B 3A                    │ 3RK1 301-0AB20-0AB4             │ 283   │
+│ DSS1e-x HF 4DI/B 8A                    │ 3RK1 301-0BB20-0AB4             │ 284   │
+│ F-CM                                   │ 3RK1 903-3CA00                  │ 51    │
+│ F-DS1e-x 0.3-3A HF                     │ 3RK1 301-0AB13-0AA2             │ 76    │
+│ F-DS1e-x 0.3-3A HF                     │ 3RK1 301-0AB13-0AA4             │ 212   │
+│ F-DS1e-x 2.4-16A HF                    │ 3RK1 301-0CB13-0AA2             │ 78    │
+│ F-DS1e-x 2.4-16A HF                    │ 3RK1 301-0CB13-0AA4             │ 214   │
+│ F-DS1e-x 2.4-8A HF                     │ 3RK1 301-0BB13-0AA2             │ 77    │
+│ F-DS1e-x 2.4-8A HF                     │ 3RK1 301-0BB13-0AA4             │ 213   │
+│ F-RS1e-x 0.3-3A HF                     │ 3RK1 301-0AB13-1AA2             │ 79    │
+│ F-RS1e-x 0.3-3A HF                     │ 3RK1 301-0AB13-1AA4             │ 215   │
+│ F-RS1e-x 2.4-16A HF                    │ 3RK1 301-0CB13-1AA2             │ 81    │
+│ F-RS1e-x 2.4-16A HF                    │ 3RK1 301-0CB13-1AA4             │ 217   │
+│ F-RS1e-x 2.4-8A HF                     │ 3RK1 301-0BB13-1AA2             │ 80    │
+│ F-RS1e-x 2.4-8A HF                     │ 3RK1 301-0BB13-1AA4             │ 216   │
+│ ICU24                                  │ 6SL3 244-0SA00-1AA0             │ 152   │
+│ ICU24; Standard telegram 1             │ 6SL3 244-0SA00-1AA1             │ 232   │
+│ ICU24F                                 │ 6SL3 244-0SA01-1AA0             │ 153   │
+│ ICU24F; Standard telegram 1            │ 6SL3 244-0SA01-1AA1             │ 234   │
+│ PM-D DC24V                             │ 3RK1 903-0BA00                  │ 43    │
+│ PM-D F X1                              │ 3RK1 903-3DA00                  │ 50    │
+│ PM-D F1 SIGUARD                        │ 3RK1 903-1BA00                  │ 44    │
+│ PM-D F2 SIGUARD                        │ 3RK1 903-1BB00                  │ 45    │
+│ PM-D F3 SIGUARD                        │ 3RK1 903-1BD00                  │ 46    │
+│ PM-D F4 SIGUARD                        │ 3RK1 903-1BC00                  │ 47    │
+│ PM-D F5 SIGUARD                        │ 3RK1 903-1BE00                  │ 48    │
+│ PM-E DC24..48V                         │ 6ES7 138-4CA50-0AB0             │ 85    │
+│ PM-E DC24..48V S                       │ 6ES7 138-4CA50-0AB0             │ 86    │
+│ PM-E DC24..48V/ AC24..230V             │ 6ES7 138-4CB00-0AB0             │ 41    │
+│ PM-E DC24..48V/ AC24..230V             │ 6ES7 138-4CB10-0AB0             │ 42    │
+│ PM-E DC24..48V/ AC24..230V             │ 6ES7 138-4CB11-0AB0             │ 193   │
+│ PM-E DC24..48V/ AC24..230V S           │ 6ES7 138-4CB10-0AB0             │ 89    │
+│ PM-E DC24..48V/ AC24..230V S           │ 6ES7 138-4CB11-0AB0             │ 192   │
+│ PM-E DC24V                             │ 6ES7 138-4CA00-0AA0             │ 7     │
+│ PM-E DC24V                             │ 6ES7 138-4CA01-0AA0             │ 179   │
+│ PM-E DC24V /8A RO                      │ 6ES7 138-4CA80-0AB0             │ 272   │
+│ PM-E DC24V /8A RO S                    │ 6ES7 138-4CA80-0AB0             │ 273   │
+│ PM-E DC24V HF                          │ 6ES7 138-4CA60-0AB0             │ 263   │
+│ PM-E DC24V HF S                        │ 6ES7 138-4CA60-0AB0             │ 264   │
+│ PM-E DC24V S                           │ 6ES7 138-4CA00-0AA0             │ 84    │
+│ PM-E DC24V S                           │ 6ES7 138-4CA01-0AA0             │ 180   │
+│ PM-X SIGUARD                           │ 3RK1 903-1CB00                  │ 49    │
+│ RS                                     │ 3RK1 301-xxB00-1AA0             │ 55    │
+│ RS-x                                   │ 3RK1 301-xxB00-1AA1             │ 56    │
+│ RS-x*                                  │ 3RK1 301-xxB00-1AA1             │ 533   │
+│ RS*                                    │ 3RK1 301-xxB00-1AA0             │ 532   │
+│ RS1-x                                  │ 3RK1 301-xxB00-1AA2             │ 57    │
+│ RS1-x*                                 │ 3RK1 301-xxB00-1AA2             │ 534   │
+│ RS1e-x 0.3-3A HF                       │ 3RK1 301-0AB10-1AA2             │ 64    │
+│ RS1e-x 0.3-3A HF                       │ 3RK1 301-0AB10-1AA3             │ 73    │
+│ RS1e-x 0.3-3A HF                       │ 3RK1 301-0AB10-1AA4             │ 206   │
+│ RS1e-x 2.4-16A HF                      │ 3RK1 301-0CB10-1AA2             │ 66    │
+│ RS1e-x 2.4-16A HF                      │ 3RK1 301-0CB10-1AA3             │ 75    │
+│ RS1e-x 2.4-16A HF                      │ 3RK1 301-0CB10-1AA4             │ 208   │
+│ RS1e-x 2.4-8A HF                       │ 3RK1 301-0BB10-1AA2             │ 65    │
+│ RS1e-x 2.4-8A HF                       │ 3RK1 301-0BB10-1AA3             │ 74    │
+│ RS1e-x 2.4-8A HF                       │ 3RK1 301-0BB10-1AA4             │ 207   │
+│ RS1e-x HF 4DI/BO 16A                   │ 3RK1 301-0CB10-1AB4             │ 282   │
+│ RS1e-x HF 4DI/BO 3A                    │ 3RK1 301-0AB10-1AB4             │ 280   │
+│ RS1e-x HF 4DI/BO 8A                    │ 3RK1 301-0BB10-1AB4             │ 281   │
+│ SIWAREX CF                             │ 7MH4 920-0AA01                  │ 184   │
+│ SIWAREX CS                             │ 7MH4 910-0AA01                  │ 130   │
+│ SIWAREX CSd                            │ 7MH4 912-0AA01                  │ 288   │
+│ xB3 DC24V/4A                           │ 3RK1 903-0CE00                  │ 82    │
+│ xB3 DC24V/4A*                          │ 3RK1 903-0CE00                  │ 535   │
+│ xB4 DC500V/0.7A                        │ 3RK1 903-0CF00                  │ 83    │
+│ xB4 DC500V/0.7A*                       │ 3RK1 903-0CF00                  │ 536   │
+│ xB6 AC400V/0.5A                        │ 3RK1 903-0CK00                  │ 286   │
+│ xB6 AC400V/0.5A*                       │ 3RK1 903-0CK00                  │ 553   │
+└────────────────────────────────────────┴─────────────────────────────────┴───────┘
+                    GSDML-V2.45-SIEMENS-ET200SP-20241104.XML                     
+                                   Head Modules                                  
+┌─────────────────────────┬─────────────────────┬───────────────────────────────┐
+│ Type                    │ OrderNumber         │ GsdId                         │
+├─────────────────────────┼─────────────────────┼───────────────────────────────┤
+│ IM 155-6 MF HF V5.0     │ 6ES7 155-6MU00-0CN0 │ IM 155-6 MF HF V5.0           │
+│ IM 155-6 MF HF V5.1     │ 6ES7 155-6MU00-0CN0 │ IM 155-6 MF HF V5.1           │
+│ IM 155-6 MF HF V5.2     │ 6ES7 155-6MU00-0CN0 │ IM 155-6 MF HF V5.2           │
+│ IM 155-6 MF HF V6.2     │ 6ES7 155-6MU01-0CN0 │ IM 155-6 MF HF V6.2           │
+│ IM 155-6 PN BA V3.2     │ 6ES7 155-6AR00-0AN0 │ DIM BA V3.2                   │
+│ IM 155-6 PN HF V2.0     │ 6ES7 155-6AU00-0CN0 │ DIM HF V2.0                   │
+│ IM 155-6 PN HF V2.1     │ 6ES7 155-6AU00-0CN0 │ DIM HF V2.1                   │
+│ IM 155-6 PN HF V2.2     │ 6ES7 155-6AU00-0CN0 │ DIM HF V2.2                   │
+│ IM 155-6 PN HF V3.0     │ 6ES7 155-6AU00-0CN0 │ DIM HF V3.0                   │
+│ IM 155-6 PN HF V3.1     │ 6ES7 155-6AU00-0CN0 │ DIM HF V3.1                   │
+│ IM 155-6 PN HF V3.3     │ 6ES7 155-6AU00-0CN0 │ DIM HF V3.3                   │
+│ IM 155-6 PN HF V4.2     │ 6ES7 155-6AU00-0CN0 │ DIM HF V4.2                   │
+│ IM 155-6 PN HS V4.0     │ 6ES7 155-6AU00-0DN0 │ DIM HS V4.0                   │
+│ IM 155-6 PN R1 V6.0 Red │ 6ES7 155-6AU00-0HM0 │ IM 155-6 PN R1 V6.0 Redundant │
+│ IM 155-6 PN ST S V1.0   │ 6ES7 155-6AU00-0BN0 │ DIM 2                         │
+│ IM 155-6 PN ST V1.0     │ 6ES7 155-6AU00-0BN0 │ DIM 1                         │
+│ IM 155-6 PN ST V1.1     │ 6ES7 155-6AU00-0BN0 │ DIM ST V1.1                   │
+│ IM 155-6 PN ST V3.1     │ 6ES7 155-6AU00-0BN0 │ DIM ST V3.1                   │
+│ IM 155-6 PN ST V3.3     │ 6ES7 155-6AU00-0BN0 │ DIM ST V3.3                   │
+│ IM 155-6 PN ST V4.1     │ 6ES7 155-6AU01-0BN0 │ DIM ST V4.1                   │
+│ IM 155-6 PN ST V4.2     │ 6ES7 155-6AU01-0BN0 │ DIM ST V4.2                   │
+│ IM 155-6 PN ST V6.1     │ 6ES7 155-6AU02-0BN0 │ IM 155-6 PN ST V6.1           │
+│ IM 155-6 PN ST V6.2     │ 6ES7 155-6AU02-0BN0 │ IM 155-6 PN ST V6.2           │
+│ IM 155-6 PN/2 HF V4.2   │ 6ES7 155-6AU01-0CN0 │ DIM HF/2 V4.2                 │
+│ IM 155-6 PN/3 HF V4.2   │ 6ES7 155-6AU30-0CN0 │ DIM HF/3 V4.2                 │
+└─────────────────────────┴─────────────────────┴───────────────────────────────┘
+                                                                    GSDML-V2.45-SIEMENS-ET200SP-20241104.XML                                                                     
+                                                                                  Signal Modules                                                                                 
+┌─────────────────────────────────────────────────────────┬─────────────────────┬─────────────────────────────────────────────────────────┬─────────────────────────────────────┐
+│ Type                                                    │ OrderNumber         │ GsdId                                                   │ Submodule                           │
+├─────────────────────────────────────────────────────────┼─────────────────────┼─────────────────────────────────────────────────────────┼─────────────────────────────────────┤
+│ AI 2xI 2-/4-wire ST V1.0                                │ 6ES7 134-6GB00-0BA1 │ AI 2xI 2-/4-wire ST                                     │                                     │
+│ AI 2xI 2-/4-wire ST V1.0, QI                            │ 6ES7 134-6GB00-0BA1 │ AI 2xI 2-/4-wire ST, QI                                 │                                     │
+│ AI 2xSG 4-/6-wire HS V1.0                               │ 7MH4 134-6LB00-0DA0 │ AI 2xSG 4-/6-wire HS                                    │                                     │
+│ AI 2xU ST V1.0                                          │ 6ES7 134-6FB00-0BA1 │ AI 2xU ST                                               │                                     │
+│ AI 2xU ST V1.0, QI                                      │ 6ES7 134-6FB00-0BA1 │ AI 2xU ST, QI                                           │                                     │
+│ AI 2xU/I 2-/4-wire HF V1.0                              │ 6ES7 134-6HB00-0CA1 │ AI 2xU/I 2-/4-wire HF                                   │                                     │
+│ AI 2xU/I 2-/4-wire HF V1.0, QI                          │ 6ES7 134-6HB00-0CA1 │ AI 2xU/I 2-/4-wire HF, QI                               │                                     │
+│ AI 2xU/I 2-/4-wire HF V2.0                              │ 6ES7 134-6HB00-0CA1 │ AI 2xU/I 2-/4-wire HF V2.0                              │                                     │
+│ AI 2xU/I 2-/4-wire HF V2.0, MSI                         │ 6ES7 134-6HB00-0CA1 │ AI 2xU/I 2-/4-wire HF V2.0, MSI                         │ AI 2xU/I 2-/4-wire HF V2.0 MSI      │
+│ AI 2xU/I 2-/4-wire HF V2.0, QI                          │ 6ES7 134-6HB00-0CA1 │ AI 2xU/I 2-/4-wire HF V2.0, QI                          │                                     │
+│ AI 2xU/I 2-/4-wire HF V2.0, SCALE                       │ 6ES7 134-6HB00-0CA1 │ AI 2xU/I 2-/4-wire HF V2.0, SCALE                       │                                     │
+│ AI 2xU/I 2-/4-wire HS V1.0                              │ 6ES7 134-6HB00-0DA1 │ AI 2xU/I 2-/4-wire HS                                   │                                     │
+│ AI 2xU/I 2-/4-wire HS V1.0, QI                          │ 6ES7 134-6HB00-0DA1 │ AI 2xU/I 2-/4-wire HS, QI                               │                                     │
+│ AI 2xU/I 2-/4-wire HS V1.1                              │ 6ES7 134-6HB00-0DA1 │ AI 2xU/I 2-/4-wire HS V1.1                              │                                     │
+│ AI 2xU/I 2-/4-wire HS V1.1, QI                          │ 6ES7 134-6HB00-0DA1 │ AI 2xU/I 2-/4-wire HS V1.1, QI                          │                                     │
+│ AI 2xU/I 2-/4-wire HS V2.0                              │ 6ES7 134-6HB00-0DA1 │ AI 2xU/I 2-/4-wire HS V2.0                              │                                     │
+│ AI 2xU/I 2-/4-wire HS V2.0, QI                          │ 6ES7 134-6HB00-0DA1 │ AI 2xU/I 2-/4-wire HS V2.0, QI                          │                                     │
+│ AI 4xI 2-/4-wire ST V1.0                                │ 6ES7 134-6GD00-0BA1 │ AI 4xI 2-/4-wire ST                                     │                                     │
+│ AI 4xI 2-/4-wire ST V1.1                                │ 6ES7 134-6GD00-0BA1 │ AI 4xI 2-/4-wire ST V1.1                                │                                     │
+│ AI 4xI 2-/4-wire ST V1.1, QI                            │ 6ES7 134-6GD00-0BA1 │ AI 4xI 2-/4-wire ST V1.1, QI                            │                                     │
+│ AI 4xI 2-/4-wire ST V2.0                                │ 6ES7 134-6GD01-0BA1 │ AI 4xI 2-/4-wire ST V2.0                                │                                     │
+│ AI 4xI 2-/4-wire ST V2.0 , QI                           │ 6ES7 134-6GD01-0BA1 │ AI 4xI 2-/4-wire ST V2.0, QI                            │                                     │
+│ AI 4xI 2-wire 4..20mA HART V1.0                         │ 6ES7 134-6TD00-0CA1 │ AI 4xI 2-wire 4...20mA, HART                            │                                     │
+│ AI 4xI 2-wire 4..20mA HART V1.0, 4 tags                 │ 6ES7 134-6TD00-0CA1 │ AI 4xI 2-wire 4...20mA, HART, 4 Variablen               │                                     │
+│ AI 4xI 2-wire 4..20mA HART V1.0, 4 tags QI              │ 6ES7 134-6TD00-0CA1 │ AI 4xI 2-wire 4...20mA, QI, HART, 4 Variablen           │                                     │
+│ AI 4xI 2-wire 4..20mA HART V1.0, QI                     │ 6ES7 134-6TD00-0CA1 │ AI 4xI 2-wire 4...20mA, QI, HART                        │                                     │
+│ AI 4xRTD/TC 2-/3-/4-wire HF V1.0                        │ 6ES7 134-6JD00-0CA1 │ AI 4xRTD/TC 2-/3-/4-wire HF                             │                                     │
+│ AI 4xRTD/TC 2-/3-/4-wire HF V1.1                        │ 6ES7 134-6JD00-0CA1 │ AI 4xRTD/TC 2-/3-/4-wire HF V1.1                        │                                     │
+│ AI 4xRTD/TC 2-/3-/4-wire HF V1.1, QI                    │ 6ES7 134-6JD00-0CA1 │ AI 4xRTD/TC 2-/3-/4-wire HF V1.1, QI                    │                                     │
+│ AI 4xRTD/TC 2-/3-/4-wire HF V2.0                        │ 6ES7 134-6JD00-0CA1 │ AI 4xRTD/TC 2-/3-/4-wire HF V2.0                        │                                     │
+│ AI 4xRTD/TC 2-/3-/4-wire HF V2.0, QI                    │ 6ES7 134-6JD00-0CA1 │ AI 4xRTD/TC 2-/3-/4-wire HF V2.0, QI                    │                                     │
+│ AI 4xRTD/TC 2-/3-/4-wire HF V2.1                        │ 6ES7 134-6JD00-0CA1 │ AI 4xRTD/TC 2-/3-/4-wire HF V2.1                        │                                     │
+│ AI 4xRTD/TC 2-/3-/4-wire HF V2.1, QI                    │ 6ES7 134-6JD00-0CA1 │ AI 4xRTD/TC 2-/3-/4-wire HF V2.1, QI                    │                                     │
+│ AI 4xRTD/TC 4xM12 V1.0                                  │ 6ES7 144-5KD50-0BA0 │ AI 4xRTD/TC 4xM12                                       │                                     │
+│ AI 4xRTD/TC 4xM12 V1.0, QI                              │ 6ES7 144-5KD50-0BA0 │ AI 4xRTD/TC 4xM12, QI                                   │                                     │
+│ AI 4xRTD/TC 4xM12 V2.0                                  │ 6ES7 144-5KD50-0BA0 │ AI 4xRTD/TC 4xM12 V2.0                                  │                                     │
+│ AI 4xRTD/TC 4xM12 V2.0, QI                              │ 6ES7 144-5KD50-0BA0 │ AI 4xRTD/TC 4xM12 V2.0, QI                              │                                     │
+│ AI 4xTC HS V1.0                                         │ 6ES7 134-6JD00-0DA1 │ AI 4xTC HS V1.0                                         │                                     │
+│ AI 4xTC HS V1.0, MSI                                    │ 6ES7 134-6JD00-0DA1 │ AI 4xTC HS V1.0, MSI                                    │ AI 4xTC HS V1.0, MSI                │
+│ AI 4xTC HS V1.0, QI                                     │ 6ES7 134-6JD00-0DA1 │ AI 4xTC HS V1.0, QI                                     │                                     │
+│ AI 4xTC HS V1.0, REAL                                   │ 6ES7 134-6JD00-0DA1 │ AI 4xTC HS V1.0, REAL                                   │                                     │
+│ AI 4xTC HS V1.0, REAL, MSI                              │ 6ES7 134-6JD00-0DA1 │ AI 4xTC HS V1.0, REAL, MSI                              │ AI 4xTC HS V1.0, REAL, MSI          │
+│ AI 4xTC HS V1.0, REAL, QI                               │ 6ES7 134-6JD00-0DA1 │ AI 4xTC HS V1.0, REAL, QI                               │                                     │
+│ AI 4xU/I 2-wire ST V1.0                                 │ 6ES7 134-6HD00-0BA1 │ AI 4xU/I 2-wire ST                                      │                                     │
+│ AI 4xU/I 2-wire ST V1.1                                 │ 6ES7 134-6HD00-0BA1 │ AI 4xU/I 2-wire ST V1.1                                 │                                     │
+│ AI 4xU/I 2-wire ST V1.1, QI                             │ 6ES7 134-6HD00-0BA1 │ AI 4xU/I 2-wire ST V1.1, QI                             │                                     │
+│ AI 4xU/I 2-wire ST V2.0                                 │ 6ES7 134-6HD01-0BA1 │ AI 4xU/I 2-wire ST V2.0                                 │                                     │
+│ AI 4xU/I 2-wire ST V2.0, QI                             │ 6ES7 134-6HD01-0BA1 │ AI 4xU/I 2-wire ST V2.0, QI                             │                                     │
+│ AI 4xU/I/RTD 4xM12 V1.0                                 │ 6ES7 144-5KD00-0BA0 │ AI 4xU/I/RTD 4xM12                                      │                                     │
+│ AI 4xU/I/RTD 4xM12 V1.0, QI                             │ 6ES7 144-5KD00-0BA0 │ AI 4xU/I/RTD 4xM12, QI                                  │                                     │
+│ AI 4xU/I/RTD 4xM12 V2.0                                 │ 6ES7 144-5KD00-0BA0 │ AI 4xU/I/RTD 4xM12 V2.0                                 │                                     │
+│ AI 4xU/I/RTD 4xM12 V2.0, QI                             │ 6ES7 144-5KD00-0BA0 │ AI 4xU/I/RTD 4xM12 V2.0, QI                             │                                     │
+│ AI 8xI 2-/4-wire BA V1.0                                │ 6ES7 134-6GF00-0AA1 │ AI 8xI 2-/4-wire BA                                     │                                     │
+│ AI 8xRTD/TC 2-wire HF V2.0                              │ 6ES7 134-6JF00-0CA1 │ AI 8xRTD/TC 2-wire HF                                   │                                     │
+│ AI 8xRTD/TC 2-wire HF V2.0, QI                          │ 6ES7 134-6JF00-0CA1 │ AI 8xRTD/TC 2-wire HF, QI                               │                                     │
+│ AI 8xRTD/TC 2-wire HF V2.1                              │ 6ES7 134-6JF00-0CA1 │ AI 8xRTD/TC 2-wire HF V2.1                              │                                     │
+│ AI 8xRTD/TC 2-wire HF V2.1, QI                          │ 6ES7 134-6JF00-0CA1 │ AI 8xRTD/TC 2-wire HF V2.1, QI                          │                                     │
+│ AI 8xU BA V1.0                                          │ 6ES7 134-6FF00-0AA1 │ AI 8xU BA                                               │                                     │
+│ AI Energy Meter CT HF V8.0 (002I/002O)                  │ 6ES7 134-6PA01-0CU0 │ AI Energymeter CT HF V8.0 (2I/2O)                       │                                     │
+│ AI Energy Meter CT HF V8.0 (032I/020O)                  │ 6ES7 134-6PA01-0CU0 │ AI Energymeter CT HF V8.0 (32I/20O)                     │                                     │
+│ AI Energy Meter CT HF V8.0 (064I/020O)                  │ 6ES7 134-6PA01-0CU0 │ AI Energymeter CT HF V8.0 (64I/20O)                     │                                     │
+│ AI Energy Meter CT HF V8.0 (128I/020O)                  │ 6ES7 134-6PA01-0CU0 │ AI Energymeter CT HF V8.0 (128I/20O)                    │                                     │
+│ AI Energy Meter CT HF V8.0 (256I/020O)                  │ 6ES7 134-6PA01-0CU0 │ AI Energymeter CT HF V8.0 (256I/20O)                    │                                     │
+│ AI Energy Meter CT HF V8.0 (E0 012I/020O)               │ 6ES7 134-6PA01-0CU0 │ AI Energymeter CT HF V8.0 (12I/20O E0)                  │                                     │
+│ AI Energy Meter CT HF V8.0 (E1 004I/020O)               │ 6ES7 134-6PA01-0CU0 │ AI Energymeter CT HF V8.0 (4I/20O E1)                   │                                     │
+│ AI Energy Meter CT HF V8.0 (E2 012I/020O)               │ 6ES7 134-6PA01-0CU0 │ AI Energymeter CT HF V8.0 (12I/20O E2)                  │                                     │
+│ AI Energy Meter CT HF V8.0 (E3 104I/020O)               │ 6ES7 134-6PA01-0CU0 │ AI Energymeter CT HF V8.0 (104I/20O E3)                 │                                     │
+│ AI Energy Meter CT ST V8.0 (002I/002O)                  │ 6ES7 134-6PA01-0BU0 │ AI Energymeter CT ST V8.0 (2I/2O)                       │                                     │
+│ AI Energy Meter CT ST V8.0 (032I/020O)                  │ 6ES7 134-6PA01-0BU0 │ AI Energymeter CT ST V8.0 (32I/20O)                     │                                     │
+│ AI Energy Meter CT ST V8.0 (064I/020O)                  │ 6ES7 134-6PA01-0BU0 │ AI Energymeter CT ST V8.0 (64I/20O)                     │                                     │
+│ AI Energy Meter CT ST V8.0 (128I/020O)                  │ 6ES7 134-6PA01-0BU0 │ AI Energymeter CT ST V8.0 (128I/20O)                    │                                     │
+│ AI Energy Meter CT ST V8.0 (256I/020O)                  │ 6ES7 134-6PA01-0BU0 │ AI Energymeter CT ST V8.0 (256I/20O)                    │                                     │
+│ AI Energy Meter CT ST V8.0 (E0 012I/020O)               │ 6ES7 134-6PA01-0BU0 │ AI Energymeter CT ST V8.0 (12I/20O E0)                  │                                     │
+│ AI Energy Meter CT ST V8.0 (E1 004I/020O)               │ 6ES7 134-6PA01-0BU0 │ AI Energymeter CT ST V8.0 (4I/20O E1)                   │                                     │
+│ AI Energy Meter CT ST V8.0 (E2 012I/020O)               │ 6ES7 134-6PA01-0BU0 │ AI Energymeter CT ST V8.0 (12I/20O E2)                  │                                     │
+│ AI Energy Meter CT ST V8.0 (E3 104I/020O)               │ 6ES7 134-6PA01-0BU0 │ AI Energymeter CT ST V8.0 (104I/20O E3)                 │                                     │
+│ AI Energy Meter RC HF V8.0 (002I/002O)                  │ 6ES7 134-6PA21-0CU0 │ AI Energymeter RC HF V8.0 (2I/2O)                       │                                     │
+│ AI Energy Meter RC HF V8.0 (032I/020O)                  │ 6ES7 134-6PA21-0CU0 │ AI Energymeter RC HF V8.0 (32I/20O)                     │                                     │
+│ AI Energy Meter RC HF V8.0 (064I/020O)                  │ 6ES7 134-6PA21-0CU0 │ AI Energymeter RC HF V8.0 (64I/20O)                     │                                     │
+│ AI Energy Meter RC HF V8.0 (128I/020O)                  │ 6ES7 134-6PA21-0CU0 │ AI Energymeter RC HF V8.0 (128I/20O)                    │                                     │
+│ AI Energy Meter RC HF V8.0 (256I/020O)                  │ 6ES7 134-6PA21-0CU0 │ AI Energymeter RC HF V8.0 (256I/20O)                    │                                     │
+│ AI Energy Meter RC HF V8.0 (E0 012I/020O)               │ 6ES7 134-6PA21-0CU0 │ AI Energymeter RC HF V8.0 (12I/20O E0)                  │                                     │
+│ AI Energy Meter RC HF V8.0 (E1 004I/020O)               │ 6ES7 134-6PA21-0CU0 │ AI Energymeter RC HF V8.0 (4I/20O E1)                   │                                     │
+│ AI Energy Meter RC HF V8.0 (E2 012I/020O)               │ 6ES7 134-6PA21-0CU0 │ AI Energymeter RC HF V8.0 (12I/20O E2)                  │                                     │
+│ AI Energy Meter RC HF V8.0 (E3 104I/020O)               │ 6ES7 134-6PA21-0CU0 │ AI Energymeter RC HF V8.0 (104I/20O E3)                 │                                     │
+│ AI Energy Meter RC ST V8.0 (002I/002O)                  │ 6ES7 134-6PA21-0BU0 │ AI Energymeter RC ST V8.0 (2I/2O)                       │                                     │
+│ AI Energy Meter RC ST V8.0 (032I/020O)                  │ 6ES7 134-6PA21-0BU0 │ AI Energymeter RC ST V8.0 (32I/20O)                     │                                     │
+│ AI Energy Meter RC ST V8.0 (064I/020O)                  │ 6ES7 134-6PA21-0BU0 │ AI Energymeter RC ST V8.0 (64I/20O)                     │                                     │
+│ AI Energy Meter RC ST V8.0 (128I/020O)                  │ 6ES7 134-6PA21-0BU0 │ AI Energymeter RC ST V8.0 (128I/20O)                    │                                     │
+│ AI Energy Meter RC ST V8.0 (256I/020O)                  │ 6ES7 134-6PA21-0BU0 │ AI Energymeter RC ST V8.0 (256I/20O)                    │                                     │
+│ AI Energy Meter RC ST V8.0 (E0 012I/020O)               │ 6ES7 134-6PA21-0BU0 │ AI Energymeter RC ST V8.0 (12I/20O E0)                  │                                     │
+│ AI Energy Meter RC ST V8.0 (E1 004I/020O)               │ 6ES7 134-6PA21-0BU0 │ AI Energymeter RC ST V8.0 (4I/20O E1)                   │                                     │
+│ AI Energy Meter RC ST V8.0 (E2 012I/020O)               │ 6ES7 134-6PA21-0BU0 │ AI Energymeter RC ST V8.0 (12I/20O E2)                  │                                     │
+│ AI Energy Meter RC ST V8.0 (E3 104I/020O)               │ 6ES7 134-6PA21-0BU0 │ AI Energymeter RC ST V8.0 (104I/20O E3)                 │                                     │
+│ AI EnergyMeter 400VAC ST V3.0 (2I/2O)                   │ 6ES7 134-6PA01-0BD0 │ AI Energymeter 400VAC (2I/2O) V3.0                      │                                     │
+│ AI EnergyMeter 400VAC ST V3.0 (32I/12O)                 │ 6ES7 134-6PA01-0BD0 │ AI Energymeter 400VAC V3.0                              │                                     │
+│ AI EnergyMeter 480VAC ST V4.0 (002I/002O)               │ 6ES7 134-6PA20-0BD0 │ AI Energymeter 480VAC ST V4.0 (2I/2O)                   │                                     │
+│ AI EnergyMeter 480VAC ST V4.0 (032I/012O)               │ 6ES7 134-6PA20-0BD0 │ AI Energymeter 480VAC ST V4.0 (32I/12O)                 │                                     │
+│ AI EnergyMeter 480VAC ST V4.0 (064I/012O)               │ 6ES7 134-6PA20-0BD0 │ AI Energymeter 480VAC ST V4.0 (64I/12O)                 │                                     │
+│ AI EnergyMeter 480VAC ST V4.0 (128I/012O)               │ 6ES7 134-6PA20-0BD0 │ AI Energymeter 480VAC ST V4.0 (128I/12O)                │                                     │
+│ AI EnergyMeter 480VAC ST V4.0 (256I/012O)               │ 6ES7 134-6PA20-0BD0 │ AI Energymeter 480VAC ST V4.0 (256I/12O)                │                                     │
+│ AI EnergyMeter 480VAC ST V4.0 (E0 012I/012O)            │ 6ES7 134-6PA20-0BD0 │ AI Energymeter 480VAC ST V4.0 (12I/12O E0)              │                                     │
+│ AI EnergyMeter 480VAC ST V4.0 (E1 004I/012O)            │ 6ES7 134-6PA20-0BD0 │ AI Energymeter 480VAC ST V4.0 (4I/12O E1)               │                                     │
+│ AI EnergyMeter 480VAC ST V4.0 (E2 012I/012O)            │ 6ES7 134-6PA20-0BD0 │ AI Energymeter 480VAC ST V4.0 (12I/12O E2)              │                                     │
+│ AI EnergyMeter 480VAC ST V4.0 (E3 104I/012O)            │ 6ES7 134-6PA20-0BD0 │ AI Energymeter 480VAC ST V4.0 (104I/12O E3)             │                                     │
+│ AI EnergyMeter 480VAC/CT HF V6.0 (002I/002O)            │ 6ES7 134-6PA00-0CU0 │ AI Energymeter 480VAC CT HF V6.0 (2I/2O)                │                                     │
+│ AI EnergyMeter 480VAC/CT HF V6.0 (032I/020O)            │ 6ES7 134-6PA00-0CU0 │ AI Energymeter 480VAC CT HF V6.0 (32I/20O)              │                                     │
+│ AI EnergyMeter 480VAC/CT HF V6.0 (064I/020O)            │ 6ES7 134-6PA00-0CU0 │ AI Energymeter 480VAC CT HF V6.0 (64I/20O)              │                                     │
+│ AI EnergyMeter 480VAC/CT HF V6.0 (128I/020O)            │ 6ES7 134-6PA00-0CU0 │ AI Energymeter 480VAC CT HF V6.0 (128I/20O)             │                                     │
+│ AI EnergyMeter 480VAC/CT HF V6.0 (256I/020O)            │ 6ES7 134-6PA00-0CU0 │ AI Energymeter 480VAC CT HF V6.0 (256I/20O)             │                                     │
+│ AI EnergyMeter 480VAC/CT HF V6.0 (E0 012I/020O)         │ 6ES7 134-6PA00-0CU0 │ AI Energymeter 480VAC CT HF V6.0 (12I/20O E0)           │                                     │
+│ AI EnergyMeter 480VAC/CT HF V6.0 (E1 004I/020O)         │ 6ES7 134-6PA00-0CU0 │ AI Energymeter 480VAC CT HF V6.0 (4I/20O E1)            │                                     │
+│ AI EnergyMeter 480VAC/CT HF V6.0 (E2 012I/020O)         │ 6ES7 134-6PA00-0CU0 │ AI Energymeter 480VAC CT HF V6.0 (12I/20O E2)           │                                     │
+│ AI EnergyMeter 480VAC/CT HF V6.0 (E3 104I/020O)         │ 6ES7 134-6PA00-0CU0 │ AI Energymeter 480VAC CT HF V6.0 (104I/20O E3)          │                                     │
+│ AI EnergyMeter 480VAC/RC HF V6.0 (002I/002O)            │ 6ES7 134-6PA20-0CU0 │ AI Energymeter 480VAC RC HF V6.0 (2I/2O)                │                                     │
+│ AI EnergyMeter 480VAC/RC HF V6.0 (032I/020O)            │ 6ES7 134-6PA20-0CU0 │ AI Energymeter 480VAC RC HF V6.0 (32I/20O)              │                                     │
+│ AI EnergyMeter 480VAC/RC HF V6.0 (064I/020O)            │ 6ES7 134-6PA20-0CU0 │ AI Energymeter 480VAC RC HF V6.0 (64I/20O)              │                                     │
+│ AI EnergyMeter 480VAC/RC HF V6.0 (128I/020O)            │ 6ES7 134-6PA20-0CU0 │ AI Energymeter 480VAC RC HF V6.0 (128I/20O)             │                                     │
+│ AI EnergyMeter 480VAC/RC HF V6.0 (256I/020O)            │ 6ES7 134-6PA20-0CU0 │ AI Energymeter 480VAC RC HF V6.0 (256I/20O)             │                                     │
+│ AI EnergyMeter 480VAC/RC HF V6.0 (E0 012I/020O)         │ 6ES7 134-6PA20-0CU0 │ AI Energymeter 480VAC RC HF V6.0 (12I/20O E0)           │                                     │
+│ AI EnergyMeter 480VAC/RC HF V6.0 (E1 004I/020O)         │ 6ES7 134-6PA20-0CU0 │ AI Energymeter 480VAC RC HF V6.0 (4I/20O E1)            │                                     │
+│ AI EnergyMeter 480VAC/RC HF V6.0 (E2 012I/020O)         │ 6ES7 134-6PA20-0CU0 │ AI Energymeter 480VAC RC HF V6.0 (12I/20O E2)           │                                     │
+│ AI EnergyMeter 480VAC/RC HF V6.0 (E3 104I/020O)         │ 6ES7 134-6PA20-0CU0 │ AI Energymeter 480VAC RC HF V6.0 (104I/20O E3)          │                                     │
+│ AI EnergyMeter ST V1.0 (2I/2O)                          │ 6ES7 134-6PA00-0BD0 │ AI Energymeter (2I/2O)                                  │                                     │
+│ AI EnergyMeter ST V1.0 (32I/12O)                        │ 6ES7 134-6PA00-0BD0 │ AI Energymeter                                          │                                     │
+│ AI EnergyMeter ST V2.0 (2I/2O)                          │ 6ES7 134-6PA00-0BD0 │ AI Energymeter (2I/2O) V2.0                             │                                     │
+│ AI EnergyMeter ST V2.0 (32I/12O)                        │ 6ES7 134-6PA00-0BD0 │ AI Energymeter V2.0                                     │                                     │
+│ AQ 2xI ST V1.0                                          │ 6ES7 135-6GB00-0BA1 │ AQ 2xI ST                                               │                                     │
+│ AQ 2xI ST V1.0, QI                                      │ 6ES7 135-6GB00-0BA1 │ AQ 2xI ST, QI                                           │                                     │
+│ AQ 2xU ST V1.0                                          │ 6ES7 135-6FB00-0BA1 │ AQ 2xU ST                                               │                                     │
+│ AQ 2xU ST V1.0, QI                                      │ 6ES7 135-6FB00-0BA1 │ AQ 2xU ST, QI                                           │                                     │
+│ AQ 2xU/I HF V1.0                                        │ 6ES7 135-6HB00-0CA1 │ AQ 2xU/I HF                                             │                                     │
+│ AQ 2xU/I HF V1.0, QI                                    │ 6ES7 135-6HB00-0CA1 │ AQ 2xU/I HF, QI                                         │                                     │
+│ AQ 2xU/I HS V1.0                                        │ 6ES7 135-6HB00-0DA1 │ AQ 2xU/I HS                                             │                                     │
+│ AQ 2xU/I HS V1.0, QI                                    │ 6ES7 135-6HB00-0DA1 │ AQ 2xU/I HS, QI                                         │                                     │
+│ AQ 2xU/I HS V1.1                                        │ 6ES7 135-6HB00-0DA1 │ AQ 2xU/I HS V1.1                                        │                                     │
+│ AQ 2xU/I HS V1.1, QI                                    │ 6ES7 135-6HB00-0DA1 │ AQ 2xU/I HS V1.1, QI                                    │                                     │
+│ AQ 2xU/I HS V2.0                                        │ 6ES7 135-6HB00-0DA1 │ AQ 2xU/I HS V2.0                                        │                                     │
+│ AQ 2xU/I HS V2.0, QI                                    │ 6ES7 135-6HB00-0DA1 │ AQ 2xU/I HS V2.0, QI                                    │                                     │
+│ AQ 4xI HART V1.0                                        │ 6ES7 135-6TD00-0CA1 │ AQ 4xI HART                                             │                                     │
+│ AQ 4xI HART V1.0, 4 tags                                │ 6ES7 135-6TD00-0CA1 │ AQ 4xI HART, 4 Variablen                                │                                     │
+│ AQ 4xI HART V1.0, 4 tags, QI                            │ 6ES7 135-6TD00-0CA1 │ AQ 4xI HART, 4 Variablen, QI                            │                                     │
+│ AQ 4xI HART V1.0, QI                                    │ 6ES7 135-6TD00-0CA1 │ AQ 4xI HART, QI                                         │                                     │
+│ AQ 4xU/I 4xM12 V1.0                                     │ 6ES7 145-5ND00-0BA0 │ AQ 145-5ND00-0BA0                                       │                                     │
+│ AQ 4xU/I 4xM12 V1.0, QI                                 │ 6ES7 145-5ND00-0BA0 │ AQ 145-5ND00-0BA0 QI                                    │                                     │
+│ AQ 4xU/I 4xM12 V2.0                                     │ 6ES7 145-5ND00-0BA0 │ AQ 4xU/I 4xM12 V2.0                                     │                                     │
+│ AQ 4xU/I 4xM12 V2.0, QI                                 │ 6ES7 145-5ND00-0BA0 │ AQ 4xU/I 4xM12 V2.0 QI                                  │                                     │
+│ AQ 4xU/I ST V1.0                                        │ 6ES7 135-6HD00-0BA1 │ AQ 4xU/I ST                                             │                                     │
+│ AQ 4xU/I ST V1.1                                        │ 6ES7 135-6HD00-0BA1 │ AQ 4xU/I ST V1.1                                        │                                     │
+│ AQ 4xU/I ST V1.1, QI                                    │ 6ES7 135-6HD00-0BA1 │ AQ 4xU/I ST V1.1, QI                                    │                                     │
+│ BA-Send 1xFC                                            │ 6ES7 193-6AS00-0AA0 │ BA-Send 1xFC                                            │                                     │
+│ BU-Cover 15 mm                                          │ 6ES7 133-6CV15-1AM0 │ BU Cover 15 mm                                          │                                     │
+│ BU-Cover 20 mm                                          │ 6ES7 133-6CV20-1AM0 │ BU Cover 20 mm                                          │                                     │
+│ BU-Cover 30 mm                                          │ 3RK1 908-1CA00-0BP0 │ BU Cover 30 mm                                          │                                     │
+│ CM 1xDALI V1.0                                          │ 6ES7 137-6CA00-0BU0 │ CM DALI                                                 │                                     │
+│ CM 4xIO-Link 16I/16O 4xM12 V1.0                         │ 6ES7 147-5JD00-0BA0 │ IO-Link 147-5JD00-0BA0 16I/16O                          │                                     │
+│ CM 4xIO-Link 1I/1O 4xM12 V1.0                           │ 6ES7 147-5JD00-0BA0 │ IO-Link 147-5JD00-0BA0 1I/1O                            │                                     │
+│ CM 4xIO-Link 2I/2O 4xM12 V1.0                           │ 6ES7 147-5JD00-0BA0 │ IO-Link 147-5JD00-0BA0 2I/2O                            │                                     │
+│ CM 4xIO-Link 32I/32O 4xM12 V1.0                         │ 6ES7 147-5JD00-0BA0 │ IO-Link 147-5JD00-0BA0                                  │                                     │
+│ CM 4xIO-Link 4I/4O 4xM12 V1.0                           │ 6ES7 147-5JD00-0BA0 │ IO-Link 147-5JD00-0BA0 4I/4O                            │                                     │
+│ CM 4xIO-Link 8I/8O 4xM12 V1.0                           │ 6ES7 147-5JD00-0BA0 │ IO-Link 147-5JD00-0BA0 8I/8O                            │                                     │
+│ CM 4xIO-Link V1.0                                       │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link                                            │                                     │
+│ CM 4xIO-Link V1.1 12I/8O 4xM12                          │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.1 12I/8O                                │                                     │
+│ CM 4xIO-Link V1.1 16I/16O 4xM12                         │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.1 16I/16O                               │                                     │
+│ CM 4xIO-Link V1.1 20I/16O 4xM12                         │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.1 20I/16O                               │                                     │
+│ CM 4xIO-Link V1.1 32I/32O 4xM12                         │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.1 32I/32O                               │                                     │
+│ CM 4xIO-Link V1.1 4I/4O 4xM12                           │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.1 4I/4O                                 │                                     │
+│ CM 4xIO-Link V1.1 8I/0O 4xM12                           │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.1 8I/0O                                 │                                     │
+│ CM 4xIO-Link V1.1 8I/8O 4xM12                           │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.1 8I/8O                                 │                                     │
+│ CM 4xIO-Link V1.2 100I/96O                              │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 100I/96O                              │                                     │
+│ CM 4xIO-Link V1.2 112I/112O                             │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 112I/112O                             │                                     │
+│ CM 4xIO-Link V1.2 116I/112O                             │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 116I/112O                             │                                     │
+│ CM 4xIO-Link V1.2 128I/128O                             │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 128I/128O                             │                                     │
+│ CM 4xIO-Link V1.2 12I/8O                                │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 12I/8O                                │                                     │
+│ CM 4xIO-Link V1.2 132I/128O                             │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 132I/128O                             │                                     │
+│ CM 4xIO-Link V1.2 16I/16O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 16I/16O                               │                                     │
+│ CM 4xIO-Link V1.2 20I/16O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 20I/16O                               │                                     │
+│ CM 4xIO-Link V1.2 32I/32O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 32I/32O                               │                                     │
+│ CM 4xIO-Link V1.2 36I/32O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 36I/32O                               │                                     │
+│ CM 4xIO-Link V1.2 48I/48O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 48I/48O                               │                                     │
+│ CM 4xIO-Link V1.2 4I/4O                                 │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 4I/4O                                 │                                     │
+│ CM 4xIO-Link V1.2 52I/48O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 52I/48O                               │                                     │
+│ CM 4xIO-Link V1.2 64I/64O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 64I/64O                               │                                     │
+│ CM 4xIO-Link V1.2 68I/64O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 68I/64O                               │                                     │
+│ CM 4xIO-Link V1.2 80I/80O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 80I/80O                               │                                     │
+│ CM 4xIO-Link V1.2 84I/80O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 84I/80O                               │                                     │
+│ CM 4xIO-Link V1.2 8I/0O                                 │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 8I/0O                                 │                                     │
+│ CM 4xIO-Link V1.2 8I/8O                                 │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 8I/8O                                 │                                     │
+│ CM 4xIO-Link V1.2 96I/96O                               │ 6ES7 147-5JD00-0BA0 │ CM 4xIO-Link V1.2 96I/96O                               │                                     │
+│ CM 4xIO-Link V2.0 16I/16O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2 16I/16O                                 │                                     │
+│ CM 4xIO-Link V2.0 1I/1O                                 │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2 1I/1O                                   │                                     │
+│ CM 4xIO-Link V2.0 2I/2O                                 │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2 2I/2O                                   │                                     │
+│ CM 4xIO-Link V2.0 32I/32O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2 32I/32O                                 │                                     │
+│ CM 4xIO-Link V2.0 8I/8O                                 │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2 8I/8O                                   │                                     │
+│ CM 4xIO-Link V2.1 144I/128O                             │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.1 144I/128O                             │                                     │
+│ CM 4xIO-Link V2.1 16I/16O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.1 16I/16O                               │                                     │
+│ CM 4xIO-Link V2.1 1I/1O                                 │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.1 1I/1O                                 │                                     │
+│ CM 4xIO-Link V2.1 2I/2O                                 │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.1 2I/2O                                 │                                     │
+│ CM 4xIO-Link V2.1 32I/32O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.1 32I/32O                               │                                     │
+│ CM 4xIO-Link V2.1 64I/64O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.1 64I/64O                               │                                     │
+│ CM 4xIO-Link V2.1 8I/8O                                 │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.1 8I/8O                                 │                                     │
+│ CM 4xIO-Link V2.2 12I/8O                                │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 12I/8O                                │                                     │
+│ CM 4xIO-Link V2.2 144I/128O                             │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 144I/128O                             │                                     │
+│ CM 4xIO-Link V2.2 16I/16O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 16I/16O                               │                                     │
+│ CM 4xIO-Link V2.2 20I/16O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 20I/16O                               │                                     │
+│ CM 4xIO-Link V2.2 32I/32O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 32I/32O                               │                                     │
+│ CM 4xIO-Link V2.2 36I/32O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 36I/32O                               │                                     │
+│ CM 4xIO-Link V2.2 4I/4O                                 │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 4I/4O                                 │                                     │
+│ CM 4xIO-Link V2.2 64I/64O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 64I/64O                               │                                     │
+│ CM 4xIO-Link V2.2 68I/64O                               │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 68I/64O                               │                                     │
+│ CM 4xIO-Link V2.2 8I/0O                                 │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 8I/0O                                 │                                     │
+│ CM 4xIO-Link V2.2 8I/8O                                 │ 6ES7 137-6BD00-0BA0 │ CM 4xIO-Link V2.2 8I/8O                                 │                                     │
+│ CM AS-i Master ST V1.0                                  │ 3RK7 137-6SA00-0BC1 │ CM AS-i Master                                          │                                     │
+│ CM AS-i Master ST V1.1 16I/16O                          │ 3RK7 137-6SA00-0BC1 │ CM AS-i Master ST (16I/16O) V1.1                        │                                     │
+│ CM AS-i Master ST V1.1 32I/32O                          │ 3RK7 137-6SA00-0BC1 │ CM AS-i Master ST V1.1                                  │                                     │
+│ CM AS-i Master ST V2.0 16I/16O                          │ 3RK7 137-6SA00-0BC1 │ CM AS-i Master ST (16I/16O) V2.0                        │                                     │
+│ CM AS-i Master ST V2.0 32I/32O                          │ 3RK7 137-6SA00-0BC1 │ CM AS-i Master ST V2.0                                  │                                     │
+│ CM PtP Performance Mode V2.0                            │ 6ES7 137-6AA01-0BA0 │ PTPCM Freeport Performance Mode V2.0                    │                                     │
+│ CM PtP V1.0                                             │ 6ES7 137-6AA00-0BA0 │ PTPCM Freeport                                          │                                     │
+│ CM PtP V2.0                                             │ 6ES7 137-6AA01-0BA0 │ PTPCM Freeport V2.0                                     │                                     │
+│ DI 16x24VDC 8xM12 V1.0                                  │ 6ES7 141-5AH00-0BA0 │ DI16 141-5AH00-0BA0                                     │                                     │
+│ DI 16x24VDC 8xM12 V1.0, QI                              │ 6ES7 141-5AH00-0BA0 │ DI16 141-5AH00-0BA0 QI                                  │                                     │
+│ DI 16x24VDC 8xM12 V2.0                                  │ 6ES7 141-5AH00-0BA0 │ DI 16x24VDC 8xM12 V2.0                                  │                                     │
+│ DI 16x24VDC 8xM12 V2.0, QI                              │ 6ES7 141-5AH00-0BA0 │ DI 16x24VDC 8xM12 V2.0, QI                              │                                     │
+│ DI 16x24VDC ST V0.0                                     │ 6ES7 131-6BH01-0BA0 │ DI 16x24VDC ST V0.0                                     │                                     │
+│ DI 16x24VDC ST V0.0, QI                                 │ 6ES7 131-6BH01-0BA0 │ DI 16x24VDC ST V0.0, QI                                 │                                     │
+│ DI 16x24VDC ST V1.0                                     │ 6ES7 131-6BH00-0BA0 │ DI 16x24VDC ST                                          │                                     │
+│ DI 16x24VDC ST V1.1                                     │ 6ES7 131-6BH00-0BA0 │ DI 16x24VDC ST V1.1                                     │                                     │
+│ DI 16x24VDC ST V1.1, QI                                 │ 6ES7 131-6BH00-0BA0 │ DI 16x24VDC ST V1.1, QI                                 │                                     │
+│ DI 4x120..230VAC ST V0.0                                │ 6ES7 131-6FD01-0BB1 │ DI 4x120-230VAC ST V0.0                                 │                                     │
+│ DI 4x120..230VAC ST V0.0, QI                            │ 6ES7 131-6FD01-0BB1 │ DI 4x120-230VAC ST V0.0, QI                             │                                     │
+│ DI 4x120..230VAC ST V1.0                                │ 6ES7 131-6FD00-0BB1 │ DI 4x120-230VAC ST                                      │                                     │
+│ DI 4x120..230VAC ST V1.0, QI                            │ 6ES7 131-6FD00-0BB1 │ DI 4x120-230VAC ST, QI                                  │                                     │
+│ DI 8x/DQ 8x24VDC/0.5A ST V1.0                           │ 6ES7 133-6BH00-0BA0 │ DI 8x/DQ 8x24VDC/0.5A ST V1.0                           │                                     │
+│ DI 8x/DQ 8x24VDC/0.5A ST V1.0, QI                       │ 6ES7 133-6BH00-0BA0 │ DI 8x/DQ 8x24VDC/0.5A ST V1.0, QI                       │                                     │
+│ DI 8x24VAC/48VUC BA V0.0                                │ 6ES7 131-6CF00-0AU0 │ DI 8x24VAC/48VUC BA V0.0                                │                                     │
+│ DI 8x24VDC 4xM12 V1.0                                   │ 6ES7 141-5AF00-0BA0 │ DI8 141-5AF00-0BA0                                      │                                     │
+│ DI 8x24VDC 4xM12 V1.0, QI                               │ 6ES7 141-5AF00-0BA0 │ DI8 141-5AF00-0BA0 QI                                   │                                     │
+│ DI 8x24VDC 4xM12 V2.0                                   │ 6ES7 141-5AF00-0BA0 │ DI 8x24VDC 4xM12 V2.0                                   │                                     │
+│ DI 8x24VDC 4xM12 V2.0, QI                               │ 6ES7 141-5AF00-0BA0 │ DI 8x24VDC 4xM12 V2.0, QI                               │                                     │
+│ DI 8x24VDC 8xM8 V1.0                                    │ 6ES7 141-5BF00-0BA0 │ DI 8x24VDC 8xM8                                         │                                     │
+│ DI 8x24VDC 8xM8 V1.0, QI                                │ 6ES7 141-5BF00-0BA0 │ DI 8x24VDC 8xM8, QI                                     │                                     │
+│ DI 8x24VDC 8xM8 V2.0                                    │ 6ES7 141-5BF00-0BA0 │ DI 8x24VDC 8xM8 V2.0                                    │                                     │
+│ DI 8x24VDC 8xM8 V2.0, QI                                │ 6ES7 141-5BF00-0BA0 │ DI 8x24VDC 8xM8 V2.0, QI                                │                                     │
+│ DI 8x24VDC BA V0.0                                      │ 6ES7 131-6BF01-0AA0 │ DI 8x24VDC BA V0.0                                      │                                     │
+│ DI 8x24VDC BA V1.0                                      │ 6ES7 131-6BF00-0AA0 │ DI 8x24VDC BA                                           │                                     │
+│ DI 8x24VDC HF V1.0                                      │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF                                           │                                     │
+│ DI 8x24VDC HF V1.1                                      │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V1.1                                      │                                     │
+│ DI 8x24VDC HF V1.1, QI                                  │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V1.1, QI                                  │                                     │
+│ DI 8x24VDC HF V1.2                                      │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V1.2                                      │                                     │
+│ DI 8x24VDC HF V1.2, MSI                                 │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V1.2, MSI                                 │ DI 8x24VDC HF V1.2 MSI              │
+│ DI 8x24VDC HF V1.2, QI                                  │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V1.2, QI                                  │                                     │
+│ DI 8x24VDC HF V2.0                                      │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V2.0                                      │                                     │
+│ DI 8x24VDC HF V2.0, MSI                                 │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V2.0, MSI                                 │ DI 8x24VDC HF V2.0 MSI              │
+│ DI 8x24VDC HF V2.0, QI                                  │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V2.0, QI                                  │                                     │
+│ DI 8x24VDC HF V2.0, S.2                                 │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V2.0, S.2                                 │                                     │
+│ DI 8x24VDC HF V2.0, S.2 QI                              │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V2.0, S.2 QI                              │                                     │
+│ DI 8x24VDC HF V2.0, S.4                                 │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V2.0, S.4                                 │                                     │
+│ DI 8x24VDC HF V2.0, S.4 QI                              │ 6ES7 131-6BF00-0CA0 │ DI 8x24VDC HF V2.0, S.4 QI                              │                                     │
+│ DI 8x24VDC HS V1.0                                      │ 6ES7 131-6BF00-0DA0 │ DI 8x24VDC HS                                           │                                     │
+│ DI 8x24VDC HS V1.0, CNT                                 │ 6ES7 131-6BF00-0DA0 │ DI 8x24VDC HS Count                                     │                                     │
+│ DI 8x24VDC HS V1.0, QI                                  │ 6ES7 131-6BF00-0DA0 │ DI 8x24VDC HS, QI                                       │                                     │
+│ DI 8x24VDC SRC BA V0.0                                  │ 6ES7 131-6BF61-0AA0 │ DI 8x24VDC SRC V0.0                                     │                                     │
+│ DI 8x24VDC SRC BA V1.0                                  │ 6ES7 131-6BF60-0AA0 │ DI 8x24VDC SRC                                          │                                     │
+│ DI 8x24VDC ST V0.0                                      │ 6ES7 131-6BF01-0BA0 │ DI 8x24VDC ST V0.0                                      │                                     │
+│ DI 8x24VDC ST V0.0, QI                                  │ 6ES7 131-6BF01-0BA0 │ DI 8x24VDC ST V0.0, QI                                  │                                     │
+│ DI 8x24VDC ST V1.0                                      │ 6ES7 131-6BF00-0BA0 │ DI 8x24VDC ST                                           │                                     │
+│ DI 8x24VDC ST V1.1                                      │ 6ES7 131-6BF00-0BA0 │ DI 8x24VDC ST V1.1                                      │                                     │
+│ DI 8x24VDC ST V1.1, QI                                  │ 6ES7 131-6BF00-0BA0 │ DI 8x24VDC ST V1.1, QI                                  │                                     │
+│ DI 8xNAMUR HF V1.0, QI                                  │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF, QI                                       │                                     │
+│ DI 8xNAMUR HF V2.0, QI                                  │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF V2.0, QI                                  │                                     │
+│ DI 8xNAMUR HF V2.0, QI, CNT 1                           │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF V2.0, QI, CNT 1                           │                                     │
+│ DI 8xNAMUR HF V2.0, QI, CNT 1, SCALE                    │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF V2.0, QI, CNT 1, SCALE                    │                                     │
+│ DI 8xNAMUR HF V2.0, QI, CNT 2                           │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF V2.0, QI, CNT 2                           │                                     │
+│ DI 8xNAMUR HF V2.0, QI, CNT 2, SCALE                    │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF V2.0, QI, CNT 2, SCALE                    │                                     │
+│ DI 8xNAMUR HF V2.0, QI, CNT 3                           │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF V2.0, QI, CNT 3                           │                                     │
+│ DI 8xNAMUR HF V2.0, QI, CNT 3, SCALE                    │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF V2.0, QI, CNT 3, SCALE                    │                                     │
+│ DI 8xNAMUR HF V2.0, QI, CNT 4                           │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF V2.0, QI, CNT 4                           │                                     │
+│ DI 8xNAMUR HF V2.0, QI, CNT 4, SCALE                    │ 6ES7 131-6TF00-0CA0 │ DI 8xNAMUR HF V2.0, QI, CNT 4, SCALE                    │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.0                            │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0                                      │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.0, 2xCount                   │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0 2xCount                              │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.0, 4xCount                   │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0 4xCount                              │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.0, QI                        │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0 QI                                   │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.1                            │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0 V1.1                                 │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.1, 2xCount                   │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0 V1.1 2xCount                         │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.1, 4xCount                   │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0 V1.1 4xCount                         │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.1, DI8/DQ8                   │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0 V1.1 8/8                             │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.1, DQ16                      │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0 V1.1 0/16                            │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V1.1, QI                        │ 6ES7 143-5AH00-0BA0 │ DIO 143-5AH00-0BA0 V1.1 QI                              │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V2.0                            │ 6ES7 143-5AH00-0BA0 │ DIQ 16x24VDC/0.5A 8xM12 V2.0                            │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V2.0, 2xCnt                     │ 6ES7 143-5AH00-0BA0 │ DIQ 16x24VDC/0.5A 8xM12 V2.0 2xCount                    │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V2.0, 4xCnt                     │ 6ES7 143-5AH00-0BA0 │ DIQ 16x24VDC/0.5A 8xM12 V2.0 4xCount                    │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V2.0, DI8/DQ8                   │ 6ES7 143-5AH00-0BA0 │ DIQ 16x24VDC/0.5A 8xM12 V2.0 8/8                        │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V2.0, DIQ MIX                   │ 6ES7 143-5AH00-0BA0 │ DIQ 16x24VDC/0.5A 8xM12 V2.0 8/8 MIX                    │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V2.0, DQ16                      │ 6ES7 143-5AH00-0BA0 │ DIQ 16x24VDC/0.5A 8xM12 V2.0 0/16                       │                                     │
+│ DIQ 16x24VDC/0.5A 8xM12 V2.0, QI                        │ 6ES7 143-5AH00-0BA0 │ DIQ 16x24VDC/0.5A 8xM12 V2.0, QI                        │                                     │
+│ DIQ 4+DQ 4x24VDC/0.5A 4xM12 V1.0                        │ 6ES7 143-5AF00-0BA0 │ DIO 143-5AF00-0BA0                                      │                                     │
+│ DIQ 4+DQ 4x24VDC/0.5A 4xM12 V1.0, QI                    │ 6ES7 143-5AF00-0BA0 │ DIO 143-5AF00-0BA0 QI                                   │                                     │
+│ DIQ 4+DQ 4x24VDC/0.5A 4xM12 V2.0                        │ 6ES7 143-5AF00-0BA0 │ DIQ 4+DQ 4x24VDC/0.5A 4xM12 V2.0                        │                                     │
+│ DIQ 4+DQ 4x24VDC/0.5A 4xM12 V2.0, QI                    │ 6ES7 143-5AF00-0BA0 │ DIQ 4+DQ 4x24VDC/0.5A 4xM12 V2.0, QI                    │                                     │
+│ DIQ 4+DQ 4x24VDC/0.5A 8xM8 V1.0                         │ 6ES7 143-5BF00-0BA0 │ DIQ 4+DQ 4x24VDC/0.5A 8xM8                              │                                     │
+│ DIQ 4+DQ 4x24VDC/0.5A 8xM8 V1.0, QI                     │ 6ES7 143-5BF00-0BA0 │ DIQ 4+DQ 4x24VDC/0.5A 8xM8, QI                          │                                     │
+│ DIQ 4+DQ 4x24VDC/0.5A 8xM8 V2.0                         │ 6ES7 143-5BF00-0BA0 │ DIQ 4+DQ 4x24VDC/0.5A 8xM8 V2.0                         │                                     │
+│ DIQ 4+DQ 4x24VDC/0.5A 8xM8 V2.0, QI                     │ 6ES7 143-5BF00-0BA0 │ DIQ 4+DQ 4x24VDC/0.5A 8xM8 V2.0, QI                     │                                     │
+│ DQ 16x24VDC/0.5A BA V0.0                                │ 6ES7 132-6BH00-0AA0 │ DQ 16x24VDC/0.5A BA V0.0                                │                                     │
+│ DQ 16x24VDC/0.5A HF V1.0                                │ 6ES7 132-6BH00-0CA0 │ DQ 16x24VDC/0,5A HF V1.0                                │                                     │
+│ DQ 16x24VDC/0.5A HF V1.0, MSO                           │ 6ES7 132-6BH00-0CA0 │ DQ 16x24VDC/0,5A HF V1.0, MSQ                           │ DQ 16x24VDC/0,5A HF V1.0 MSQ        │
+│ DQ 16x24VDC/0.5A HF V1.0, QI                            │ 6ES7 132-6BH00-0CA0 │ DQ 16x24VDC/0,5A HF V1.0, QI                            │                                     │
+│ DQ 16x24VDC/0.5A HF V1.0, S.2                           │ 6ES7 132-6BH00-0CA0 │ DQ 16x24VDC/0,5A HF V1.0, S.2                           │                                     │
+│ DQ 16x24VDC/0.5A HF V1.0, S.2 QI                        │ 6ES7 132-6BH00-0CA0 │ DQ 16x24VDC/0,5A HF V1.0, S.2 QI                        │                                     │
+│ DQ 16x24VDC/0.5A HF V1.0, S.4                           │ 6ES7 132-6BH00-0CA0 │ DQ 16x24VDC/0,5A HF V1.0, S.4                           │                                     │
+│ DQ 16x24VDC/0.5A HF V1.0, S.4 QI                        │ 6ES7 132-6BH00-0CA0 │ DQ 16x24VDC/0,5A HF V1.0, S.4 QI                        │                                     │
+│ DQ 16x24VDC/0.5A ST V0.0                                │ 6ES7 132-6BH01-0BA0 │ DQ 16x24VDC/0,5A ST V0.0                                │                                     │
+│ DQ 16x24VDC/0.5A ST V0.0, QI                            │ 6ES7 132-6BH01-0BA0 │ DQ 16x24VDC/0,5A ST V0.0, QI                            │                                     │
+│ DQ 16x24VDC/0.5A ST V1.0                                │ 6ES7 132-6BH00-0BA0 │ DQ 16x24VDC/0,5A ST                                     │                                     │
+│ DQ 16x24VDC/0.5A ST V1.1                                │ 6ES7 132-6BH00-0BA0 │ DQ 16x24VDC/0,5A ST V1.1                                │                                     │
+│ DQ 16x24VDC/0.5A ST V1.1, QI                            │ 6ES7 132-6BH00-0BA0 │ DQ 16x24VDC/0,5A ST V1.1, QI                            │                                     │
+│ DQ 4x24..230VAC/2A HF PC V1.0                           │ 6ES7 132-6FD00-0CU0 │ DQ 4x24..230VAC/2A HF PC V1.0                           │                                     │
+│ DQ 4x24..230VAC/2A HF PC V1.0, QI                       │ 6ES7 132-6FD00-0CU0 │ DQ 4x24..230VAC/2A HF PC V1.0, QI                       │                                     │
+│ DQ 4x24..230VAC/2A HF V1.0                              │ 6ES7 132-6FD00-0CU0 │ DQ 4x24..230VAC/2A HF V1.0                              │                                     │
+│ DQ 4x24..230VAC/2A HF V1.0, QI                          │ 6ES7 132-6FD00-0CU0 │ DQ 4x24..230VAC/2A HF V1.0, QI                          │                                     │
+│ DQ 4x24..230VAC/2A ST V1.0                              │ 6ES7 132-6FD00-0BB1 │ DQ 4x24-230VAC/2A ST                                    │                                     │
+│ DQ 4x24..230VAC/2A ST V1.0, QI                          │ 6ES7 132-6FD00-0BB1 │ DQ 4x24-230VAC/2A ST, QI                                │                                     │
+│ DQ 4x24VDC/2A HF V1.0                                   │ 6ES7 132-6BD20-0CA0 │ DQ 4x24VDC/2A HF                                        │                                     │
+│ DQ 4x24VDC/2A HF V1.0                                   │ 6ES7 132-6BD21-0CA0 │ DQ 4x24VDC/2A HF V1.0 (6BD21)                           │                                     │
+│ DQ 4x24VDC/2A HF V1.0, MSO                              │ 6ES7 132-6BD20-0CA0 │ DQ 4x24VDC/2A HF, MSQ                                   │ DQ 4x24VDC/2A HF MSQ                │
+│ DQ 4x24VDC/2A HF V1.0, MSO                              │ 6ES7 132-6BD21-0CA0 │ DQ 4x24VDC/2A HF V1.0, MSQ (6BD21)                      │ DQ 4x24VDC/2A HF V1.0 MSQ (6BD21)   │
+│ DQ 4x24VDC/2A HF V1.0, QI                               │ 6ES7 132-6BD20-0CA0 │ DQ 4x24VDC/2A HF, QI                                    │                                     │
+│ DQ 4x24VDC/2A HF V1.0, QI                               │ 6ES7 132-6BD21-0CA0 │ DQ 4x24VDC/2A HF V1.0, QI (6BD21)                       │                                     │
+│ DQ 4x24VDC/2A HF V1.0, S.2                              │ 6ES7 132-6BD21-0CA0 │ DQ 4x24VDC/2A HF V1.0, S.2 (6BD21)                      │                                     │
+│ DQ 4x24VDC/2A HF V1.0, S.2 QI                           │ 6ES7 132-6BD21-0CA0 │ DQ 4x24VDC/2A HF V1.0, S.2 QI (6BD21)                   │                                     │
+│ DQ 4x24VDC/2A HF V2.0                                   │ 6ES7 132-6BD20-0CA0 │ DQ 4x24VDC/2A HF V2.0                                   │                                     │
+│ DQ 4x24VDC/2A HF V2.0, MSO                              │ 6ES7 132-6BD20-0CA0 │ DQ 4x24VDC/2A HF V2.0, MSQ                              │ DQ 4x24VDC/2A HF V2.0 MSQ           │
+│ DQ 4x24VDC/2A HF V2.0, QI                               │ 6ES7 132-6BD20-0CA0 │ DQ 4x24VDC/2A HF V2.0, QI                               │                                     │
+│ DQ 4x24VDC/2A HF V2.0, S.2                              │ 6ES7 132-6BD20-0CA0 │ DQ 4x24VDC/2A HF V2.0, S.2                              │                                     │
+│ DQ 4x24VDC/2A HF V2.0, S.2 QI                           │ 6ES7 132-6BD20-0CA0 │ DQ 4x24VDC/2A HF V2.0, S.2 QI                           │                                     │
+│ DQ 4x24VDC/2A HS V1.0                                   │ 6ES7 132-6BD20-0DA0 │ DQ 4x24VDC/2A HS                                        │                                     │
+│ DQ 4x24VDC/2A HS V1.0, PWM                              │ 6ES7 132-6BD20-0DA0 │ DQ 4x24VDC/2A HS PWM                                    │                                     │
+│ DQ 4x24VDC/2A HS V1.0, QI                               │ 6ES7 132-6BD20-0DA0 │ DQ 4x24VDC/2A HS, QI                                    │                                     │
+│ DQ 4x24VDC/2A HS V2.0                                   │ 6ES7 132-6BD20-0DA0 │ DQ 4x24VDC/2A HS V2.0                                   │                                     │
+│ DQ 4x24VDC/2A HS V2.0 MCC (16 Byte) MtM                 │ 6ES7 132-6BD20-0DA0 │ DQ 4x24VDC/2A HS V2.0, MCC (16 Byte) MtM                │                                     │
+│ DQ 4x24VDC/2A HS V2.0 MCC (6 Byte) MtM                  │ 6ES7 132-6BD20-0DA0 │ DQ 4x24VDC/2A HS V2.0, MCC (6 Byte) MtM                 │                                     │
+│ DQ 4x24VDC/2A HS V2.0 PWM                               │ 6ES7 132-6BD20-0DA0 │ DQ 4x24VDC/2A HS V2.0 PWM                               │                                     │
+│ DQ 4x24VDC/2A HS V2.0, QI                               │ 6ES7 132-6BD20-0DA0 │ DQ 4x24VDC/2A HS V2.0, QI                               │                                     │
+│ DQ 4x24VDC/2A ST V1.0                                   │ 6ES7 132-6BD20-0BA0 │ DQ 4x24VDC/2A ST                                        │                                     │
+│ DQ 4x24VDC/2A ST V1.0                                   │ 6ES7 132-6BD21-0BA0 │ DQ 4x24VDC/2A ST V1.0 (6BD21)                           │                                     │
+│ DQ 4x24VDC/2A ST V1.0, QI                               │ 6ES7 132-6BD21-0BA0 │ DQ 4x24VDC/2A ST V1.0, QI (6BD21)                       │                                     │
+│ DQ 4x24VDC/2A ST V1.1                                   │ 6ES7 132-6BD20-0BA0 │ DQ 4x24VDC/2A ST V1.1                                   │                                     │
+│ DQ 4x24VDC/2A ST V1.1, QI                               │ 6ES7 132-6BD20-0BA0 │ DQ 4x24VDC/2A ST V1.1, QI                               │                                     │
+│ DQ 8x24VDC/0.5A BA V0.0                                 │ 6ES7 132-6BF01-0AA0 │ DQ 8x24VDC/0.5A BA V0.0                                 │                                     │
+│ DQ 8x24VDC/0.5A BA V1.0                                 │ 6ES7 132-6BF00-0AA0 │ DQ 8x24VDC/0.5A BA                                      │                                     │
+│ DQ 8x24VDC/0.5A HF V1.0                                 │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF                                      │                                     │
+│ DQ 8x24VDC/0.5A HF V1.0                                 │ 6ES7 132-6BF01-0CA0 │ DQ 8x24VDC/0,5A HF V1.0 (6BF01)                         │                                     │
+│ DQ 8x24VDC/0.5A HF V1.0, MSO                            │ 6ES7 132-6BF01-0CA0 │ DQ 8x24VDC/0,5A HF V1.0, MSQ (6BF01)                    │ DQ 8x24VDC/0,5A HF V1.0 MSQ (6BF01) │
+│ DQ 8x24VDC/0.5A HF V1.0, QI                             │ 6ES7 132-6BF01-0CA0 │ DQ 8x24VDC/0,5A HF V1.0, QI (6BF01)                     │                                     │
+│ DQ 8x24VDC/0.5A HF V1.0, S.2                            │ 6ES7 132-6BF01-0CA0 │ DQ 8x24VDC/0,5A HF V1.0, S.2 (6BF01)                    │                                     │
+│ DQ 8x24VDC/0.5A HF V1.0, S.2 QI                         │ 6ES7 132-6BF01-0CA0 │ DQ 8x24VDC/0,5A HF V1.0, S.2 QI (6BF01)                 │                                     │
+│ DQ 8x24VDC/0.5A HF V1.0, S.4                            │ 6ES7 132-6BF01-0CA0 │ DQ 8x24VDC/0,5A HF V1.0, S.4 (6BF01)                    │                                     │
+│ DQ 8x24VDC/0.5A HF V1.0, S.4 QI                         │ 6ES7 132-6BF01-0CA0 │ DQ 8x24VDC/0,5A HF V1.0, S.4 QI (6BF01)                 │                                     │
+│ DQ 8x24VDC/0.5A HF V1.1                                 │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V1.1                                 │                                     │
+│ DQ 8x24VDC/0.5A HF V1.1, QI                             │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V1.1, QI                             │                                     │
+│ DQ 8x24VDC/0.5A HF V1.2                                 │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V1.2                                 │                                     │
+│ DQ 8x24VDC/0.5A HF V1.2, MSO                            │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V1.2, MSQ                            │ DQ 8x24VDC/0,5A HF V1.2 MSQ         │
+│ DQ 8x24VDC/0.5A HF V1.2, QI                             │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V1.2, QI                             │                                     │
+│ DQ 8x24VDC/0.5A HF V2.0                                 │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V2.0                                 │                                     │
+│ DQ 8x24VDC/0.5A HF V2.0, MSO                            │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V2.0, MSQ                            │ DQ 8x24VDC/0,5A HF V2.0 MSQ         │
+│ DQ 8x24VDC/0.5A HF V2.0, QI                             │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V2.0, QI                             │                                     │
+│ DQ 8x24VDC/0.5A HF V2.0, S.2                            │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V2.0, S.2                            │                                     │
+│ DQ 8x24VDC/0.5A HF V2.0, S.2 QI                         │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V2.0, S.2 QI                         │                                     │
+│ DQ 8x24VDC/0.5A HF V2.0, S.4                            │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V2.0, S.4                            │                                     │
+│ DQ 8x24VDC/0.5A HF V2.0, S.4 QI                         │ 6ES7 132-6BF00-0CA0 │ DQ 8x24VDC/0,5A HF V2.0, S.4 QI                         │                                     │
+│ DQ 8x24VDC/0.5A SNK BA V0.0                             │ 6ES7 132-6BF61-0AA0 │ DQ 8x24VDC/0,5A SNK V0.0                                │                                     │
+│ DQ 8x24VDC/0.5A SNK BA V1.0                             │ 6ES7 132-6BF60-0AA0 │ DQ 8x24VDC/0,5A SNK                                     │                                     │
+│ DQ 8x24VDC/0.5A ST V0.0                                 │ 6ES7 132-6BF01-0BA0 │ DQ 8x24VDC/0,5A ST V0.0                                 │                                     │
+│ DQ 8x24VDC/0.5A ST V0.0, QI                             │ 6ES7 132-6BF01-0BA0 │ DQ 8x24VDC/0,5A ST V0.0, QI                             │                                     │
+│ DQ 8x24VDC/0.5A ST V1.0                                 │ 6ES7 132-6BF00-0BA0 │ DQ 8x24VDC/0,5A ST                                      │                                     │
+│ DQ 8x24VDC/0.5A ST V1.1                                 │ 6ES7 132-6BF00-0BA0 │ DQ 8x24VDC/0,5A ST V1.1                                 │                                     │
+│ DQ 8x24VDC/0.5A ST V1.1, QI                             │ 6ES7 132-6BF00-0BA0 │ DQ 8x24VDC/0,5A ST V1.1, QI                             │                                     │
+│ DQ 8x24VDC/2A 8xM12 V1.0                                │ 6ES7 142-5AF00-0BA0 │ DO 142-5AF00-0BA0                                       │                                     │
+│ DQ 8x24VDC/2A 8xM12 V1.0, QI                            │ 6ES7 142-5AF00-0BA0 │ DO 142-5AF00-0BA0 QI                                    │                                     │
+│ DQ 8x24VDC/2A 8xM12 V2.0                                │ 6ES7 142-5AF00-0BA0 │ DQ 8x24VDC/2A 8xM12 V2.0                                │                                     │
+│ DQ 8x24VDC/2A 8xM12 V2.0, QI                            │ 6ES7 142-5AF00-0BA0 │ DQ 8x24VDC/2A 8xM12 V2.0, QI                            │                                     │
+│ DS 0,4 - 4A HF V1.0                                     │ 3RC7 140-1E*10      │ DS 0,4 - 4A HF V1.0                                     │                                     │
+│ DS 0,4 - 4A ST V1.0                                     │ 3RC7 140-1E*00      │ DS 0,4 - 4A ST V1.0                                     │                                     │
+│ DS 0.1 - 0.4A HF 3DI/LC V1.2                            │ 3RK1 308-0AA00-0CP0 │ DS 0,1 - 0,4A HF V1.2                                   │                                     │
+│ DS 0.3 - 1A HF 3DI/LC V1.0                              │ 3RK1 308-0AB00-0CP0 │ DS 0,3 - 1A HF                                          │                                     │
+│ DS 0.3 - 1A HF 3DI/LC V1.1                              │ 3RK1 308-0AB00-0CP0 │ DS 0,3 - 1A HF V1.1                                     │                                     │
+│ DS 0.3 - 1A HF 3DI/LC V1.2                              │ 3RK1 308-0AB00-0CP0 │ DS 0,3 - 1A HF V1.2                                     │                                     │
+│ DS 0.9 - 3A HF 3DI/LC V1.0                              │ 3RK1 308-0AC00-0CP0 │ DS 0,9 - 3A HF                                          │                                     │
+│ DS 0.9 - 3A HF 3DI/LC V1.1                              │ 3RK1 308-0AC00-0CP0 │ DS 0,9 - 3A HF V1.1                                     │                                     │
+│ DS 0.9 - 3A HF 3DI/LC V1.2                              │ 3RK1 308-0AC00-0CP0 │ DS 0,9 - 3A HF V1.2                                     │                                     │
+│ DS 1,2 - 12A HF V1.0                                    │ 3RC7 140-1K*10      │ DS 1,2 - 12A HF V1.0                                    │                                     │
+│ DS 1,2 - 12A ST V1.0                                    │ 3RC7 140-1K*00      │ DS 1,2 - 12A ST V1.0                                    │                                     │
+│ DS 2.8 - 9A HF 3DI/LC V1.0                              │ 3RK1 308-0AD00-0CP0 │ DS 2,8 - 9A HF                                          │                                     │
+│ DS 2.8 - 9A HF 3DI/LC V1.1                              │ 3RK1 308-0AD00-0CP0 │ DS 2,8 - 9A HF V1.1                                     │                                     │
+│ DS 2.8 - 9A HF 3DI/LC V1.2                              │ 3RK1 308-0AD00-0CP0 │ DS 2,8 - 9A HF V1.2                                     │                                     │
+│ DS 3,5 - 32A HF V1.0                                    │ 3RC7 140-4E*11      │ DS 3,5 - 32A HF V1.0                                    │                                     │
+│ DS 3,5 - 32A ST V1.0                                    │ 3RC7 140-4E*01      │ DS 3,5 - 32A ST V1.0                                    │                                     │
+│ DS 4.0 - 12A HF 3DI/LC V1.1                             │ 3RK1 308-0AE00-0CP0 │ DS 4,0 - 12A HF                                         │                                     │
+│ DS 4.0 - 12A HF 3DI/LC V1.2                             │ 3RK1 308-0AE00-0CP0 │ DS 4,0 - 12A HF V1.2                                    │                                     │
+│ Ex-AI 2xI 2-wire HART V1.0                              │ 6DL1 134-6TB00-0HX1 │ Ex-AI 2xI 2-wire HART                                   │                                     │
+│ Ex-AI 2xI 2-wire HART V1.0, 4 tags                      │ 6DL1 134-6TB00-0HX1 │ Ex-AI 2xI 2-wire HART, 4 Variablen                      │                                     │
+│ Ex-AI 2xI 2-wire HART V1.0, 4 tags, QI                  │ 6DL1 134-6TB00-0HX1 │ Ex-AI 2xI 2-wire HART, 4 Variablen, QI                  │                                     │
+│ Ex-AI 2xI 2-wire HART V1.0, QI                          │ 6DL1 134-6TB00-0HX1 │ Ex-AI 2xI 2-wire HART, QI                               │                                     │
+│ Ex-AI 4xTC/2xRTD 2-/3-/4-wire V1.0                      │ 6DL1 134-6JD00-0HX1 │ Ex-AI 4xTC/2xRTD 2-/3-/4-wire                           │                                     │
+│ Ex-AI 4xTC/2xRTD 2-/3-/4-wire V1.0, QI                  │ 6DL1 134-6JD00-0HX1 │ Ex-AI 4xTC/2xRTD 2-/3-/4-wire, QI                       │                                     │
+│ Ex-AI 4xTC/2xRTD 2-/3-/4-wire V1.0, REAL                │ 6DL1 134-6JD00-0HX1 │ Ex-AI 4xTC/2xRTD 2-/3-/4-wire, REAL                     │                                     │
+│ Ex-AI 4xTC/2xRTD 2-/3-/4-wire V1.0, REAL, QI            │ 6DL1 134-6JD00-0HX1 │ Ex-AI 4xTC/2xRTD 2-/3-/4-wire, REAL, QI                 │                                     │
+│ Ex-AQ 2xI HART V1.0                                     │ 6DL1 135-6TB00-0HX1 │ Ex-AQ 2xI HART                                          │                                     │
+│ Ex-AQ 2xI HART V1.0, 4 tags                             │ 6DL1 135-6TB00-0HX1 │ Ex-AQ 2xI HART, 4 Variablen                             │                                     │
+│ Ex-AQ 2xI HART V1.0, 4 tags, QI                         │ 6DL1 135-6TB00-0HX1 │ Ex-AQ 2xI HART, 4 Variablen, QI                         │                                     │
+│ Ex-AQ 2xI HART V1.0, QI                                 │ 6DL1 135-6TB00-0HX1 │ Ex-AQ 2xI HART, QI                                      │                                     │
+│ Ex-DI 4xNAMUR V1.0                                      │ 6DL1 131-6TD00-0HX1 │ Ex-DI 4xNAMUR                                           │                                     │
+│ Ex-DI 4xNAMUR V1.0, CNT                                 │ 6DL1 131-6TD00-0HX1 │ Ex-DI 4xNAMUR,Count                                     │                                     │
+│ Ex-DI 4xNAMUR V1.0, CNT, QI                             │ 6DL1 131-6TD00-0HX1 │ Ex-DI 4xNAMUR,Count QI                                  │                                     │
+│ Ex-DI 4xNAMUR V1.0, QI                                  │ 6DL1 131-6TD00-0HX1 │ Ex-DI 4xNAMUR, QI                                       │                                     │
+│ Ex-DQ 2x17.4VDC/27mA V1.0                               │ 6DL1 132-6CB00-0HX1 │ Ex-DQ 2x17.4VDC/27mA                                    │                                     │
+│ Ex-DQ 2x17.4VDC/27mA V1.0, MSO                          │ 6DL1 132-6CB00-0HX1 │ Ex-DQ 2x17.4VDC/27mA, MSQ                               │ Ex-DQ 2x17.4VDC/27mA MSQ            │
+│ Ex-DQ 2x17.4VDC/27mA V1.0, QI                           │ 6DL1 132-6CB00-0HX1 │ Ex-DQ 2x17.4VDC/27mA, QI                                │                                     │
+│ Ex-DQ 2x23.1VDC/20mA V1.0                               │ 6DL1 132-6EB00-0HX1 │ Ex-DQ 2x23.1VDC/20mA                                    │                                     │
+│ Ex-DQ 2x23.1VDC/20mA V1.0, MSO                          │ 6DL1 132-6EB00-0HX1 │ Ex-DQ 2x23.1VDC/20mA, MSQ                               │ Ex-DQ 2x23.1VDC/20mA MSQ            │
+│ Ex-DQ 2x23.1VDC/20mA V1.0, QI                           │ 6DL1 132-6EB00-0HX1 │ Ex-DQ 2x23.1VDC/20mA, QI                                │                                     │
+│ Ex-PM E V1.0                                            │ 6DL1 133-6PX00-0HW0 │ Ex-PM-E                                                 │                                     │
+│ F-AI 4xI 0(4)..20mA 2-/4-wire HF, XP V1.0               │ 6ES7 136-6AA00-0CA1 │ F-AI 4xI 2-/4-wire HF, XP                               │                                     │
+│ F-AI 4xU 0..10V HF, XP V1.0                             │ 6ES7 136-6AB00-0CA1 │ F-AI 4xU 0..10V HF, XP                                  │                                     │
+│ F-CM AS-i Safety ST V1.0, BP                            │ 3RK7 136-6SC00-0BC1 │ F-CM AS-i Safety ST                                     │                                     │
+│ F-DI 4+F-DQ 2x24VDC/2A, 4xM12 PROFISAFE V2.4            │ 6ES7 146-5FF00-0BA0 │ F-DI 4+F-DQ 2x24VDC/2A, 4xM12 PROFISAFE V2.4            │                                     │
+│ F-DI 4+F-DQ 2x24VDC/2A, 4xM12 PROFISAFE V2.6            │ 6ES7 146-5FF00-0BA0 │ F-DI 4+F-DQ 2x24VDC/2A, 4xM12 PROFISAFE V2.6            │                                     │
+│ F-DI 8x24VDC HF, BP V1.0                                │ 6ES7 136-6BA00-0CA0 │ F-DI 8x24VDC HF, BP                                     │                                     │
+│ F-DI 8x24VDC HF2, BP V1.0                               │ 6ES7 136-6BA01-0CA0 │ F-DI 8x24VDC HF2, BP                                    │                                     │
+│ F-DI 8x24VDC HF2, BP V2.0                               │ 6ES7 136-6BA01-0CA0 │ F-DI 8x24VDC HF2, BP V2                                 │                                     │
+│ F-DI 8x24VDC HF2, XP V1.0                               │ 6ES7 136-6BA01-0CA0 │ F-DI 8x24VDC HF2, XP                                    │                                     │
+│ F-DI 8x24VDC HF2, XP V2.0                               │ 6ES7 136-6BA01-0CA0 │ F-DI 8x24VDC HF2, XP V2                                 │                                     │
+│ F-DQ 4x24VDC/2A PM HF, BP V2.0                          │ 6ES7 136-6DB00-0CA0 │ F-DQ 4x24VDC/2A PM HF, BP                               │                                     │
+│ F-DQ 8x24VDC/0.5A PP HF, BP V1.0                        │ 6ES7 136-6DC00-0CA0 │ F-DQ 8x24VDC/0,5A PP HF, BP                             │                                     │
+│ F-DQ 8x24VDC/0.5A PP HF, XP V1.0                        │ 6ES7 136-6DC00-0CA0 │ F-DQ 8x24VDC/0,5A PP HF, XP                             │                                     │
+│ F-DS 0.1 - 0.4A HF 3DI/LC V1.2                          │ 3RK1 308-0CA00-0CP0 │ F-DS 0,1 - 0,4A HF V1.2                                 │                                     │
+│ F-DS 0.3 - 1A HF 3DI/LC V1.0                            │ 3RK1 308-0CB00-0CP0 │ F-DS 0,3 - 1A HF                                        │                                     │
+│ F-DS 0.3 - 1A HF 3DI/LC V1.2                            │ 3RK1 308-0CB00-0CP0 │ F-DS 0,3 - 1A HF V1.2                                   │                                     │
+│ F-DS 0.9 - 3A HF 3DI/LC V1.0                            │ 3RK1 308-0CC00-0CP0 │ F-DS 0,9 - 3A HF                                        │                                     │
+│ F-DS 0.9 - 3A HF 3DI/LC V1.2                            │ 3RK1 308-0CC00-0CP0 │ F-DS 0,9 - 3A HF V1.2                                   │                                     │
+│ F-DS 2.8 - 9A HF 3DI/LC V1.0                            │ 3RK1 308-0CD00-0CP0 │ F-DS 2,8 - 9A HF                                        │                                     │
+│ F-DS 2.8 - 9A HF 3DI/LC V1.2                            │ 3RK1 308-0CD00-0CP0 │ F-DS 2,8 - 9A HF V1.2                                   │                                     │
+│ F-DS 4.0 - 12A HF 3DI/LC V1.0                           │ 3RK1 308-0CE00-0CP0 │ F-DS 4,0 - 12A HF                                       │                                     │
+│ F-DS 4.0 - 12A HF 3DI/LC V1.2                           │ 3RK1 308-0CE00-0CP0 │ F-DS 4,0 - 12A HF V1.2                                  │                                     │
+│ F-PM-E 24VDC/8A PPM ST, BP V2.0                         │ 6ES7 136-6PA00-0BC0 │ F-PM-E 24VDC/8A PPM ST, BP                              │                                     │
+│ F-RQ 1x24..48VDC/24..230VAC/5A V1.0                     │ 6ES7 136-6RA00-0BF0 │ F-RQ 1x24VDC/24..230VAC/5A                              │                                     │
+│ F-RS 0.1 - 0.4A HF 3DI/LC V1.2                          │ 3RK1 308-0DA00-0CP0 │ F-RS 0,1 - 0,4A HF V1.2                                 │                                     │
+│ F-RS 0.3 - 1A HF 3DI/LC V1.0                            │ 3RK1 308-0DB00-0CP0 │ F-RS 0,3 - 1A HF                                        │                                     │
+│ F-RS 0.3 - 1A HF 3DI/LC V1.2                            │ 3RK1 308-0DB00-0CP0 │ F-RS 0,3 - 1A HF V1.2                                   │                                     │
+│ F-RS 0.9 - 3A HF 3DI/LC V1.0                            │ 3RK1 308-0DC00-0CP0 │ F-RS 0,9 - 3A HF                                        │                                     │
+│ F-RS 0.9 - 3A HF 3DI/LC V1.2                            │ 3RK1 308-0DC00-0CP0 │ F-RS 0,9 - 3A HF V1.2                                   │                                     │
+│ F-RS 2.8 - 9A HF 3DI/LC V1.0                            │ 3RK1 308-0DD00-0CP0 │ F-RS 2,8 - 9A HF                                        │                                     │
+│ F-RS 2.8 - 9A HF 3DI/LC V1.2                            │ 3RK1 308-0DD00-0CP0 │ F-RS 2,8 - 9A HF V1.2                                   │                                     │
+│ F-RS 4.0 - 12A HF 3DI/LC V1.0                           │ 3RK1 308-0DE00-0CP0 │ F-RS 4,0 - 12A HF                                       │                                     │
+│ F-RS 4.0 - 12A HF 3DI/LC V1.2                           │ 3RK1 308-0DE00-0CP0 │ F-RS 4,0 - 12A HF V1.2                                  │                                     │
+│ F-TM Count 1x1Vpp sin/cos HF  PROFIsafe V2.4            │ 6ES7 136-6CB00-0CA0 │ F-TM-C                                                  │                                     │
+│ F-TM Count 1x1Vpp sin/cos HF  PROFIsafe V2.6            │ 6ES7 136-6CB00-0CA0 │ F-TM-C1                                                 │                                     │
+│ F-TM ServoDrive 1x24..48V HF V1.0, PROFIdrive Tel.3, DI │ 6BK1 136-6AB00-0CU0 │ F-TM ServoDrive 1x24..48V HF V1.0, PROFIdrive Tel.3, DI │                                     │
+│ F-TM ServoDrive 1x24..48V HF V1.1, PROFIdrive Tel.1, DI │ 6BK1 136-6AB00-0CU0 │ F-TM ServoDrive 1x24..48V HF V1.1, PROFIdrive Tel.1, DI │                                     │
+│ F-TM ServoDrive 1x24..48V HF V1.1, PROFIdrive Tel.102   │ 6BK1 136-6AB00-0CU0 │ F-TM ServoDrive 1x24..48V HF V1.1, PROFIdrive Siemens   │                                     │
+│                                                         │                     │ Tel.102                                                 │                                     │
+│ F-TM ServoDrive 1x24..48V HF V1.1, PROFIdrive Tel.2, DI │ 6BK1 136-6AB00-0CU0 │ F-TM ServoDrive 1x24..48V HF V1.1, PROFIdrive Tel.2, DI │                                     │
+│ F-TM ServoDrive 1x24..48V HF V1.1, PROFIdrive Tel.3, DI │ 6BK1 136-6AB00-0CU0 │ F-TM ServoDrive 1x24..48V HF V1.1, PROFIdrive Tel.3, DI │                                     │
+│ F-TM ServoDrive 1x24..48V HF V2.0, PROFIdrive Tel.1, DI │ 6BK1 136-6AB01-0CU0 │ F-TM ServoDrive 1x24..48V HF V2.0, PROFIdrive Tel.1, DI │                                     │
+│ F-TM ServoDrive 1x24..48V HF V2.0, PROFIdrive Tel.102   │ 6BK1 136-6AB01-0CU0 │ F-TM ServoDrive 1x24..48V HF V2.0, PROFIdrive Siemens   │                                     │
+│                                                         │                     │ Tel.102                                                 │                                     │
+│ F-TM ServoDrive 1x24..48V HF V2.0, PROFIdrive Tel.2, DI │ 6BK1 136-6AB01-0CU0 │ F-TM ServoDrive 1x24..48V HF V2.0, PROFIdrive Tel.2, DI │                                     │
+│ F-TM ServoDrive 1x24..48V HF V2.0, PROFIdrive Tel.3, DI │ 6BK1 136-6AB01-0CU0 │ F-TM ServoDrive 1x24..48V HF V2.0, PROFIdrive Tel.3, DI │                                     │
+│ F-TM ServoDrive 1x24..48V ST V1.0, PROFIdrive Tel.3, DI │ 6BK1 136-6AB00-0BU0 │ F-TM ServoDrive 1x24..48V ST V1.0, PROFIdrive Tel.3, DI │                                     │
+│ F-TM ServoDrive 1x24..48V ST V1.1, PROFIdrive Tel.3, DI │ 6BK1 136-6AB00-0BU0 │ F-TM ServoDrive 1x24..48V ST V1.1, PROFIdrive Tel.3, DI │                                     │
+│ F-TM ServoDrive 1x24..48V ST V1.2, PROFIdrive Tel.3, DI │ 6BK1 136-6AB00-0BU0 │ F-TM ServoDrive 1x24..48V ST V1.2, PROFIdrive Tel.3, DI │                                     │
+│ F-TM ServoDrive 1x24..48V ST V1.3, PROFIdrive Tel.1, DI │ 6BK1 136-6AB00-0BU0 │ F-TM ServoDrive 1x24..48V ST V1.3, PROFIdrive Tel.1, DI │                                     │
+│ F-TM ServoDrive 1x24..48V ST V1.3, PROFIdrive Tel.102   │ 6BK1 136-6AB00-0BU0 │ F-TM ServoDrive 1x24..48V ST V1.3, PROFIdrive Siemens   │                                     │
+│                                                         │                     │ Tel.102                                                 │                                     │
+│ F-TM ServoDrive 1x24..48V ST V1.3, PROFIdrive Tel.2, DI │ 6BK1 136-6AB00-0BU0 │ F-TM ServoDrive 1x24..48V ST V1.3, PROFIdrive Tel.2, DI │                                     │
+│ F-TM ServoDrive 1x24..48V ST V1.3, PROFIdrive Tel.3, DI │ 6BK1 136-6AB00-0BU0 │ F-TM ServoDrive 1x24..48V ST V1.3, PROFIdrive Tel.3, DI │                                     │
+│ F-TM ServoDrive 1x24..48V ST V2.0, PROFIdrive Tel.1, DI │ 6BK1 136-6AB01-0BU0 │ F-TM ServoDrive 1x24..48V ST V2.0, PROFIdrive Tel.1, DI │                                     │
+│ F-TM ServoDrive 1x24..48V ST V2.0, PROFIdrive Tel.102   │ 6BK1 136-6AB01-0BU0 │ F-TM ServoDrive 1x24..48V ST V2.0, PROFIdrive Siemens   │                                     │
+│                                                         │                     │ Tel.102                                                 │                                     │
+│ F-TM ServoDrive 1x24..48V ST V2.0, PROFIdrive Tel.2, DI │ 6BK1 136-6AB01-0BU0 │ F-TM ServoDrive 1x24..48V ST V2.0, PROFIdrive Tel.2, DI │                                     │
+│ F-TM ServoDrive 1x24..48V ST V2.0, PROFIdrive Tel.3, DI │ 6BK1 136-6AB01-0BU0 │ F-TM ServoDrive 1x24..48V ST V2.0, PROFIdrive Tel.3, DI │                                     │
+│ F-TM StepDrive 1x24..48V ST V1.0, PROFIdrive Tel.3, DI  │ 6BK1 136-6SB00-0BU0 │ F-TM StepDrive 1x24..48V ST V1.0, PROFIdrive Tel.3, DI  │                                     │
+│ F-TM StepDrive 1x24..48V ST V2.0, PROFIdrive Tel.1, DI  │ 6BK1 136-6SB01-0BU0 │ F-TM StepDrive 1x24..48V ST V2.0, PROFIdrive Tel.1, DI  │                                     │
+│ F-TM StepDrive 1x24..48V ST V2.0, PROFIdrive Tel.2, DI  │ 6BK1 136-6SB01-0BU0 │ F-TM StepDrive 1x24..48V ST V2.0, PROFIdrive Tel.2, DI  │                                     │
+│ F-TM StepDrive 1x24..48V ST V2.0, PROFIdrive Tel.3, DI  │ 6BK1 136-6SB01-0BU0 │ F-TM StepDrive 1x24..48V ST V2.0, PROFIdrive Tel.3, DI  │                                     │
+│ MSO LOCAL   1 Byte                                      │                     │ Local MSO Module 1 byte_6subslots                       │ Local MSO Submodule Input 1 Byte    │
+│ MSO LOCAL   1 Byte                                      │                     │ Local MSO Module 1 byte                                 │ Local MSO Submodule Input 1 Byte    │
+│ MSO LOCAL   2 Byte                                      │                     │ Local MSO Module 2 byte_6subslots                       │ Local MSO Submodule Input 2 Byte    │
+│ MSO LOCAL   2 Byte                                      │                     │ Local MSO Module 2 byte                                 │ Local MSO Submodule Input 2 Byte    │
+│ MSO LOCAL   4 Byte                                      │                     │ Local MSO Module 4 byte_6subslots                       │ Local MSO Submodule Input 4 Byte    │
+│ MSO LOCAL   4 Byte                                      │                     │ Local MSO Module 4 byte                                 │ Local MSO Submodule Input 4 Byte    │
+│ MSO LOCAL   8 Byte                                      │                     │ Local MSO Module 8 byte_6subslots                       │ Local MSO Submodule Input 8 Byte    │
+│ MSO LOCAL   8 Byte                                      │                     │ Local MSO Module 8 byte                                 │ Local MSO Submodule Input 8 Byte    │
+│ MSO LOCAL  16 Byte                                      │                     │ Local MSO Module 16 byte_6subslots                      │ Local MSO Submodule Input 16 Byte   │
+│ MSO LOCAL  16 Byte                                      │                     │ Local MSO Module 16 byte                                │ Local MSO Submodule Input 16 Byte   │
+│ MSO LOCAL  32 Byte                                      │                     │ Local MSO Module 32 byte_6subslots                      │ Local MSO Submodule Input 32 Byte   │
+│ MSO LOCAL  32 Byte                                      │                     │ Local MSO Module 32 byte                                │ Local MSO Submodule Input 32 Byte   │
+│ MSO LOCAL  64 Byte                                      │                     │ Local MSO Module 64 byte_6subslots                      │ Local MSO Submodule Input 64 Byte   │
+│ MSO LOCAL  64 Byte                                      │                     │ Local MSO Module 64 byte                                │ Local MSO Submodule Input 64 Byte   │
+│ MSO LOCAL 128 Byte                                      │                     │ Local MSO Module 128 byte_6subslots                     │ Local MSO Submodule Input 128 Byte  │
+│ MSO LOCAL 128 Byte                                      │                     │ Local MSO Module 128 byte                               │ Local MSO Submodule Input 128 Byte  │
+│ MSO LOCAL 244 Byte                                      │                     │ Local MSO Module 244 byte_6subslots                     │ Local MSO Submodule Input 244 Byte  │
+│ MSO LOCAL 253 Byte                                      │                     │ Local MSO Module 253 byte_6subslots                     │ Local MSO Submodule Input 253 Byte  │
+│ MSO LOCAL 253 Byte                                      │                     │ Local MSO Module 253 byte                               │ Local MSO Submodule Input 253 Byte  │
+│ PotDis-TB-BR-W                                          │ 6ES7 193-6TP00-0TP0 │ PotDis-TB-BR-W                                          │                                     │
+│ PotDis-TB-n.c.-G                                        │ 6ES7 193-6TP00-0TN0 │ PotDis-TB-n.c.-G                                        │                                     │
+│ PotDis-TB-P1-R                                          │ 6ES7 193-6TP00-0TP1 │ PotDis-TB-P1-R                                          │                                     │
+│ PotDis-TB-P2-B                                          │ 6ES7 193-6TP00-0TP2 │ PotDis-TB-P2-B                                          │                                     │
+│ PQ16VS8 Position Feedback                               │ BURKERT_ID_00284806 │ PQ16VS8 Position Feedback                               │                                     │
+│ PQ16VS8 Position Feedback QI                            │ BURKERT_ID_00284806 │ PQ16VS8 Position Feedback, QI                           │                                     │
+│ PQ16VS8 Position Feedback QI, Pressure Indicator        │ BURKERT_ID_00284806 │ PQ16VS8 Position Feedback QI, Pressure Indicator        │                                     │
+│ PQ16VS8 Position Feedback, Pressure Indicator           │ BURKERT_ID_00284806 │ PQ16VS8 Position Feedback, Pressure Indicator           │                                     │
+│ PQ16VS8 Pressure Indicator                              │ BURKERT_ID_00284806 │ PQ16VS8 Pressure Indicator                              │                                     │
+│ PQ16VS8 ST                                              │ BURKERT_ID_00284806 │ PQ16VS8 ST                                              │                                     │
+│ PQ16VS8EVS 5/3 Position Feedback                        │ BURKERT_ID_00331589 │ PQ16VS8 EVS 5/3 Position Feedback                       │                                     │
+│ PQ16VS8EVS 5/3 Position Feedback QI                     │ BURKERT_ID_00331589 │ PQ16VS8 EVS 5/3 Position Feedback, QI                   │                                     │
+│ PQ16VS8EVS 5/3 Position Feedback QI, Pressure Indicator │ BURKERT_ID_00331589 │ PQ16VS8 EVS 5/3 Position Feedback QI, Pressure          │                                     │
+│                                                         │                     │ Indicator                                               │                                     │
+│ PQ16VS8EVS 5/3 Position Feedback, Pressure Indicator    │ BURKERT_ID_00331589 │ PQ16VS8 EVS 5/3 Position Feedback, Pressure Indicator   │                                     │
+│ PQ16VS8EVS 5/3 Pressure Indicator                       │ BURKERT_ID_00331589 │ PQ16VS8 EVS 5/3 Pressure Indicator                      │                                     │
+│ PQ16VS8EVS 5/3 ST                                       │ BURKERT_ID_00331589 │ PQ16VS8 EVS 5/3 ST                                      │                                     │
+│ PQ16VS8EVS Position Feedback                            │ BURKERT_ID_00285096 │ PQ16VS8 EVS Position Feedback                           │                                     │
+│ PQ16VS8EVS Position Feedback QI                         │ BURKERT_ID_00285096 │ PQ16VS8 EVS Position Feedback, QI                       │                                     │
+│ PQ16VS8EVS Position Feedback QI, Pressure Indicator     │ BURKERT_ID_00285096 │ PQ16VS8 EVS Position Feedback QI, Pressure Indicator    │                                     │
+│ PQ16VS8EVS Position Feedback, Pressure Indicator        │ BURKERT_ID_00285096 │ PQ16VS8 EVS Position Feedback, Pressure Indicator       │                                     │
+│ PQ16VS8EVS Pressure Indicator                           │ BURKERT_ID_00285096 │ PQ16VS8 EVS Pressure Indicator                          │                                     │
+│ PQ16VS8EVS ST                                           │ BURKERT_ID_00285096 │ PQ16VS8 EVS ST                                          │                                     │
+│ PQ4VS4 Position Feedback                                │ BURKERT_ID_00284935 │ PQ4VS4 Position Feedback                                │                                     │
+│ PQ4VS4 Position Feedback QI                             │ BURKERT_ID_00284935 │ PQ4VS4 Position Feedback, QI                            │                                     │
+│ PQ4VS4 Position Feedback QI, Pressure Indicator         │ BURKERT_ID_00284935 │ PQ4VS4 Position Feedback QI, Pressure Indicator         │                                     │
+│ PQ4VS4 Position Feedback, Pressure Indicator            │ BURKERT_ID_00284935 │ PQ4VS4 Position Feedback, Pressure Indicator            │                                     │
+│ PQ4VS4 Pressure Indicator                               │ BURKERT_ID_00284935 │ PQ4VS4 Pressure Indicator                               │                                     │
+│ PQ4VS4 ST                                               │ BURKERT_ID_00284935 │ PQ4VS4 ST                                               │                                     │
+│ PQ4VS4EVS Position Feedback                             │ BURKERT_ID_00285097 │ PQ4VS4 EVS Position Feedback                            │                                     │
+│ PQ4VS4EVS Position Feedback QI                          │ BURKERT_ID_00285097 │ PQ4VS4 EVS Position Feedback, QI                        │                                     │
+│ PQ4VS4EVS Position Feedback QI, Pressure Indicator      │ BURKERT_ID_00285097 │ PQ4VS4 EVS Position Feedback QI, Pressure Indicator     │                                     │
+│ PQ4VS4EVS Position Feedback, Pressure Indicator         │ BURKERT_ID_00285097 │ PQ4VS4 EVS Position Feedback, Pressure Indicator        │                                     │
+│ PQ4VS4EVS Pressure Indicator                            │ BURKERT_ID_00285097 │ PQ4VS4 EVS Pressure Indicator                           │                                     │
+│ PQ4VS4EVS ST                                            │ BURKERT_ID_00285097 │ PQ4VS4 EVS ST                                           │                                     │
+│ PQ8VS4 Position Feedback                                │ BURKERT_ID_00284936 │ PQ8VS4 Position Feedback                                │                                     │
+│ PQ8VS4 Position Feedback QI                             │ BURKERT_ID_00284936 │ PQ8VS4 Position Feedback, QI                            │                                     │
+│ PQ8VS4 Position Feedback QI, Pressure Indicator         │ BURKERT_ID_00284936 │ PQ8VS4 Position Feedback QI, Pressure Indicator         │                                     │
+│ PQ8VS4 Position Feedback, Pressure Indicator            │ BURKERT_ID_00284936 │ PQ8VS4 Position Feedback, Pressure Indicator            │                                     │
+│ PQ8VS4 Pressure Indicator                               │ BURKERT_ID_00284936 │ PQ8VS4 Pressure Indicator                               │                                     │
+│ PQ8VS4 ST                                               │ BURKERT_ID_00284936 │ PQ8VS4 ST                                               │                                     │
+│ PQ8VS4EVS 5/3 Position Feedback                         │ BURKERT_ID_00331588 │ PQ8VS4 EVS 5/3 Position Feedback                        │                                     │
+│ PQ8VS4EVS 5/3 Position Feedback QI                      │ BURKERT_ID_00331588 │ PQ8VS4 EVS 5/3 Position Feedback, QI                    │                                     │
+│ PQ8VS4EVS 5/3 Position Feedback QI, Pressure Indicator  │ BURKERT_ID_00331588 │ PQ8VS4 EVS 5/3 Position Feedback QI, Pressure Indicator │                                     │
+│ PQ8VS4EVS 5/3 Position Feedback, Pressure Indicator     │ BURKERT_ID_00331588 │ PQ8VS4 EVS 5/3 Position Feedback, Pressure Indicator    │                                     │
+│ PQ8VS4EVS 5/3 Pressure Indicator                        │ BURKERT_ID_00331588 │ PQ8VS4 EVS 5/3 Pressure Indicator                       │                                     │
+│ PQ8VS4EVS 5/3 ST                                        │ BURKERT_ID_00331588 │ PQ8VS4 EVS 5/3 ST                                       │                                     │
+│ PQ8VS4EVS Position Feedback                             │ BURKERT_ID_00285098 │ PQ8VS4 EVS Position Feedback                            │                                     │
+│ PQ8VS4EVS Position Feedback QI                          │ BURKERT_ID_00285098 │ PQ8VS4 EVS Position Feedback, QI                        │                                     │
+│ PQ8VS4EVS Position Feedback QI, Pressure Indicator      │ BURKERT_ID_00285098 │ PQ8VS4 EVS Position Feedback QI, Pressure Indicator     │                                     │
+│ PQ8VS4EVS Position Feedback, Pressure Indicator         │ BURKERT_ID_00285098 │ PQ8VS4 EVS Position Feedback, Pressure Indicator        │                                     │
+│ PQ8VS4EVS Pressure Indicator                            │ BURKERT_ID_00285098 │ PQ8VS4 EVS Pressure Indicator                           │                                     │
+│ PQ8VS4EVS ST                                            │ BURKERT_ID_00285098 │ PQ8VS4 EVS ST                                           │                                     │
+│ PQ8VS8 Position Feedback                                │ BURKERT_ID_00283166 │ PQ8VS8 Position Feedback                                │                                     │
+│ PQ8VS8 Position Feedback QI                             │ BURKERT_ID_00283166 │ PQ8VS8 Position Feedback, QI                            │                                     │
+│ PQ8VS8 Position Feedback QI, Pressure Indicator         │ BURKERT_ID_00283166 │ PQ8VS8 Position Feedback QI, Pressure Indicator         │                                     │
+│ PQ8VS8 Position Feedback, Pressure Indicator            │ BURKERT_ID_00283166 │ PQ8VS8 Position Feedback, Pressure Indicator            │                                     │
+│ PQ8VS8 Pressure Indicator                               │ BURKERT_ID_00283166 │ PQ8VS8 Pressure Indicator                               │                                     │
+│ PQ8VS8 ST                                               │ BURKERT_ID_00283166 │ PQ8VS8 ST                                               │                                     │
+│ PQ8VS8EVS Position Feedback                             │ BURKERT_ID_00285095 │ PQ8VS8 EVS Position Feedback                            │                                     │
+│ PQ8VS8EVS Position Feedback QI                          │ BURKERT_ID_00285095 │ PQ8VS8 EVS Position Feedback, QI                        │                                     │
+│ PQ8VS8EVS Position Feedback QI, Pressure Indicator      │ BURKERT_ID_00285095 │ PQ8VS8 EVS Position Feedback QI, Pressure Indicator     │                                     │
+│ PQ8VS8EVS Position Feedback, Pressure Indicator         │ BURKERT_ID_00285095 │ PQ8VS8 EVS Position Feedback, Pressure Indicator        │                                     │
+│ PQ8VS8EVS Pressure Indicator                            │ BURKERT_ID_00285095 │ PQ8VS8 EVS Pressure Indicator                           │                                     │
+│ PQ8VS8EVS ST                                            │ BURKERT_ID_00285095 │ PQ8VS8 EVS ST                                           │                                     │
+│ PSU-L                                                   │ BURKERT_ID_00285088 │ PSU-L                                                   │                                     │
+│ PSU-L-M                                                 │ BURKERT_ID_00284112 │ PSU-L-M                                                 │                                     │
+│ PSU-L-PS                                                │ BURKERT_ID_00292732 │ PSU-L-PS                                                │                                     │
+│ PSU-M                                                   │ BURKERT_ID_00285091 │ PSU-M                                                   │                                     │
+│ PSU-M-M                                                 │ BURKERT_ID_00284944 │ PSU-M-M                                                 │                                     │
+│ PSU-R                                                   │ BURKERT_ID_00285092 │ PSU-R                                                   │                                     │
+│ PSU-R-M                                                 │ BURKERT_ID_00284195 │ PSU-R-M                                                 │                                     │
+│ PSU-R-PS                                                │ BURKERT_ID_00292734 │ PSU-R-PS                                                │                                     │
+│ RQ 3x120VDC/230VAC/5A CO n.i. ST V0.0                   │ 6ES7 132-6HC70-0BU0 │ RQ 3x120VDC/230VAC/5A CO n.i. ST V0.0                   │                                     │
+│ RQ 3x120VDC/230VAC/5A CO n.i. ST V0.0, QI               │ 6ES7 132-6HC70-0BU0 │ RQ 3x120VDC/230VAC/5A CO n.i. ST V0.0, QI               │                                     │
+│ RQ 3x120VDC/230VAC/5A CO ST V0.0                        │ 6ES7 132-6HC50-0BU0 │ RQ 3x120VDC/230VAC/5A CO ST V0.0                        │                                     │
+│ RQ 3x120VDC/230VAC/5A CO ST V0.0, QI                    │ 6ES7 132-6HC50-0BU0 │ RQ 3x120VDC/230VAC/5A CO ST V0.0, QI                    │                                     │
+│ RQ 4x120VDC/230VAC/5A NO MA ST V1.0                     │ 6ES7 132-6MD00-0BB1 │ RQ 4x120VDC-230VAC/5A NO MA ST                          │                                     │
+│ RQ 4x120VDC/230VAC/5A NO MA ST V1.0, QI                 │ 6ES7 132-6MD00-0BB1 │ RQ 4x120VDC-230VAC/5A NO MA ST, QI                      │                                     │
+│ RQ 4x120VDC/230VAC/5A NO ST V0.0                        │ 6ES7 132-6HD01-0BB1 │ RQ 4x120VDC-230VAC/5A NO ST V0.0                        │                                     │
+│ RQ 4x120VDC/230VAC/5A NO ST V0.0, QI                    │ 6ES7 132-6HD01-0BB1 │ RQ 4x120VDC-230VAC/5A NO ST V0.0, QI                    │                                     │
+│ RQ 4x120VDC/230VAC/5A NO ST V1.0                        │ 6ES7 132-6HD00-0BB0 │ RQ 4x120VDC-230VAC/5A NO ST                             │                                     │
+│ RQ 4x120VDC/230VAC/5A NO ST V1.1                        │ 6ES7 132-6HD00-0BB0 │ RQ 4x120VDC-230VAC/5A NO ST V1.1                        │                                     │
+│ RQ 4x120VDC/230VAC/5A NO ST V1.1                        │ 6ES7 132-6HD00-0BB1 │ RQ 4x120VDC-230VAC/5A NO ST V1.1n                       │                                     │
+│ RQ 4x120VDC/230VAC/5A NO ST V1.1, QI                    │ 6ES7 132-6HD00-0BB0 │ RQ 4x120VDC-230VAC/5A NO ST V1.1, QI                    │                                     │
+│ RQ 4x120VDC/230VAC/5A NO ST V1.1, QI                    │ 6ES7 132-6HD00-0BB1 │ RQ 4x120VDC-230VAC/5A NO ST V1.1n, QI                   │                                     │
+│ RQ 4x24VUC/2A CO ST V0.0                                │ 6ES7 132-6GD51-0BA0 │ RQ 4x24VDC/2A CO ST V0.0                                │                                     │
+│ RQ 4x24VUC/2A CO ST V0.0, QI                            │ 6ES7 132-6GD51-0BA0 │ RQ 4x24VDC/2A CO ST V0.0, QI                            │                                     │
+│ RQ 4x24VUC/2A CO ST V1.0                                │ 6ES7 132-6GD50-0BA0 │ RQ 4x24VDC/2A CO ST                                     │                                     │
+│ RQ 4x24VUC/2A CO ST V1.0, QI                            │ 6ES7 132-6GD50-0BA0 │ RQ 4x24VDC/2A CO ST, QI                                 │                                     │
+│ RS 0,4 - 4A HF V1.0                                     │ 3RC7 141-1E*10      │ RS 0,4 - 4A HF V1.0                                     │                                     │
+│ RS 0,4 - 4A ST V1.0                                     │ 3RC7 141-1E*00      │ RS 0,4 - 4A ST V1.0                                     │                                     │
+│ RS 0.1 - 0.4A HF 3DI/LC V1.2                            │ 3RK1 308-0BA00-0CP0 │ RS 0,1 - 0,4A HF V1.2                                   │                                     │
+│ RS 0.3 - 1A HF 3DI/LC V1.0                              │ 3RK1 308-0BB00-0CP0 │ RS 0,3 - 1A HF                                          │                                     │
+│ RS 0.3 - 1A HF 3DI/LC V1.1                              │ 3RK1 308-0BB00-0CP0 │ RS 0,3 - 1A HF V1.1                                     │                                     │
+│ RS 0.3 - 1A HF 3DI/LC V1.2                              │ 3RK1 308-0BB00-0CP0 │ RS 0,3 - 1A HF V1.2                                     │                                     │
+│ RS 0.9 - 3A HF 3DI/LC V1.0                              │ 3RK1 308-0BC00-0CP0 │ RS 0,9 - 3A HF                                          │                                     │
+│ RS 0.9 - 3A HF 3DI/LC V1.1                              │ 3RK1 308-0BC00-0CP0 │ RS 0,9 - 3A HF V1.1                                     │                                     │
+│ RS 0.9 - 3A HF 3DI/LC V1.2                              │ 3RK1 308-0BC00-0CP0 │ RS 0,9 - 3A HF V1.2                                     │                                     │
+│ RS 1,2 - 12A HF V1.0                                    │ 3RC7 141-1K*10      │ RS 1,2 - 12A HF V1.0                                    │                                     │
+│ RS 1,2 - 12A ST V1.0                                    │ 3RC7 141-1K*00      │ RS 1,2 - 12A ST V1.0                                    │                                     │
+│ RS 2.8 - 9A HF 3DI/LC V1.0                              │ 3RK1 308-0BD00-0CP0 │ RS 2,8 - 9A HF                                          │                                     │
+│ RS 2.8 - 9A HF 3DI/LC V1.1                              │ 3RK1 308-0BD00-0CP0 │ RS 2,8 - 9A HF V1.1                                     │                                     │
+│ RS 2.8 - 9A HF 3DI/LC V1.2                              │ 3RK1 308-0BD00-0CP0 │ RS 2,8 - 9A HF V1.2                                     │                                     │
+│ RS 3,5 - 32A HF V1.0                                    │ 3RC7 141-4E*11      │ RS 3,5 - 32A HF V1.0                                    │                                     │
+│ RS 3,5 - 32A ST V1.0                                    │ 3RC7 141-4E*01      │ RS 3,5 - 32A ST V1.0                                    │                                     │
+│ RS 4.0 - 12A HF 3DI/LC V1.1                             │ 3RK1 308-0BE00-0CP0 │ RS 4,0 - 12A HF                                         │                                     │
+│ RS 4.0 - 12A HF 3DI/LC V1.2                             │ 3RK1 308-0BE00-0CP0 │ RS 4,0 - 12A HF V1.2                                    │                                     │
+│ Server module V1.1 (0 bytes)                            │ 6ES7 193-6PA00-0AA0 │ Servermodule_without_io                                 │                                     │
+│ Server module V1.1 (16 bytes, 65 slots)                 │ 6ES7 193-6PA00-0AA0 │ Servermodul_16Byte_64Slots                              │                                     │
+│ Server module V1.1 (2 bytes, 13/17 slots)               │ 6ES7 193-6PA00-0AA0 │ Servermodul_2Byte_12Slots                               │                                     │
+│ Server module V1.1 (4 bytes, 13/17 slots)               │ 6ES7 193-6PA00-0AA0 │ Servermodul_4Byte_12Slots                               │                                     │
+│ Server module V1.1 (4 bytes, 31 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_4Byte_31Slots                               │                                     │
+│ Server module V1.1 (4 bytes, 33 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_4Byte_32Slots                               │                                     │
+│ Server module V1.1 (8 bytes, 31 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_8Byte_31Slots                               │                                     │
+│ Server module V1.1 (8 bytes, 33 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_8Byte_32Slots                               │                                     │
+│ Server module V1.1 (8 bytes, 65 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_8Byte_64Slots                               │                                     │
+│ Server module V1.1 (IM 155-6 PN ST V1.0)                │ 6ES7 193-6PA00-0AA0 │ Servermodule                                            │                                     │
+│ Server module V1.2 (0 bytes)                            │ 6ES7 193-6PA00-0AA0 │ Servermodule_without_io V1.2                            │                                     │
+│ Server module V1.2 (16 bytes, 65 slots)                 │ 6ES7 193-6PA00-0AA0 │ Servermodul_16Byte_64Slots V1.2                         │                                     │
+│ Server module V1.2 (2 bytes, 13/17 slots)               │ 6ES7 193-6PA00-0AA0 │ Servermodul_2Byte_12Slots V1.2                          │                                     │
+│ Server module V1.2 (4 bytes, 13/17 slots)               │ 6ES7 193-6PA00-0AA0 │ Servermodul_4Byte_12Slots V1.2                          │                                     │
+│ Server module V1.2 (4 bytes, 31 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_4Byte_31Slots V1.2                          │                                     │
+│ Server module V1.2 (4 bytes, 33 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_4Byte_32Slots V1.2                          │                                     │
+│ Server module V1.2 (8 bytes, 31 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_8Byte_31Slots V1.2                          │                                     │
+│ Server module V1.2 (8 bytes, 33 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_8Byte_32Slots V1.2                          │                                     │
+│ Server module V1.2 (8 bytes, 65 slots)                  │ 6ES7 193-6PA00-0AA0 │ Servermodul_8Byte_64Slots V1.2                          │                                     │
+│ SITRANS FCT070 V1.0                                     │ 7ME4 138-6AA00-0BB1 │ SITRANS FCT070 V1.0                                     │                                     │
+│ SITRANS FST070 V1.0 Gas                                 │ 7ME3 448-6AA00-0BB1 │ SITRANS FST070 V1.0 gas                                 │                                     │
+│ SITRANS FST070 V1.0 Hydrocarbon                         │ 7ME3 448-6AA00-0BB1 │ SITRANS FST070 V1.0 hydrocarbon                         │                                     │
+│ SITRANS FST070 V1.0 Standard                            │ 7ME3 448-6AA00-0BB1 │ SITRANS FST070 V1.0 standard                            │                                     │
+│ SIWAREX WP321 V1.0                                      │ 7MH4 138-6AA00-0BA0 │ SIWAREX WP321                                           │                                     │
+│ TM Count 1x24V C V1.0                                   │ 6ES7 138-6AA00-0BA0 │ TMCount1 C                                              │                                     │
+│ TM Count 1x24V C V1.1                                   │ 6ES7 138-6AA00-0BA0 │ TMCount1 C V1.1                                         │                                     │
+│ TM Count 1x24V C V1.2                                   │ 6ES7 138-6AA00-0BA0 │ TMCount1 C V1.2                                         │                                     │
+│ TM Count 1x24V C V1.3                                   │ 6ES7 138-6AA00-0BA0 │ TMCount1 C V1.3                                         │                                     │
+│ TM Count 1x24V C V2.0                                   │ 6ES7 138-6AA01-0BA0 │ TMCount1 C V2.0                                         │                                     │
+│ TM Count 1x24V Fast Mode V1.2                           │ 6ES7 138-6AA00-0BA0 │ TMCount1 FastMode V1.2                                  │                                     │
+│ TM Count 1x24V Fast Mode V1.3                           │ 6ES7 138-6AA00-0BA0 │ TMCount1 FastMode V1.3                                  │                                     │
+│ TM Count 1x24V Fast Mode V2.0                           │ 6ES7 138-6AA01-0BA0 │ TMCount1 FastMode V2.0                                  │                                     │
+│ TM Count 1x24V M V1.0                                   │ 6ES7 138-6AA00-0BA0 │ TMCount1 M                                              │                                     │
+│ TM Count 1x24V M V1.1                                   │ 6ES7 138-6AA00-0BA0 │ TMCount1 M V1.1                                         │                                     │
+│ TM Count 1x24V M V1.2                                   │ 6ES7 138-6AA00-0BA0 │ TMCount1 M V1.2                                         │                                     │
+│ TM Count 1x24V M V1.3                                   │ 6ES7 138-6AA00-0BA0 │ TMCount1 M V1.3                                         │                                     │
+│ TM Count 1x24V M V2.0                                   │ 6ES7 138-6AA01-0BA0 │ TMCount1 M V2.0                                         │                                     │
+│ TM ECC 2xPWM 12V ST V1.0                                │ 6FE1 242-6TM10-0BB1 │ TM ECC 2xPWM 12V ST                                     │                                     │
+│ TM PosInput 1 C V1.0                                    │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 C                                           │                                     │
+│ TM PosInput 1 C V1.2                                    │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 C V1.2                                      │                                     │
+│ TM PosInput 1 C V1.3                                    │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 C V1.3                                      │                                     │
+│ TM PosInput 1 C V2.0                                    │ 6ES7 138-6BA01-0BA0 │ TMPosInput1 C V2.0                                      │                                     │
+│ TM PosInput 1 Fast Mode V1.2                            │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 FastMode                                    │                                     │
+│ TM PosInput 1 Fast Mode V1.3                            │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 FastMode V1.3                               │                                     │
+│ TM PosInput 1 Fast Mode V2.0                            │ 6ES7 138-6BA01-0BA0 │ TMPosInput1 FastMode V2.0                               │                                     │
+│ TM PosInput 1 M V1.0                                    │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 M                                           │                                     │
+│ TM PosInput 1 M V1.2                                    │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 M V1.2                                      │                                     │
+│ TM PosInput 1 M V1.3                                    │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 M V1.3                                      │                                     │
+│ TM PosInput 1 M V2.0                                    │ 6ES7 138-6BA01-0BA0 │ TMPosInput1 M V2.0                                      │                                     │
+│ TM PosInput 1 SSI C V1.0                                │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 SSI C                                       │                                     │
+│ TM PosInput 1 SSI C V1.2                                │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 SSI C V1.2                                  │                                     │
+│ TM PosInput 1 SSI C V1.3                                │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 SSI C V1.3                                  │                                     │
+│ TM PosInput 1 SSI C V2.0                                │ 6ES7 138-6BA01-0BA0 │ TMPosInput1 SSI C V2.0                                  │                                     │
+│ TM PosInput 1 SSI Fast Mode V1.2                        │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 SSI FastMode                                │                                     │
+│ TM PosInput 1 SSI Fast Mode V1.3                        │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 SSI FastMode V1.3                           │                                     │
+│ TM PosInput 1 SSI Fast Mode V2.0                        │ 6ES7 138-6BA01-0BA0 │ TMPosInput1 SSI FastMode V2.0                           │                                     │
+│ TM PosInput 1 SSI M V1.0                                │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 SSI M                                       │                                     │
+│ TM PosInput 1 SSI M V1.2                                │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 SSI M V1.2                                  │                                     │
+│ TM PosInput 1 SSI M V1.3                                │ 6ES7 138-6BA00-0BA0 │ TMPosInput1 SSI M V1.3                                  │                                     │
+│ TM PosInput 1 SSI M V2.0                                │ 6ES7 138-6BA01-0BA0 │ TMPosInput1 SSI M V2.0                                  │                                     │
+│ TM PTO 2x24V V1.0                                       │ 6ES7 138-6EB00-0BA0 │ TM PTO 2x24V                                            │                                     │
+│ TM Pulse 2x24V High Current V1.0                        │ 6ES7 138-6DB00-0BB1 │ TMPulse2 high current                                   │                                     │
+│ TM Pulse 2x24V V1.0                                     │ 6ES7 138-6DB00-0BB1 │ TMPulse2                                                │                                     │
+│ TM SIWAREX WP341 HF V1.0                                │ 7MH4 138-6CA00-0CU0 │ TM SIWAREX WP341 HF                                     │                                     │
+│ TM SIWAREX WP351 HF V1.0                                │ 7MH4 138-6BA00-0CU0 │ TM SIWAREX WP351 HF                                     │                                     │
+│ TM StepDrive 1x24..48V/5A V1.0                          │ PHYTRON 10020273    │ TMStepDrive 1x48V/5A V1.0 PM                            │                                     │
+└─────────────────────────────────────────────────────────┴─────────────────────┴─────────────────────────────────────────────────────────┴─────────────────────────────────────┘
+   GSDML-V2.33-SIEMENS-002A-SCALANCE_X200-20170328-103700.XML   
+                          Head Modules                          
+┌───────────────────────────────┬─────────────────────┬────────┐
+│ Type                          │ OrderNumber         │ GsdId  │
+├───────────────────────────────┼─────────────────────┼────────┤
+│ SCALANCE X200-4P IRT V2.1     │ 6GK5 200-4AH00-2BA3 │ DAP B  │
+│ SCALANCE X200-4P IRT V3.0     │ 6GK5 200-4AH00-2BA3 │ DAP 16 │
+│ SCALANCE X200-4P IRT V4.0     │ 6GK5 200-4AH00-2BA3 │ DAP 2A │
+│ SCALANCE X200-4P IRT V4.3     │ 6GK5 200-4AH00-2BA3 │ DAP 4C │
+│ SCALANCE X200-4P IRT V5.0     │ 6GK5 200-4AH00-2BA3 │ DAP 5C │
+│ SCALANCE X200-4P IRT V5.1     │ 6GK5 200-4AH00-2BA3 │ DAP 6D │
+│ SCALANCE X200-4P IRT V5.2     │ 6GK5 200-4AH00-2BA3 │ DAP 85 │
+│ SCALANCE X200-4P IRT V5.3     │ 6GK5 200-4AH00-2BA3 │ DAP C1 │
+│ SCALANCE X200-4P IRT V5.4     │ 6GK5 200-4AH00-2BA3 │ DAP CA │
+│ SCALANCE X201-3P IRT PRO V4.5 │ 6GK5 201-3JR00-2BA6 │ DAP 4E │
+│ SCALANCE X201-3P IRT PRO V5.0 │ 6GK5 201-3JR00-2BA6 │ DAP 59 │
+│ SCALANCE X201-3P IRT PRO V5.1 │ 6GK5 201-3JR00-2BA6 │ DAP 6F │
+│ SCALANCE X201-3P IRT PRO V5.2 │ 6GK5 201-3JR00-2BA6 │ DAP 87 │
+│ SCALANCE X201-3P IRT PRO V5.3 │ 6GK5 201-3JR00-2BA6 │ DAP C3 │
+│ SCALANCE X201-3P IRT PRO V5.4 │ 6GK5 201-3JR00-2BA6 │ DAP CC │
+│ SCALANCE X201-3P IRT V2.1     │ 6GK5 201-3BH00-2BA3 │ DAP C  │
+│ SCALANCE X201-3P IRT V3.0     │ 6GK5 201-3BH00-2BA3 │ DAP 17 │
+│ SCALANCE X201-3P IRT V4.0     │ 6GK5 201-3BH00-2BA3 │ DAP 29 │
+│ SCALANCE X201-3P IRT V4.3     │ 6GK5 201-3BH00-2BA3 │ DAP 4B │
+│ SCALANCE X201-3P IRT V5.0     │ 6GK5 201-3BH00-2BA3 │ DAP 5B │
+│ SCALANCE X201-3P IRT V5.1     │ 6GK5 201-3BH00-2BA3 │ DAP 6E │
+│ SCALANCE X201-3P IRT V5.2     │ 6GK5 201-3BH00-2BA3 │ DAP 86 │
+│ SCALANCE X201-3P IRT V5.3     │ 6GK5 201-3BH00-2BA3 │ DAP C2 │
+│ SCALANCE X201-3P IRT V5.4     │ 6GK5 201-3BH00-2BA3 │ DAP CB │
+│ SCALANCE X202-2IRT V2.0       │ 6GK5 202-2BB00-2BA3 │ DAP A  │
+│ SCALANCE X202-2IRT V3.0       │ 6GK5 202-2BB00-2BA3 │ DAP 15 │
+│ SCALANCE X202-2IRT V4.0       │ 6GK5 202-2BB00-2BA3 │ DAP 25 │
+│ SCALANCE X202-2IRT V4.3       │ 6GK5 202-2BB00-2BA3 │ DAP 47 │
+│ SCALANCE X202-2IRT V5.0       │ 6GK5 202-2BB00-2BA3 │ DAP 56 │
+│ SCALANCE X202-2IRT V5.1       │ 6GK5 202-2BB00-2BA3 │ DAP 70 │
+│ SCALANCE X202-2IRT V5.2       │ 6GK5 202-2BB00-2BA3 │ DAP 88 │
+│ SCALANCE X202-2IRT V5.3       │ 6GK5 202-2BB00-2BA3 │ DAP C4 │
+│ SCALANCE X202-2IRT V5.4       │ 6GK5 202-2BB00-2BA3 │ DAP CD │
+│ SCALANCE X202-2P IRT PRO V4.0 │ 6GK5 202-2JR00-2BA6 │ DAP 28 │
+│ SCALANCE X202-2P IRT PRO V4.3 │ 6GK5 202-2JR00-2BA6 │ DAP 4A │
+│ SCALANCE X202-2P IRT PRO V5.0 │ 6GK5 202-2JR00-2BA6 │ DAP 58 │
+│ SCALANCE X202-2P IRT PRO V5.1 │ 6GK5 202-2JR00-2BA6 │ DAP 72 │
+│ SCALANCE X202-2P IRT PRO V5.2 │ 6GK5 202-2JR00-2BA6 │ DAP 8A │
+│ SCALANCE X202-2P IRT PRO V5.3 │ 6GK5 202-2JR00-2BA6 │ DAP C6 │
+│ SCALANCE X202-2P IRT PRO V5.4 │ 6GK5 202-2JR00-2BA6 │ DAP CF │
+│ SCALANCE X202-2P IRT V2.1     │ 6GK5 202-2BH00-2BA3 │ DAP D  │
+│ SCALANCE X202-2P IRT V3.0     │ 6GK5 202-2BH00-2BA3 │ DAP 18 │
+│ SCALANCE X202-2P IRT V4.0     │ 6GK5 202-2BH00-2BA3 │ DAP 27 │
+│ SCALANCE X202-2P IRT V4.3     │ 6GK5 202-2BH00-2BA3 │ DAP 49 │
+│ SCALANCE X202-2P IRT V5.0     │ 6GK5 202-2BH00-2BA3 │ DAP 5A │
+│ SCALANCE X202-2P IRT V5.1     │ 6GK5 202-2BH00-2BA3 │ DAP 71 │
+│ SCALANCE X202-2P IRT V5.2     │ 6GK5 202-2BH00-2BA3 │ DAP 89 │
+│ SCALANCE X202-2P IRT V5.3     │ 6GK5 202-2BH00-2BA3 │ DAP C5 │
+│ SCALANCE X202-2P IRT V5.4     │ 6GK5 202-2BH00-2BA3 │ DAP CE │
+│ SCALANCE X202-2PIRT PRO V3.0  │ 6GK5 202-2JR00-2BA6 │ DAP 21 │
+│ SCALANCE X204-2 V2.0          │ 6GK5 204-2BB10-2AA3 │ DAP 12 │
+│ SCALANCE X204-2 V4.0          │ 6GK5 204-2BB10-2AA3 │ DAP 33 │
+│ SCALANCE X204-2 V4.2          │ 6GK5 204-2BB10-2AA3 │ DAP 41 │
+│ SCALANCE X204-2 V4.5          │ 6GK5 204-2BB10-2AA3 │ DAP 5F │
+│ SCALANCE X204-2 V5.0          │ 6GK5 204-2BB10-2AA3 │ DAP 77 │
+│ SCALANCE X204-2 V5.1          │ 6GK5 204-2BB10-2AA3 │ DAP 8F │
+│ SCALANCE X204-2 V5.1.1        │ 6GK5 204-2BB10-2AA3 │ DAP A0 │
+│ SCALANCE X204-2 V5.2          │ 6GK5 204-2BB10-2AA3 │ DAP B1 │
+│ SCALANCE X204-2FM V5.1        │ 6GK5 204-2BB11-2AA3 │ DAP 9E │
+│ SCALANCE X204-2FM V5.1.1      │ 6GK5 204-2BB11-2AA3 │ DAP AF │
+│ SCALANCE X204-2FM V5.2        │ 6GK5 204-2BB11-2AA3 │ DAP C0 │
+│ SCALANCE X204-2LD TS V5.1     │ 6GK5 204-2BC10-2CA2 │ DAP 9D │
+│ SCALANCE X204-2LD TS V5.1.1   │ 6GK5 204-2BC10-2CA2 │ DAP AE │
+│ SCALANCE X204-2LD TS V5.2     │ 6GK5 204-2BC10-2CA2 │ DAP BF │
+│ SCALANCE X204-2LD V2.0        │ 6GK5 204-2BC10-2AA3 │ DAP 13 │
+│ SCALANCE X204-2LD V4.0        │ 6GK5 204-2BC10-2AA3 │ DAP 32 │
+│ SCALANCE X204-2LD V4.2        │ 6GK5 204-2BC10-2AA3 │ DAP 40 │
+│ SCALANCE X204-2LD V4.5        │ 6GK5 204-2BC10-2AA3 │ DAP 60 │
+│ SCALANCE X204-2LD V5.0        │ 6GK5 204-2BC10-2AA3 │ DAP 78 │
+│ SCALANCE X204-2LD V5.1        │ 6GK5 204-2BC10-2AA3 │ DAP 90 │
+│ SCALANCE X204-2LD V5.1.1      │ 6GK5 204-2BC10-2AA3 │ DAP A1 │
+│ SCALANCE X204-2LD V5.2        │ 6GK5 204-2BC10-2AA3 │ DAP B2 │
+│ SCALANCE X204-2TS V4.3        │ 6GK5 204-2BB10-2CA2 │ DAP 4F │
+│ SCALANCE X204-2TS V4.5        │ 6GK5 204-2BB10-2CA2 │ DAP 61 │
+│ SCALANCE X204-2TS V5.0        │ 6GK5 204-2BB10-2CA2 │ DAP 79 │
+│ SCALANCE X204-2TS V5.1        │ 6GK5 204-2BB10-2CA2 │ DAP 91 │
+│ SCALANCE X204-2TS V5.1.1      │ 6GK5 204-2BB10-2CA2 │ DAP A2 │
+│ SCALANCE X204-2TS V5.2        │ 6GK5 204-2BB10-2CA2 │ DAP B3 │
+│ SCALANCE X204IRT PRO V3.0     │ 6GK5 204-0JA00-2BA6 │ DAP 20 │
+│ SCALANCE X204IRT PRO V4.0     │ 6GK5 204-0JA00-2BA6 │ DAP 26 │
+│ SCALANCE X204IRT PRO V4.3     │ 6GK5 204-0JA00-2BA6 │ DAP 48 │
+│ SCALANCE X204IRT PRO V5.0     │ 6GK5 204-0JA00-2BA6 │ DAP 57 │
+│ SCALANCE X204IRT PRO V5.1     │ 6GK5 204-0JA00-2BA6 │ DAP 74 │
+│ SCALANCE X204IRT PRO V5.2     │ 6GK5 204-0JA00-2BA6 │ DAP 8C │
+│ SCALANCE X204IRT PRO V5.3     │ 6GK5 204-0JA00-2BA6 │ DAP C8 │
+│ SCALANCE X204IRT PRO V5.4     │ 6GK5 204-0JA00-2BA6 │ DAP D1 │
+│ SCALANCE X204IRT V2.0         │ 6GK5 204-0BA00-2BA3 │ DAP 9  │
+│ SCALANCE X204IRT V3.0         │ 6GK5 204-0BA00-2BA3 │ DAP 14 │
+│ SCALANCE X204IRT V4.0         │ 6GK5 204-0BA00-2BA3 │ DAP 24 │
+│ SCALANCE X204IRT V4.3         │ 6GK5 204-0BA00-2BA3 │ DAP 46 │
+│ SCALANCE X204IRT V5.0         │ 6GK5 204-0BA00-2BA3 │ DAP 55 │
+│ SCALANCE X204IRT V5.1         │ 6GK5 204-0BA00-2BA3 │ DAP 73 │
+│ SCALANCE X204IRT V5.2         │ 6GK5 204-0BA00-2BA3 │ DAP 8B │
+│ SCALANCE X204IRT V5.3         │ 6GK5 204-0BA00-2BA3 │ DAP C7 │
+│ SCALANCE X204IRT V5.4         │ 6GK5 204-0BA00-2BA3 │ DAP D0 │
+│ SCALANCE X206-1 V2.0          │ 6GK5 206-1BB10-2AA3 │ DAP 10 │
+│ SCALANCE X206-1 V4.0          │ 6GK5 206-1BB10-2AA3 │ DAP 31 │
+│ SCALANCE X206-1 V4.2          │ 6GK5 206-1BB10-2AA3 │ DAP 3F │
+│ SCALANCE X206-1 V4.5          │ 6GK5 206-1BB10-2AA3 │ DAP 62 │
+│ SCALANCE X206-1 V5.0          │ 6GK5 206-1BB10-2AA3 │ DAP 7A │
+│ SCALANCE X206-1 V5.1          │ 6GK5 206-1BB10-2AA3 │ DAP 92 │
+│ SCALANCE X206-1 V5.1.1        │ 6GK5 206-1BB10-2AA3 │ DAP A3 │
+│ SCALANCE X206-1 V5.2          │ 6GK5 206-1BB10-2AA3 │ DAP B4 │
+│ SCALANCE X206-1LD V2.0        │ 6GK5 206-1BC10-2AA3 │ DAP 11 │
+│ SCALANCE X206-1LD V4.0        │ 6GK5 206-1BC10-2AA3 │ DAP 30 │
+│ SCALANCE X206-1LD V4.2        │ 6GK5 206-1BC10-2AA3 │ DAP 3E │
+│ SCALANCE X206-1LD V4.5        │ 6GK5 206-1BC10-2AA3 │ DAP 63 │
+│ SCALANCE X206-1LD V5.0        │ 6GK5 206-1BC10-2AA3 │ DAP 7B │
+│ SCALANCE X206-1LD V5.1        │ 6GK5 206-1BC10-2AA3 │ DAP 93 │
+│ SCALANCE X206-1LD V5.1.1      │ 6GK5 206-1BC10-2AA3 │ DAP A4 │
+│ SCALANCE X206-1LD V5.2        │ 6GK5 206-1BC10-2AA3 │ DAP B5 │
+│ SCALANCE X208 PRO V5.0        │ 6GK5 208-0HA10-2AA6 │ DAP 76 │
+│ SCALANCE X208 V2.0            │ 6GK5 208-0BA10-2AA3 │ DAP E  │
+│ SCALANCE X208 V4.0            │ 6GK5 208-0BA10-2AA3 │ DAP 2F │
+│ SCALANCE X208 V4.2            │ 6GK5 208-0BA10-2AA3 │ DAP 3D │
+│ SCALANCE X208 V4.5            │ 6GK5 208-0BA10-2AA3 │ DAP 64 │
+│ SCALANCE X208 V5.0            │ 6GK5 208-0BA10-2AA3 │ DAP 7C │
+│ SCALANCE X208 V5.1            │ 6GK5 208-0BA10-2AA3 │ DAP 94 │
+│ SCALANCE X208 V5.1.1          │ 6GK5 208-0BA10-2AA3 │ DAP A5 │
+│ SCALANCE X208 V5.2            │ 6GK5 208-0BA10-2AA3 │ DAP B6 │
+│ SCALANCE X208PRO V4.5         │ 6GK5 208-0HA10-2AA6 │ DAP 5E │
+│ SCALANCE X208PRO V5.1         │ 6GK5 208-0HA10-2AA6 │ DAP 8E │
+│ SCALANCE X208PRO V5.1.1       │ 6GK5 208-0HA10-2AA6 │ DAP 9F │
+│ SCALANCE X208PRO V5.2         │ 6GK5 208-0HA10-2AA6 │ DAP B0 │
+│ SCALANCE X212-2 V2.0          │ 6GK5 212-2BB00-2AA3 │ DAP 19 │
+│ SCALANCE X212-2 V4.0          │ 6GK5 212-2BB00-2AA3 │ DAP 2E │
+│ SCALANCE X212-2 V4.2          │ 6GK5 212-2BB00-2AA3 │ DAP 3C │
+│ SCALANCE X212-2 V4.5          │ 6GK5 212-2BB00-2AA3 │ DAP 65 │
+│ SCALANCE X212-2 V5.0          │ 6GK5 212-2BB00-2AA3 │ DAP 7D │
+│ SCALANCE X212-2 V5.1          │ 6GK5 212-2BB00-2AA3 │ DAP 95 │
+│ SCALANCE X212-2 V5.1.1        │ 6GK5 212-2BB00-2AA3 │ DAP A6 │
+│ SCALANCE X212-2 V5.2          │ 6GK5 212-2BB00-2AA3 │ DAP B7 │
+│ SCALANCE X212-2LD V2.0        │ 6GK5 212-2BC00-2AA3 │ DAP 1A │
+│ SCALANCE X212-2LD V4.0        │ 6GK5 212-2BC00-2AA3 │ DAP 2D │
+│ SCALANCE X212-2LD V4.2        │ 6GK5 212-2BC00-2AA3 │ DAP 3B │
+│ SCALANCE X212-2LD V4.5        │ 6GK5 212-2BC00-2AA3 │ DAP 66 │
+│ SCALANCE X212-2LD V5.0        │ 6GK5 212-2BC00-2AA3 │ DAP 7E │
+│ SCALANCE X212-2LD V5.1        │ 6GK5 212-2BC00-2AA3 │ DAP 96 │
+│ SCALANCE X212-2LD V5.1.1      │ 6GK5 212-2BC00-2AA3 │ DAP A7 │
+│ SCALANCE X212-2LD V5.2        │ 6GK5 212-2BC00-2AA3 │ DAP B8 │
+│ SCALANCE X216 V2.0            │ 6GK5 216-0BA00-2AA3 │ DAP 1B │
+│ SCALANCE X216 V4.0            │ 6GK5 216-0BA00-2AA3 │ DAP 2C │
+│ SCALANCE X216 V4.2            │ 6GK5 216-0BA00-2AA3 │ DAP 3A │
+│ SCALANCE X216 V4.5            │ 6GK5 216-0BA00-2AA3 │ DAP 67 │
+│ SCALANCE X216 V5.0            │ 6GK5 216-0BA00-2AA3 │ DAP 7F │
+│ SCALANCE X216 V5.1            │ 6GK5 216-0BA00-2AA3 │ DAP 97 │
+│ SCALANCE X216 V5.1.1          │ 6GK5 216-0BA00-2AA3 │ DAP A8 │
+│ SCALANCE X216 V5.2            │ 6GK5 216-0BA00-2AA3 │ DAP B9 │
+│ SCALANCE X224 V2.0            │ 6GK5 224-0BA00-2AA3 │ DAP 1C │
+│ SCALANCE X224 V4.0            │ 6GK5 224-0BA00-2AA3 │ DAP 2B │
+│ SCALANCE X224 V4.2            │ 6GK5 224-0BA00-2AA3 │ DAP 39 │
+│ SCALANCE X224 V4.5            │ 6GK5 224-0BA00-2AA3 │ DAP 68 │
+│ SCALANCE X224 V5.0            │ 6GK5 224-0BA00-2AA3 │ DAP 80 │
+│ SCALANCE X224 V5.1            │ 6GK5 224-0BA00-2AA3 │ DAP 98 │
+│ SCALANCE X224 V5.1.1          │ 6GK5 224-0BA00-2AA3 │ DAP A9 │
+│ SCALANCE X224 V5.2            │ 6GK5 224-0BA00-2AA3 │ DAP BA │
+│ SCALANCE XF204 V4.1           │ 6GK5 204-0BA00-2AF2 │ DAP 38 │
+│ SCALANCE XF204 V4.2           │ 6GK5 204-0BA00-2AF2 │ DAP 45 │
+│ SCALANCE XF204 V4.5           │ 6GK5 204-0BA00-2AF2 │ DAP 69 │
+│ SCALANCE XF204 V5.0           │ 6GK5 204-0BA00-2AF2 │ DAP 81 │
+│ SCALANCE XF204 V5.1           │ 6GK5 204-0BA00-2AF2 │ DAP 99 │
+│ SCALANCE XF204 V5.1.1         │ 6GK5 204-0BA00-2AF2 │ DAP AA │
+│ SCALANCE XF204 V5.2           │ 6GK5 204-0BA00-2AF2 │ DAP BB │
+│ SCALANCE XF204-2 V4.1         │ 6GK5 204-2BC00-2AF2 │ DAP 37 │
+│ SCALANCE XF204-2 V4.2         │ 6GK5 204-2BC00-2AF2 │ DAP 44 │
+│ SCALANCE XF204-2 V4.5         │ 6GK5 204-2BC00-2AF2 │ DAP 6A │
+│ SCALANCE XF204-2 V5.0         │ 6GK5 204-2BC00-2AF2 │ DAP 82 │
+│ SCALANCE XF204-2 V5.1         │ 6GK5 204-2BC00-2AF2 │ DAP 9A │
+│ SCALANCE XF204-2 V5.1.1       │ 6GK5 204-2BC00-2AF2 │ DAP AB │
+│ SCALANCE XF204-2 V5.2         │ 6GK5 204-2BC00-2AF2 │ DAP BC │
+│ SCALANCE XF204IRT V4.1        │ 6GK5 204-0BA00-2BF2 │ DAP 34 │
+│ SCALANCE XF204IRT V4.3        │ 6GK5 204-0BA00-2BF2 │ DAP 4D │
+│ SCALANCE XF204IRT V5.0        │ 6GK5 204-0BA00-2BF2 │ DAP 5D │
+│ SCALANCE XF204IRT V5.1        │ 6GK5 204-0BA00-2BF2 │ DAP 75 │
+│ SCALANCE XF204IRT V5.2        │ 6GK5 204-0BA00-2BF2 │ DAP 8D │
+│ SCALANCE XF204IRT V5.3        │ 6GK5 204-0BA00-2BF2 │ DAP C9 │
+│ SCALANCE XF204IRT V5.4        │ 6GK5 204-0BA00-2BF2 │ DAP D2 │
+│ SCALANCE XF206-1 V4.1         │ 6GK5 206-1BC00-2AF2 │ DAP 36 │
+│ SCALANCE XF206-1 V4.2         │ 6GK5 206-1BC00-2AF2 │ DAP 43 │
+│ SCALANCE XF206-1 V4.5         │ 6GK5 206-1BC00-2AF2 │ DAP 6B │
+│ SCALANCE XF206-1 V5.0         │ 6GK5 206-1BC00-2AF2 │ DAP 83 │
+│ SCALANCE XF206-1 V5.1         │ 6GK5 206-1BC00-2AF2 │ DAP 9B │
+│ SCALANCE XF206-1 V5.1.1       │ 6GK5 206-1BC00-2AF2 │ DAP AC │
+│ SCALANCE XF206-1 V5.2         │ 6GK5 206-1BC00-2AF2 │ DAP BD │
+│ SCALANCE XF208 V4.1           │ 6GK5 208-0BA00-2AF2 │ DAP 35 │
+│ SCALANCE XF208 V4.2           │ 6GK5 208-0BA00-2AF2 │ DAP 42 │
+│ SCALANCE XF208 V4.5           │ 6GK5 208-0BA00-2AF2 │ DAP 6C │
+│ SCALANCE XF208 V5.0           │ 6GK5 208-0BA00-2AF2 │ DAP 84 │
+│ SCALANCE XF208 V5.1           │ 6GK5 208-0BA00-2AF2 │ DAP 9C │
+│ SCALANCE XF208 V5.1.1         │ 6GK5 208-0BA00-2AF2 │ DAP AD │
+│ SCALANCE XF208 V5.2           │ 6GK5 208-0BA00-2AF2 │ DAP BE │
+└───────────────────────────────┴─────────────────────┴────────┘

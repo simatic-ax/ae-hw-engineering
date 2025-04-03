@@ -1,0 +1,16 @@
+Templates:
+  Modules:
+  - Name: 'et200s_pm_dc24v_Template'
+    Placeholders:
+      - Name: NAME
+    Content:
+      Name: "${NAME}"
+      TypeIdentifier:
+        FileName: 'GSDML-V2.25-SIEMENS-ET200S-20191007.XML'
+        GsdId: '7'
+      Parameters:
+        RecordDataList:
+        - IndexName: 'General parameters'
+          Values:
+          - OffsetName: 'Diag: missing load voltage L+'
+            Value: False

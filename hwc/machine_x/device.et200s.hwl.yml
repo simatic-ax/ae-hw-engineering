@@ -1,0 +1,29 @@
+Devices:
+- Name: 'et200s_device'
+  Modules:
+  - Apply:
+      TemplateName: 'et200s_im151_3_pn_hf_v7_0_Template'
+      Arguments:
+        NAME: 'im151hfv70'
+        IP_ADDRESS_X1: '192.168.0.18/24'
+        PROFINET_DEVICE_NAME_X1: 'et200s'
+  - Apply:
+      TemplateName: 'et200s_pm_dc24v_Template'
+      Arguments:
+        NAME: 'pm'
+  - Apply:
+      TemplateName: 'et200s_dq2x24v_hf_Template'
+      Arguments:
+        NAME: 'dq2_1'
+  - Apply:
+      TemplateName: 'et200s_dq2x24v_hf_Template'
+      Arguments:
+        NAME: 'dq2_2'
+  - Apply:
+      TemplateName: 'et200s_di2x24v_hf_Template'
+      Arguments:
+        NAME: 'di2_1'
+  - Apply:
+      TemplateName: 'et200s_di2x24v_hf_Template'
+      Arguments:
+        NAME: 'di2_2'

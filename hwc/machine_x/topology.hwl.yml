@@ -1,0 +1,13 @@
+PortInterconnections:
+- Ports:
+  - Ref: scalancex208_device/scalancex208/Port_1
+  - Ref: plc_device/cpu1516v31/Port_1
+- Ports:
+  - Ref: scalancex208_device/scalancex208/Port_2
+  - Ref: et200sp1_device/im155hfv33/Port_1
+- Ports:
+  - Ref: scalancex208_device/scalancex208/Port_3
+  - Ref: et200sp2_device/im155stv41/Port_1
+- Ports:
+  - Ref: scalancex208_device/scalancex208/Port_4
+  - Ref: et200s_device/im151hfv70/Port_1

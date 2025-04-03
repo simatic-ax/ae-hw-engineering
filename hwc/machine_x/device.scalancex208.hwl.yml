@@ -1,0 +1,9 @@
+Devices:
+- Name: 'scalancex208_device'
+  Modules:
+  - Apply:
+      TemplateName: 'scalancex208_Template'
+      Arguments:
+        NAME: 'scalancex208'
+        IP_ADDRESS_X1: '192.168.0.19/24'
+        PROFINET_DEVICE_NAME_X1: 'scalancex208'

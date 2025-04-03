@@ -1,0 +1,16 @@
+Templates:
+  Modules:
+  - Name: 'et200sp_servermod_wo_io_Template'
+    Placeholders:
+      - Name: NAME
+    Content:
+      Name: "${NAME}"
+      TypeIdentifier:
+        FileName: 'GSDML-V2.45-SIEMENS-ET200SP-20241104.XML'
+        GsdId: 'Servermodule_without_io'
+      Parameters:
+        RecordDataList:
+        - IndexName: 'General parameters'
+          Values:
+          - OffsetName: 'Group diagnostics: Missing supply voltage L+'
+            Value: False

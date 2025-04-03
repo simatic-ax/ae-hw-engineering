@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "HardwareIdentifiers": [
+    {
+      "Name": "et200s_device",
+      "Value": 271
+    },
+    {
+      "Name": "et200s_device~Rack",
+      "Value": 274
+    },
+    {
+      "Name": "et200s_device~di2_1~2DI DC24V HF",
+      "Value": 277
+    },
+    {
+      "Name": "et200s_device~di2_2~2DI DC24V HF",
+      "Value": 276
+    },
+    {
+      "Name": "et200s_device~dq2_1~2DO DC24V/0.5A HF",
+      "Value": 279
+    },
+    {
+      "Name": "et200s_device~dq2_2~2DO DC24V/0.5A HF",
+      "Value": 278
+    },
+    {
+      "Name": "et200s_device~im151hfv70",
+      "Value": 275
+    },
+    {
+      "Name": "et200s_device~im151hfv70~IM151-3 PN HF V7.0",
+      "Value": 281
+    },
+    {
+      "Name": "et200s_device~im151hfv70~PN-IO",
+      "Value": 270
+    },
+    {
+      "Name": "et200s_device~im151hfv70~PN-IO~Port_1",
+      "Value": 272
+    },
+    {
+      "Name": "et200s_device~im151hfv70~PN-IO~Port_2",
+      "Value": 273
+    },
+    {
+      "Name": "et200s_device~pm~PM-E DC24V",
+      "Value": 280
+    },
+    {
+      "Name": "et200sp1_device",
+      "Value": 293
+    },
+    {
+      "Name": "et200sp1_device~Rack",
+      "Value": 296
+    },
+    {
+      "Name": "et200sp1_device~di8~DI 8x24VDC ST V1.1",
+      "Value": 300
+    },
+    {
+      "Name": "et200sp1_device~dq8~DQ 8x24VDC/0.5A ST V1.1",
+      "Value": 299
+    },
+    {
+      "Name": "et200sp1_device~im155hfv33",
+      "Value": 297
+    },
+    {
+      "Name": "et200sp1_device~im155hfv33~IM 155-6 PN HF V3.3",
+      "Value": 301
+    },
+    {
+      "Name": "et200sp1_device~im155hfv33~PN-IO",
+      "Value": 292
+    },
+    {
+      "Name": "et200sp1_device~im155hfv33~Port_1",
+      "Value": 294
+    },
+    {
+      "Name": "et200sp1_device~im155hfv33~Port_2",
+      "Value": 295
+    },
+    {
+      "Name": "et200sp1_device~servermodule~Server module V1.1 (0 bytes)",
+      "Value": 298
+    },
+    {
+      "Name": "et200sp2_device",
+      "Value": 283
+    },
+    {
+      "Name": "et200sp2_device~Rack",
+      "Value": 286
+    },
+    {
+      "Name": "et200sp2_device~di8~DI 8x24VDC ST V1.1",
+      "Value": 290
+    },
+    {
+      "Name": "et200sp2_device~dq8~DQ 8x24VDC/0.5A ST V1.1",
+      "Value": 289
+    },
+    {
+      "Name": "et200sp2_device~im155stv41",
+      "Value": 287
+    },
+    {
+      "Name": "et200sp2_device~im155stv41~IM 155-6 PN ST V4.1",
+      "Value": 291
+    },
+    {
+      "Name": "et200sp2_device~im155stv41~PN-IO",
+      "Value": 282
+    },
+    {
+      "Name": "et200sp2_device~im155stv41~Port_1",
+      "Value": 284
+    },
+    {
+      "Name": "et200sp2_device~im155stv41~Port_2",
+      "Value": 285
+    },
+    {
+      "Name": "et200sp2_device~servermodule~Server module V1.1 (0 bytes)",
+      "Value": 288
+    },
+    {
+      "Name": "plc_device",
+      "Value": 32
+    },
+    {
+      "Name": "plc_device~Rail_0",
+      "Value": 302
+    },
+    {
+      "Name": "plc_device~cpu1516v31",
+      "Value": 48
+    },
+    {
+      "Name": "plc_device~cpu1516v31~CPU display_1",
+      "Value": 54
+    },
+    {
+      "Name": "plc_device~cpu1516v31~Card reader/writer_1",
+      "Value": 51
+    },
+    {
+      "Name": "plc_device~cpu1516v31~DP interface_1",
+      "Value": 60
+    },
+    {
+      "Name": "plc_device~cpu1516v31~OPC UA_1",
+      "Value": 117
+    },
+    {
+      "Name": "plc_device~cpu1516v31~PROFINET_interface_1",
+      "Value": 64
+    },
+    {
+      "Name": "plc_device~cpu1516v31~PROFINET_interface_1~Port_1",
+      "Value": 65
+    },
+    {
+      "Name": "plc_device~cpu1516v31~PROFINET_interface_1~Port_2",
+      "Value": 66
+    },
+    {
+      "Name": "plc_device~cpu1516v31~PROFINET_interface_2",
+      "Value": 72
+    },
+    {
+      "Name": "plc_device~cpu1516v31~PROFINET_interface_2~Port_3",
+      "Value": 73
+    },
+    {
+      "Name": "plc_device~cpu1516v31~Virtual_communication_interface",
+      "Value": 135
+    },
+    {
+      "Name": "profinet_io_system",
+      "Value": 256
+    },
+    {
+      "Name": "scalancex208_device",
+      "Value": 258
+    },
+    {
+      "Name": "scalancex208_device~Rack",
+      "Value": 267
+    },
+    {
+      "Name": "scalancex208_device~scalancex208",
+      "Value": 268
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~PN-IO",
+      "Value": 257
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~PN-IO~Port_1",
+      "Value": 259
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~PN-IO~Port_2",
+      "Value": 260
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~PN-IO~Port_3",
+      "Value": 261
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~PN-IO~Port_4",
+      "Value": 262
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~PN-IO~Port_5",
+      "Value": 263
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~PN-IO~Port_6",
+      "Value": 264
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~PN-IO~Port_7",
+      "Value": 265
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~PN-IO~Port_8",
+      "Value": 266
+    },
+    {
+      "Name": "scalancex208_device~scalancex208~SCALANCE X208",
+      "Value": 269
+    }
+  ]
+}

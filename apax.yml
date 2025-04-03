@@ -8,97 +8,114 @@ description: This reposetory contains an example project to demonstrate how to I
 targets:
   - "1500"
 
-# Install Setting
-installStrategy: strict
-apaxVersion: 3.2.1
+#  "@ax/opcua-server-config": 1.0.0
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2405.0.0
-  "@ax/opcua-server-config": 1.0.0
+  "@ax/sdk": 2411.2.0
+  "@ax/hwc": 2.1.0
+  "@ax/hwld": 2.1.0
+  "@ax/hw-s7-1500": 2.1.0
 
 # Project variables
 variables:
   APAX_BUILD_ARGS:
-    - "--debug" # Generate debug information for target "1500"
-
-  # Folder where to find the compiled HW artefacts
+    - --debug # Enable debug information for value debugging
+  # Folder where to find the compiled HW artifacts
   HW_BIN_FOLDER: ./hwbin
-
-  # Folder where to find the compiled SW artefacts
-  SW_BIN_FOLDER: ./bin/1500
-
-  # IP Address of the PLC to be loaded
-  PLC_IP: 192.168.0.15
-
-  # SIMATIC PLCs support TLS/certificate based communication (secure communication between the PLC and Enginieering System/SIMATIC AX or and HMI, web server and OPC UA server)
-  # At least one TLS certificate must be provided and can be used for all PLC communication services.
-  # Alternatively, a separate certificate can be provided for each service.
-  # This is a archive file (PKCS #12)  used to bundle a private key with its X.509 certificate (public key)
-  TLS_PFX_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.pfx
-
-  # DISCLAIMER:Storing and publishing passwords in readable form is not best practice. It was only done here to simplify the demonstration
-  # this is the password to open the file TLS_Server_Certificate_for_S71500.pfx
-  PFX_CERT_PW: S71500
-
-  # this is the X.509 certificate (public key) to be passed with a call accessing the PLC (e.g. hwld, sld) to let AX verifying the PLCs idendity (authentication)
-  TLS_PUBLIC_KEY_CERTFILE: hwcfg/cert/TLS_Server_Certificate_for_S71500.crt
-
-  # SIMATIC PLCs support role based user management
-  # In this example I configure 2 users (I call them "Admin" and "Operator") with different roles and rights
-  # A user is identified by a name and a password 
-  # DISCLAIMER:Storing and publishing passwords in readable form is not best practice. It was only done here to simplify the demonstration
-  USER1: Admin
-  USER1_PW: Demo#123
-  USER2: Operator
-  USER2_PW: Demo#123
-
-  # DISCLAIMER:Storing and publishing passwords in readable form is not best practice. It was only done here to simplify the demonstration
-  # The master passwort is known as "Passwort for protection of confidential PLC configuration data". 
-  # To transfer it to the PLC, it must be passed as an argument during the first hardware download. It can be omitted in further hardware download calls.
-  MASTER_PW: Demo#123
-
+  # Folder where to find the compiled SW artifacts
+  SW_BIN_FOLDER: "./bin/1500"
+  # Choose your target RT, here : any S7-1500 PLC
+  # IP address must match with the IP address of your target device
+  # The IP address in the .vscode/launch.json must be equal  
+  IP_ADDRESS: "192.168.0.10"
+  # The master password for protection of confidential PLC configuration data
+  # DISCLAIMER: Storing and publishing passwords in readable form is not a best practice. It is only done here to simplify the demonstration
+  # Please use a password that is case sensitive (1 big and 1 small letter), a special character and a number.
+  MASTER_PW: "Demo#123"
+  # The locations of the certificate files
+  TLS_CONNECT_CERTFILE: "certificate/reference_x509.crt"
+  TLS_IMPORT_CERTFILE: "certificate/containerWithPublicAndPrivateKeys_x509.p12"
+  # The password (or passphrase) to open containerWithPublicAndPrivateKeys_x509.p12 used when importing the certificate. 
+  # DISCLAIMER: Storing and publishing passwords in readable form is not a best practice. It is only done here to simplify the demonstration
+  CERT_PASSPHRASE: "!S71500"
+  # The name of the plc as specified in the plc configuration
+  # The name should be specified before creating the plc security file, as the files are assigned using the plc name.
+  PLC_NAME: "cpu1516v31"
+  # The users names as specified in the plc configuration
+  USER_1_NAME: "Adam"
+  USER_2_NAME: "Otto"
+  # The passwords for users as specified in the plc configuration.
+  # DISCLAIMER: Storing and publishing passwords in readable form is not a best practice. It is only done here to simplify the demonstration.
+  USER_1_PASSWORD: "A123456z"
+  USER_2_PASSWORD: "O123456z"
 
 # Apax scripts
 scripts:
-  # install the GSDML files of the PROFINET IO devices that the PLC is to operate
-  hw_install_gsdml: hwc install-gsd -i hwcfg/gsd
-
-  # create a text file containing all modules can be used. Pls. recall after you've added further GSDML files 
+  ############### Inital runs for PLC / PLC Name changes ###########################
+  hw_install_gsd: hwc install-gsd -i hwc/gsd
   hw_print_catalog: hwc get-supported-devices > hw_catalog.txt
 
-  # this call returns all properties/parameters a user can change in module (in this case: the PLC 1516 V3.1)
-  hw_get_properties:
-    - hwc get-supported-device-properties -o  "6ES7 516-3AP03-0AB0" -v "V3.1" > params.txt
+  # The bash function provide the easy creation of certificates via open ssl and then moves the certificate to the certificate folder. 
+  # In order to call the script, the access level must be authorized at the beginning.
+  create_certificate:
+    - chmod +x certificate/createCertificateViaOpenSSL.sh
+    - certificate/createCertificateViaOpenSSL.sh
+    - echo "set in the apax.yml the variable CERT_PASSPHRASE to the value that you insert as password of import of certificate"
+  # Creates the file for the security configuration for the PLC
+  hwc_setup_secure_communication: hwc setup-secure-communication --module-name $PLC_NAME --input hwc --master-password:$MASTER_PW
+  # Imports the certificate for TLS (Transport Layer Security) communication in the project to the PLC
+  hwc_import_certificate:
+    - hwc import-certificate --module-name $PLC_NAME --input hwc --certificate $TLS_IMPORT_CERTFILE --passphrase $CERT_PASSPHRASE --purpose TLS
+    - hwc import-certificate --module-name $PLC_NAME --input hwc --certificate $TLS_IMPORT_CERTFILE --passphrase $CERT_PASSPHRASE --purpose OpcUAServer
+    - hwc import-certificate --module-name $PLC_NAME --input hwc --certificate $TLS_IMPORT_CERTFILE --passphrase $CERT_PASSPHRASE --purpose WebServer
 
-  # setup all security relevant data for a specific PLC
-  hw_setup_security:
-    # create a file made to stores all confidential data (certificates, passwords, users, rights etc.) in a secure format so that it can be added to Git
-    - hwc setup-secure-communication --name cpu1516 --input hwcfg/cpu1516.hwl.json --password $MASTER_PW
-    # add a TLS certificate for the PLC as a server, that allows a client (e.g. SIMATIC AX, or an HMI) to verify the PLC's identity when accessing it
-    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose TLS
-    # add a certificate for the PLC's Web server, that allows a Web client (e.g. a browser) to verify the server identity
-    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW  --purpose WebServer
-    # add a certificate for the PLC's OPC UA server, that allows an OPC UA client (e.g. a HMI) to verify the server identity
-    - hwc import-certificate --name cpu1516 --input hwcfg/cpu1516.hwl.json --certificate $TLS_PFX_CERTFILE --password $PFX_CERT_PW --purpose OpcUAServer
-    # add a password for a users who can access the PLC and it services (Webs erver, OPC UA server) according to the access authorizations after logging on with his password
-    - hwc manage-users set-password -u $USER1 -p "$USER1_PW" --moduleName cpu1516 -i hwcfg/cpu1516.hwl.json
-    - hwc manage-users set-password -u $USER2 -p "$USER2_PW" --moduleName cpu1516 -i hwcfg/cpu1516.hwl.json
+  # Creates the default user for the PLC
+  hwc_add_user:
+    - hwc manage-users --input hwc --module-name $PLC_NAME set-password --username $USER_1_NAME --password $USER_1_PASSWORD
+    - hwc manage-users --input hwc --module-name $PLC_NAME set-password --username $USER_2_NAME --password $USER_2_PASSWORD
+  ##################################################################################
+  hw_generate_config_templates:
+    #s71500 cpu1516-3pn/dp v3.1
+    - apax hwc generate-template-file --order-number "6ES7 516-3AP03-0AB0" --version "V3.1" --output hwc/hw_templates/cpu1516_v3_1
+    #et200sp im155-6-pn-hf v3.3 
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.45-SIEMENS-ET200SP-20241104.XML" --gsd-id "DIM HF V3.3" --output hwc/hw_templates/et200sp_im_155_6_pn_hf_v3_3
+    #et200sp im155-6-pn-st v4.1 
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.45-SIEMENS-ET200SP-20241104.XML" --gsd-id "DIM ST V4.1" --output hwc/hw_templates/et200sp_im_155_6_pn_st_v4_1
+    #et200sp di8-st v1.1
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.45-SIEMENS-ET200SP-20241104.XML" --gsd-id "DI 8x24VDC ST V1.1" --output hwc/hw_templates/et200sp_di8x24vdcst_v1_1
+    #et200sp dq8-st v1.1
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.45-SIEMENS-ET200SP-20241104.XML" --gsd-id "DQ 8x24VDC/0,5A ST V1.1" --output hwc/hw_templates/et200sp_dq8x24VDC_v1_1
+    #et200sp server module
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.45-SIEMENS-ET200SP-20241104.XML" --gsd-id "Servermodule_without_io" --output hwc/hw_templates/et200sp_servermod_wo_io
+    #scalance x208 v4.2
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.33-Siemens-002A-SCALANCE_X200-20170328-103700.XML" --gsd-id "DAP 3D" --output hwc/hw_templates/scalancex208
+    #et200s IM151-3 PN HF V7.0
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.25-SIEMENS-ET200S-20191007.XML" --gsd-id "DIM 20" --output hwc/hw_templates/et200s_im151_3_pn_hf_v7_0
+    #et200s  PM-E DC24V 
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.25-SIEMENS-ET200S-20191007.XML" --gsd-id "7" --output hwc/hw_templates/et200s_pm_dc24v
+    #et200s  2DO DC24V/0.5A HF 
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.25-SIEMENS-ET200S-20191007.XML" --gsd-id "161" --output hwc/hw_templates/et200s_dq2x24v_hf
+    #et200s  2DI DC24V HF  
+    - apax hwc generate-template-file --gsd-file-name "GSDML-V2.25-SIEMENS-ET200S-20191007.XML" --gsd-id "1" --output hwc/hw_templates/et200s_di2x24v_hf
 
-  # compile and load the hardware configuration
-  hw_load:
-    # compile the hardware description (input:sources) to target specific data (output:binaries) and update the IO- and HwIdent mapping (SystemConstants)
-    - hwc compile --input hwcfg --input hwcfg_templates --output $HW_BIN_FOLDER
-    # load the target specific hardware data (binaries) to the PLC
-    - hwld --input $HW_BIN_FOLDER/cpu1516 -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -M:$MASTER_PW
+  # Compile the hardware description (input:sources) to target specific data (output:binaries) and update the IO- and HwIdent mapping (SystemConstants)
+  hw_compile: hwc compile --input hwc --output $HW_BIN_FOLDER
+  # load the target specific hardware data (binaries) to the PLC
+  init_hw_load: hwld --input $HW_BIN_FOLDER/$PLC_NAME -t $IP_ADDRESS --accept-security-disclaimer -M:$MASTER_PW
+  hw_load: hwld --input $HW_BIN_FOLDER/$PLC_NAME -t $IP_ADDRESS --accept-security-disclaimer -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD" -r
 
-    # compile and load the automation program
-  sw_load:
+  hw_compile_and_load:
+    - apax hw_compile
+    - apax hw_load
+
+  # Call 'apax load' to download the builded program to the target. An 'apax build' might be required upfront
+  sw_load: sld load --input $SW_BIN_FOLDER --target $IP_ADDRESS --restart --accept-security-disclaimer --log debug -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"
+  # Call 'apax dlplc' to build and download the application to the target
+  dlplc:
     - apax build
-    - sld load --input $SW_BIN_FOLDER --target $PLC_IP -u:$USER1 -p:$USER1_PW  --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -r
-
-  # load the OPC UA interface to expose variables accessible for an OPC UA client
-  opcua_load:
-    - apax oscr interface install $SW_BIN_FOLDER/ae-hw-engineering.app -t $PLC_IP -u:$USER1 -p:$USER1_PW --accept-security-disclaimer -C $TLS_PUBLIC_KEY_CERTFILE -sr
-  # verify the the interface was added
-  opcua_list:
-    - apax oscr interface list -t $PLC_IP -u:$USER1 -p:$USER1_PW -C $TLS_PUBLIC_KEY_CERTFILE
+    - apax sw_load
+  # Compiles the hardware and software and then loads it onto the PLC
+  compile_and_load_all:
+    - apax hw_compile
+    - apax hw_load
+    - apax dlplc

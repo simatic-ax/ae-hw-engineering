@@ -1,0 +1,59 @@
+Templates:
+  Modules:
+  - Name: 'scalancex208_Template'
+    Placeholders:
+      - Name: NAME
+      - Name: IP_ADDRESS_X1
+      - Name: PROFINET_DEVICE_NAME_X1
+    Content:
+      Name: "${NAME}"
+      TypeIdentifier:
+        FileName: 'GSDML-V2.33-SIEMENS-002A-SCALANCE_X200-20170328-103700.XML'
+        GsdId: 'DAP 3D'
+      Interfaces:
+      - Name: 'PN-IO'
+        Label: 'X1'
+        Addresses:
+          Configured:
+          - IPv4: "${IP_ADDRESS_X1}"
+          - ProfinetDeviceName: "${PROFINET_DEVICE_NAME_X1}"
+        Parameters:
+          # IECV22LLDPMode: True
+          # TsnDomainName: null
+      Ports:
+      - Name: 'Port_1'
+        Label: 'X1 P1'
+      - Name: 'Port_2'
+        Label: 'X1 P2'
+      - Name: 'Port_3'
+        Label: 'X1 P3'
+      - Name: 'Port_4'
+        Label: 'X1 P4'
+      - Name: 'Port_5'
+        Label: 'X1 P5'
+      - Name: 'Port_6'
+        Label: 'X1 P6'
+      - Name: 'Port_7'
+        Label: 'X1 P7'
+      - Name: 'Port_8'
+        Label: 'X1 P8'
+      Parameters:
+        RecordDataList:
+        - IndexName: 'Alarm setting'
+          Values:
+          # - Offset: '6'
+          #   ValueName: 'Reserve'
+          # - Offset: '8'
+          #   ValueName: 'Reserve'
+            - OffsetName: 'Redundant power supply'
+              # Possible ValueNames: Not monitored | Monitored
+              ValueName: 'Not monitored'
+            - OffsetName: 'C-PLUG error'
+              # Possible ValueNames: Not monitored | Monitored
+              ValueName: 'Not monitored'
+            # - Offset: '9.2'
+            #   Value: False
+            # - OffsetName: 'Influence of pressing button'
+            #   Value: False
+            # - Offset: '9.4'
+            #   ValueName: 'Reserve'
