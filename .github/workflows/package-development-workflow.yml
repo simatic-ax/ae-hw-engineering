@@ -53,15 +53,6 @@ jobs:
         with:
           immutable: true
 
-      - name: Build source code
-        uses: simatic-ax/actions/apax-build@v3
-        with:
-          apax-build-targets: |
-            1500
-          apax-build-args: |
-            --debug
-            --log Debug
-
       - name: Test source code
         uses: ./.github/test-hwc
 
