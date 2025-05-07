@@ -7,6 +7,7 @@ runs:
     - name: "Test hwc"
       shell: bash
       run: |
+        apax hw_install_gsd
         apax hwc_setup_secure_communication
         apax hwc_import_certificate
         apax hwc_add_user
