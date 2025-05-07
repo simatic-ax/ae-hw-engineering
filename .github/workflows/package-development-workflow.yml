@@ -57,16 +57,14 @@ jobs:
         uses: simatic-ax/actions/apax-build@v3
         with:
           apax-build-targets: |
-            llvm
             1500
           apax-build-args: |
             --debug
             --log Debug
 
       - name: Test source code
-        uses: simatic-ax/actions/apax-test@v3
+        uses: ./.github/test-hwc
         with:
-          coverage: true
           loglevel: debug
 
       - name: Check links
