@@ -1,0 +1,48 @@
+# This workflow creates a template based of the repository and publishes it to the registry
+name: Templatify workflow
+
+on:
+  workflow_dispatch:
+
+permissions:
+  packages: read
+  
+jobs:
+  templatify:
+    name: Templatify
+    runs-on: ubuntu-24.04
+    container:
+      image: ghcr.io/simatic-ax/ci-images/apax-ci-image:3.4.2
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    steps: 
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Templatify repository
+        uses: ./apax-templatify # replace with simatic-ax/actions/apax-templatify@v3
+        with:
+          path: actions-test # remove later, only here for test purposes
+          version: 1.0.0
+
+      - name: Pack the template
+        uses: ./apax-pack # simatic-ax/actions/apax-pack@v3
+        with:
+          path: actions-test/actions-test-template # remove later, only here for test purposes
+          version: 1.0.0
+      
+      - name: Login to required registries
+        uses: ./apax-login # replace with simatic-ax/actions/apax-login@v3
+        with:
+          apax-token: ${{ secrets.APAX_TOKEN }}
+          registries: |
+            https://npm.pkg.github.com/,${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Publish template
+        uses: ./apax-publish # simatic-ax/actions/apax-publish@v3
+        with:
+          registries: |
+            https://npm.pkg.github.com/
+          tag: 1.0.0
+          path: actions-test/actions-test-template # remove later, only here for test purposes
