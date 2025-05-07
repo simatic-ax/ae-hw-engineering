@@ -64,8 +64,6 @@ jobs:
 
       - name: Test source code
         uses: ./.github/test-hwc
-        with:
-          loglevel: debug
 
       - name: Check links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
