@@ -8,13 +8,16 @@ description: This reposetory contains an example project to demonstrate how to I
 targets:
   - "1500"
 
-#  "@ax/opcua-server-config": 1.0.0
+# Catalog:
+catalogs:
+  "@ax/simatic-ax": 2504.0.0
+
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2411.2.0
-  "@ax/hwc": 2.1.0
-  "@ax/hwld": 2.1.0
-  "@ax/hw-s7-1500": 2.1.0
+  "@ax/sdk": 2504.0.0
+  "@ax/hwc": 3.0.0
+  "@ax/hwld": 3.0.0
+  "@ax/hw-s7-1500": 3.0.0
 
 # Project variables
 variables:
