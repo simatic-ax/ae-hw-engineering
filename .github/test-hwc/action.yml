@@ -15,7 +15,7 @@ runs:
         # delte exsting config for test
         rm -rf hwc/machine_x/hwc.gen
         # deactivate opc ua server in config > cause there is no lisenz on test agent
-        yq eval '.Templates.Modules[0].Content.Services[] | select(.Type == "OpcUaServer").Enabled = false' --inplace hwc/hw_templates/cpu1516_v3_1.hwl.yaml
+        yq -i '(.Templates.Modules[0].Content.Services[] | select(.Type == "OpcUaServer").Enabled) = false' hwc/hw_templates/cpu1516_v3_1.hwl.yaml
         apax hw_install_gsd
         apax hwc_setup_secure_communication
         apax hwc_import_certificate
