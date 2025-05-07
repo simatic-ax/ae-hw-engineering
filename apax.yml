@@ -62,8 +62,8 @@ scripts:
   # In order to call the script, the access level must be authorized at the beginning.
   create_certificate:
     - chmod +x certificate/createCertificateViaOpenSSL.sh
-    - certificate/createCertificateViaOpenSSL.sh
-    - echo "set in the apax.yml the variable CERT_PASSPHRASE to the value that you insert as password of import of certificate"
+    - certificate/createCertificateViaOpenSSL.sh $CERT_PASSPHRASE
+    - echo "Make sure that the CERT_PASSPHRASE variable retains the value that was last used to generate the certificate files when you import certificates later."
   # Creates the file for the security configuration for the PLC
   hwc_setup_secure_communication: hwc setup-secure-communication --module-name $PLC_NAME --input hwc --master-password:$MASTER_PW
   # Imports the certificate for TLS (Transport Layer Security) communication in the project to the PLC
