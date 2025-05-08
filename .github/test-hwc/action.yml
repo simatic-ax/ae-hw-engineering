@@ -1,10 +1,10 @@
-name: "Test HWC"
-description: "Test the HWC workflow for the application example"
+name: "Test Application Example"
+description: "Test the HWC workflow for the application example and do a software build"
   
 runs:
   using: "composite"
   steps:
-    - name: "Test hwc"
+    - name: "Test create of hwc"
       shell: bash
       run: |
         # installl yq on image
@@ -21,8 +21,7 @@ runs:
         apax hwc_import_certificate
         apax hwc_add_user
         apax hw_compile
-    - name: "Test software"
+    - name: "Build software"
       shell: bash
       run: |
         apax build
-        apax test
