@@ -92,7 +92,7 @@ Templates:
         CycleEnableMinimumCycleTime: True
         CycleMaximumCycleTime: 150
         CycleMinimumCycleTime: 1
-        OpcUaPurchasedLicense: 'SimaticOpcUaS71500Medium'
+        OpcUaPurchasedLicense: 2
         ConfigurationControl: False
         LocationIdentifier: ""
         PlantDesignation: ""
