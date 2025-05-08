@@ -8,13 +8,16 @@ description: This reposetory contains an example project to demonstrate how to I
 targets:
   - "1500"
 
-#  "@ax/opcua-server-config": 1.0.0
+# Catalog:
+catalogs:
+  "@ax/simatic-ax": 2504.0.0
+
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2411.2.0
-  "@ax/hwc": 2.1.0
-  "@ax/hwld": 2.1.0
-  "@ax/hw-s7-1500": 2.1.0
+  "@ax/sdk": 2504.0.0
+  "@ax/hwc": 3.0.0
+  "@ax/hwld": 3.0.0
+  "@ax/hw-s7-1500": 3.0.0
 
 # Project variables
 variables:
@@ -59,8 +62,8 @@ scripts:
   # In order to call the script, the access level must be authorized at the beginning.
   create_certificate:
     - chmod +x certificate/createCertificateViaOpenSSL.sh
-    - certificate/createCertificateViaOpenSSL.sh
-    - echo "set in the apax.yml the variable CERT_PASSPHRASE to the value that you insert as password of import of certificate"
+    - certificate/createCertificateViaOpenSSL.sh $CERT_PASSPHRASE
+    - echo "Make sure that the CERT_PASSPHRASE variable retains the value that was last used to generate the certificate files when you import certificates later."
   # Creates the file for the security configuration for the PLC
   hwc_setup_secure_communication: hwc setup-secure-communication --module-name $PLC_NAME --input hwc --master-password:$MASTER_PW
   # Imports the certificate for TLS (Transport Layer Security) communication in the project to the PLC

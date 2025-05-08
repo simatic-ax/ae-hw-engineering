@@ -31,6 +31,7 @@ Templates:
           - 'Basic256Sha256SignEncrypt'
           # AlarmsAndConditionsAcknowledgeActive: False
           # AlarmsAndConditionsEnable: False
+          Port: 4048
       - Type: 'WebServer'
         Enabled: True
         Parameters:
@@ -91,6 +92,7 @@ Templates:
         CycleEnableMinimumCycleTime: True
         CycleMaximumCycleTime: 150
         CycleMinimumCycleTime: 1
+        OpcUaPurchasedLicense: 2
         ConfigurationControl: False
         LocationIdentifier: ""
         PlantDesignation: ""

@@ -22,12 +22,12 @@ echo "Step3 of PKCS12 file creation COMPLETED: generating end-entity certificate
 
 # Export certificate in pkcs12 format
 echo "Step4 of PKCS12 file creation STARTED: export certificate in pkcs12 format"
-openssl pkcs12 -export -in server.cert.pem -inkey privateKey.pem -out containerWithPublicAndPrivateKeys_x509.p12
+openssl pkcs12 -export -in server.cert.pem -inkey privateKey.pem -out containerWithPublicAndPrivateKeys_x509.p12 -passout pass:$1
 echo "Step4 of PKCS12 file creation COMPLETED: export certificate in pkcs12 format"
 
 # Create certificate with public key
 echo "Certificate with public key creation STARTED"
-openssl pkcs12 -in containerWithPublicAndPrivateKeys_x509.p12 -out reference_x509.crt -nokeys
+openssl pkcs12 -in containerWithPublicAndPrivateKeys_x509.p12 -out reference_x509.crt -nokeys -passin pass:$1
 echo "Certificate with public key creation COMPLETED"
 
 # move certificate files to folder

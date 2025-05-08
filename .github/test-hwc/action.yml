@@ -1,0 +1,23 @@
+name: "Test Application Example"
+description: "Test the HWC workflow for the application example and do a software build"
+  
+runs:
+  using: "composite"
+  steps:
+    - name: "Setup test enviorment"
+      shell: bash
+      run: | 
+        # delte exsting config for test
+        rm -rf hwc/machine_x/hwc.gen
+    - name: "Test create of hwc"
+      shell: bash
+      run: |
+        apax hw_install_gsd
+        apax hwc_setup_secure_communication
+        apax hwc_import_certificate
+        apax hwc_add_user
+        apax hw_compile
+    - name: "Build software"
+      shell: bash
+      run: |
+        apax build
