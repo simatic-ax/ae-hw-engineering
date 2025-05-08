@@ -7,15 +7,8 @@ runs:
     - name: "Setup test enviorment"
       shell: bash
       run: | 
-        # installl yq on image
-        apt-get update
-        apt-get install -y wget
-        wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
-        chmod +x /usr/bin/yq
         # delte exsting config for test
         rm -rf hwc/machine_x/hwc.gen
-        # deactivate opc ua server in config > cause there is no lisenz on test agent
-        yq -i '(.Templates.Modules[0].Content.Services[] | select(.Type == "OpcUaServer").Enabled) = false' hwc/hw_templates/cpu1516_v3_1.hwl.yaml
     - name: "Test create of hwc"
       shell: bash
       run: |
