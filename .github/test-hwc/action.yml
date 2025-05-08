@@ -4,9 +4,9 @@ description: "Test the HWC workflow for the application example and do a softwar
 runs:
   using: "composite"
   steps:
-    - name: "Test create of hwc"
+    - name: "Setup test enviorment"
       shell: bash
-      run: |
+      run: | 
         # installl yq on image
         apt-get update
         apt-get install -y wget
@@ -16,6 +16,9 @@ runs:
         rm -rf hwc/machine_x/hwc.gen
         # deactivate opc ua server in config > cause there is no lisenz on test agent
         yq -i '(.Templates.Modules[0].Content.Services[] | select(.Type == "OpcUaServer").Enabled) = false' hwc/hw_templates/cpu1516_v3_1.hwl.yaml
+    - name: "Test create of hwc"
+      shell: bash
+      run: |
         apax hw_install_gsd
         apax hwc_setup_secure_communication
         apax hwc_import_certificate
