@@ -1,5 +1,4 @@
 # This workflow is triggered when a release is published via the UI
-# The workflow is only executed if the release is a tag and the target_commitish is a release branch
 name: Release workflow
 
 # Start the workflow as soon as a release has been published via the UI
@@ -8,11 +7,13 @@ on:
     types: [published]
 
 permissions:
-  contents: write    # required for checkout
+  contents: read    # required for checkout
   packages: write    # required for pulling the container
-  actions: write     # required for artifact downloading
-  pull-requests: write # Für PR-Erstellung und Management
+  actions: write     # required for artifact uploading
 
+env:
+  TEMPLATE_PATH: working-directory
+  
 jobs:
   call-development:
     name: Build the package
@@ -20,7 +21,6 @@ jobs:
     secrets:
       APAX_TOKEN: ${{ secrets.APAX_TOKEN }}
     with:
-      # checks out the branch that has been selected during the release process
       ref: ${{ github.event.release.target_commitish }}
 
   release:
@@ -36,27 +36,31 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
+          # checks out the branch that has been selected during the release process
           ref: ${{ github.event.release.target_commitish }}
           fetch-depth: 0
-
-      - name: Create bin folder
-        run: mkdir -p bin
-
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: build-artifacts
-          path: bin
 
       - name: Version package
         uses: simatic-ax/actions/apax-version@v3
         with:
           version: ${{ github.event.release.tag_name }}
 
-      - name: Package source code
+      - name: Templatify repository
+        uses: simatic-ax/actions/apax-templatify@v3
+        with:
+          version: ${{ github.event.release.tag_name }}
+
+      - name: Version package
+        uses: simatic-ax/actions/apax-version@v3
+        with:
+          version: ${{ github.event.release.tag_name }}
+          path: ${{ env.TEMPLATE_PATH }}/template
+
+      - name: Pack the template
         uses: simatic-ax/actions/apax-pack@v3
         with:
           key: ${{ secrets.APAX_SIGNKEY }}
+          path: ${{ env.TEMPLATE_PATH }}
 
       - name: Login to required registries
         uses: simatic-ax/actions/apax-login@v3
@@ -70,3 +74,5 @@ jobs:
         with:
           registries: |
             https://npm.pkg.github.com
+          tag: latest
+          path: ${{ env.TEMPLATE_PATH }}
