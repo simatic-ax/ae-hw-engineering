@@ -5,6 +5,7 @@
 files:
   - certificate
   - docs
+  - hwc
   - src
   - SystemConstants
   - test
