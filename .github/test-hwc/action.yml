@@ -17,7 +17,7 @@ runs:
         # delte exsting config for test
         rm -rf hwc/machine_x/hwc.gen
     - name: "Test hwc scripts and workflow"
-        # also the in the  piepline  create config will be  checked in, in package
+        # test script also aims creation of all configuration files from scratch.
       shell: bash
       run: |
         apax hwc_setup_secure_communication
