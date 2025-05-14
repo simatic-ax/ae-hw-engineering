@@ -5,7 +5,7 @@ runs:
   using: "composite"
   steps:
     - name: "test checked in secure settings"
-        # when a customer  clone repro > the existing config need to work after a install gsds
+        # when a customer  clone repository, the existing config needs to work after installation of gsds
       shell: bash
       run: | 
         apax hw_install_gsd
