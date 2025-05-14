@@ -11,7 +11,7 @@ runs:
         apax hw_install_gsd
         apax hw_compile
     - name: "Setup test enviorment"
-        # For test the scripts we need to delete the exsting secure config
+        # For test the scripts we need to delete the existing security configuration files; but before deletion of the configuration files we want to verify that the committed configuration files are still valid, and can be succesfully compiled.
       shell: bash
       run: | 
         # delte exsting config for test
