@@ -24,7 +24,7 @@ runs:
         apax hwc_import_certificate
         apax hwc_add_user
         apax hw_compile
-        # ------------------ Check if the secure config existing after compile to insert in package
+        # ------------------ Check if the security configuration files exist after compile. 
         if [ -f 'hwc/machine_x/hwc.gen/cpu1516v31.HardwareIdentifiers.json' ]; 
         then
           echo 'cpu1516v31.HardwareIdentifiers.json exists.'
