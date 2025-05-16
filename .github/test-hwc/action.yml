@@ -4,19 +4,48 @@ description: "Test the HWC workflow for the application example and do a softwar
 runs:
   using: "composite"
   steps:
+    - name: "test checked in secure settings"
+        # when a customer  clone repository, the existing config needs to work after installation of gsds
+      shell: bash
+      run: | 
+        apax hw_install_gsd
+        apax hw_compile
     - name: "Setup test enviorment"
+        # For test the scripts we need to delete the existing security configuration files; but before deletion of the configuration files we want to verify that the committed configuration files are still valid, and can be succesfully compiled.
       shell: bash
       run: | 
         # delte exsting config for test
         rm -rf hwc/machine_x/hwc.gen
-    - name: "Test create of hwc"
+    - name: "Test hwc scripts and workflow"
+        # test script also aims creation of all configuration files from scratch.
       shell: bash
       run: |
-        apax hw_install_gsd
         apax hwc_setup_secure_communication
         apax hwc_import_certificate
         apax hwc_add_user
         apax hw_compile
+        # ------------------ Check if the security configuration files exist after compile. 
+        if [ -f 'hwc/machine_x/hwc.gen/cpu1516v31.HardwareIdentifiers.json' ]; 
+        then
+          echo 'cpu1516v31.HardwareIdentifiers.json exists.'
+        else
+          echo 'cpu1516v31.HardwareIdentifiers.json not exists.'
+          exit 1
+        fi
+        if [ -f 'hwc/machine_x/hwc.gen/cpu1516v31.IoAddresses.json' ]; 
+        then
+          echo 'cpu1516v31.IoAddresses.json exists.'
+        else
+          echo 'cpu1516v31.IoAddresses.json not exists.'
+          exit 1
+        fi
+        if [ -f 'hwc/machine_x/hwc.gen/cpu1516v31.SecurityConfiguration.json' ]; 
+        then
+          echo 'cpu1516v31.SecurityConfiguration.json exists.'
+        else
+          echo 'cpu1516v31.SecurityConfiguration.json not exists.'
+          exit 1
+        fi
     - name: "Build software"
       shell: bash
       run: |
