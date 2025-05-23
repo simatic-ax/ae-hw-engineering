@@ -15,9 +15,7 @@ catalogs:
 # Dependencies
 devDependencies:
   "@ax/sdk": 2504.0.0
-  "@ax/hwc": 3.0.0
-  "@ax/hwld": 3.0.0
-  "@ax/hw-s7-1500": 3.0.0
+  "@ax/hardware-diagnostics": 0.3.0
 
 # Project variables
 variables:
@@ -104,9 +102,8 @@ scripts:
   # Compile the hardware description (input:sources) to target specific data (output:binaries) and update the IO- and HwIdent mapping (SystemConstants)
   hw_compile: hwc compile --input hwc --output $HW_BIN_FOLDER
   # load the target specific hardware data (binaries) to the PLC
-  init_hw_load: hwld --input $HW_BIN_FOLDER/$PLC_NAME -t $IP_ADDRESS --accept-security-disclaimer -M:$MASTER_PW
-  hw_load: hwld --input $HW_BIN_FOLDER/$PLC_NAME -t $IP_ADDRESS --accept-security-disclaimer -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD" -r
-
+  init_hw_load: hwld load --input $HW_BIN_FOLDER/$PLC_NAME -t $IP_ADDRESS --accept-security-disclaimer -M:$MASTER_PW
+  hw_load: hwld load --input $HW_BIN_FOLDER/$PLC_NAME -t $IP_ADDRESS --accept-security-disclaimer -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD" -r
   hw_compile_and_load:
     - apax hw_compile
     - apax hw_load
@@ -122,3 +119,20 @@ scripts:
     - apax hw_compile
     - apax hw_load
     - apax dlplc
+
+  # basic plc operation
+  plc-run: plc-info set-mode run -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"
+  plc-stop: plc-info set-mode stop -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"
+  plc-mres: plc-info memory-reset -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"
+  plc-reset: hwld load --reset-plc KeepOnlyIP --target $IP_ADDRESS -u:$USER_1_NAME -p:"$USER_1_PASSWORD" --accept-security-disclaimer
+  # basic plc diagnostics
+  plc-info: plc-info inspect -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"
+  plc-perf-cylce: perf-info cycle-time -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"
+  plc-perf-memory: perf-info memory -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"
+  plc-perf-com: perf-info comm-load -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"
+  # extended plc diagnostics
+  show-alarms: plc-control alarms -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD" --format Yaml --continuous
+  show-diagbuffer: diag-buff -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD" --continuous
+  # onlince <> offline compare
+  plc-hwcomp: hw-diag compare -t $IP_ADDRESS -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"
+  plc-swcomp: sld compare -m All -t $IP_ADDRESS -i $SW_BIN_FOLDER -C $TLS_CONNECT_CERTFILE -u:$USER_1_NAME -p:"$USER_1_PASSWORD"

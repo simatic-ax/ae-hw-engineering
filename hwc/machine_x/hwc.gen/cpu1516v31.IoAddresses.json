@@ -1,109 +1,321 @@
 {
-  "Version": 1,
+  "Version": 2,
   "IoAddresses": [
     {
       "Ref": "et200s_device/di2_1",
-      "IoConfiguration": {
-        "InputAddress": [
-          {
+      "Submodules": [
+        {
+          "Name": "2DI DC24V HF",
+          "HardwareIdentifier": 277,
+          "Inputs": {
             "StartAddress": "1.0",
             "EndAddress": "1.7",
             "Length": 8,
-            "Source": "AutoAssigned"
+            "Source": "AutoAssigned",
+            "SignalLayout": [
+              {
+                "Name": "Signals_0",
+                "Offset": 0,
+                "Length": 8
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "Ref": "et200s_device/di2_2",
-      "IoConfiguration": {
-        "InputAddress": [
-          {
+      "Submodules": [
+        {
+          "Name": "2DI DC24V HF",
+          "HardwareIdentifier": 276,
+          "Inputs": {
             "StartAddress": "0.0",
             "EndAddress": "0.7",
             "Length": 8,
-            "Source": "AutoAssigned"
+            "Source": "AutoAssigned",
+            "SignalLayout": [
+              {
+                "Name": "Signals_0",
+                "Offset": 0,
+                "Length": 8
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "Ref": "et200s_device/dq2_1",
-      "IoConfiguration": {
-        "OutputAddress": [
-          {
+      "Submodules": [
+        {
+          "Name": "2DO DC24V/0,5A HF",
+          "HardwareIdentifier": 279,
+          "Outputs": {
             "StartAddress": "1.0",
             "EndAddress": "1.7",
             "Length": 8,
-            "Source": "AutoAssigned"
+            "Source": "AutoAssigned",
+            "SignalLayout": [
+              {
+                "Name": "Signals_0",
+                "Offset": 0,
+                "Length": 8
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "Ref": "et200s_device/dq2_2",
-      "IoConfiguration": {
-        "OutputAddress": [
-          {
+      "Submodules": [
+        {
+          "Name": "2DO DC24V/0,5A HF",
+          "HardwareIdentifier": 278,
+          "Outputs": {
             "StartAddress": "0.0",
             "EndAddress": "0.7",
             "Length": 8,
-            "Source": "AutoAssigned"
+            "Source": "AutoAssigned",
+            "SignalLayout": [
+              {
+                "Name": "Signals_0",
+                "Offset": 0,
+                "Length": 8
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "Ref": "et200sp1_device/di8",
-      "IoConfiguration": {
-        "InputAddress": [
-          {
+      "Submodules": [
+        {
+          "Name": "DI 8x24VDC ST V1.1",
+          "HardwareIdentifier": 300,
+          "Inputs": {
             "StartAddress": "3.0",
             "EndAddress": "3.7",
             "Length": 8,
-            "Source": "AutoAssigned"
+            "Source": "AutoAssigned",
+            "SignalLayout": [
+              {
+                "Name": "Signals_0",
+                "Offset": 0,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_1",
+                "Offset": 1,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_2",
+                "Offset": 2,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_3",
+                "Offset": 3,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_4",
+                "Offset": 4,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_5",
+                "Offset": 5,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_6",
+                "Offset": 6,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_7",
+                "Offset": 7,
+                "Length": 1
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "Ref": "et200sp1_device/dq8",
-      "IoConfiguration": {
-        "OutputAddress": [
-          {
+      "Submodules": [
+        {
+          "Name": "DQ 8x24VDC/0.5A ST V1.1",
+          "HardwareIdentifier": 299,
+          "Outputs": {
             "StartAddress": "3.0",
             "EndAddress": "3.7",
             "Length": 8,
-            "Source": "AutoAssigned"
+            "Source": "AutoAssigned",
+            "SignalLayout": [
+              {
+                "Name": "Signals_0",
+                "Offset": 0,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_1",
+                "Offset": 1,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_2",
+                "Offset": 2,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_3",
+                "Offset": 3,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_4",
+                "Offset": 4,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_5",
+                "Offset": 5,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_6",
+                "Offset": 6,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_7",
+                "Offset": 7,
+                "Length": 1
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "Ref": "et200sp2_device/di8",
-      "IoConfiguration": {
-        "InputAddress": [
-          {
+      "Submodules": [
+        {
+          "Name": "DI 8x24VDC ST V1.1",
+          "HardwareIdentifier": 290,
+          "Inputs": {
             "StartAddress": "2.0",
             "EndAddress": "2.7",
             "Length": 8,
-            "Source": "AutoAssigned"
+            "Source": "AutoAssigned",
+            "SignalLayout": [
+              {
+                "Name": "Signals_0",
+                "Offset": 0,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_1",
+                "Offset": 1,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_2",
+                "Offset": 2,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_3",
+                "Offset": 3,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_4",
+                "Offset": 4,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_5",
+                "Offset": 5,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_6",
+                "Offset": 6,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_7",
+                "Offset": 7,
+                "Length": 1
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "Ref": "et200sp2_device/dq8",
-      "IoConfiguration": {
-        "OutputAddress": [
-          {
+      "Submodules": [
+        {
+          "Name": "DQ 8x24VDC/0.5A ST V1.1",
+          "HardwareIdentifier": 289,
+          "Outputs": {
             "StartAddress": "2.0",
             "EndAddress": "2.7",
             "Length": 8,
-            "Source": "AutoAssigned"
+            "Source": "AutoAssigned",
+            "SignalLayout": [
+              {
+                "Name": "Signals_0",
+                "Offset": 0,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_1",
+                "Offset": 1,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_2",
+                "Offset": 2,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_3",
+                "Offset": 3,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_4",
+                "Offset": 4,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_5",
+                "Offset": 5,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_6",
+                "Offset": 6,
+                "Length": 1
+              },
+              {
+                "Name": "Signals_7",
+                "Offset": 7,
+                "Length": 1
+              }
+            ]
           }
-        ]
-      }
+        }
+      ]
     }
   ]
 }

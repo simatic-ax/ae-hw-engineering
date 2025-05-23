@@ -21,7 +21,7 @@ CONFIGURATION HardwareIDs
         et200sp1_device_im155hfv33_PN_IO_HwID : UINT := UINT#292;
         et200sp1_device_im155hfv33_Port_1_HwID : UINT := UINT#294;
         et200sp1_device_im155hfv33_Port_2_HwID : UINT := UINT#295;
-        et200sp1_device_servermodule_Server_module_V1_1_0_bytes_HwID : UINT := UINT#298;
+        et200sp1_device_servermodule_Servermodul_V1_1_0_Bytes_HwID : UINT := UINT#298;
         et200sp2_device_HwID : UINT := UINT#283;
         et200sp2_device_Rack_HwID : UINT := UINT#286;
         et200sp2_device_di8_DI_8x24VDC_ST_V1_1_HwID : UINT := UINT#290;
@@ -31,7 +31,7 @@ CONFIGURATION HardwareIDs
         et200sp2_device_im155stv41_PN_IO_HwID : UINT := UINT#282;
         et200sp2_device_im155stv41_Port_1_HwID : UINT := UINT#284;
         et200sp2_device_im155stv41_Port_2_HwID : UINT := UINT#285;
-        et200sp2_device_servermodule_Server_module_V1_1_0_bytes_HwID : UINT := UINT#288;
+        et200sp2_device_servermodule_Servermodul_V1_1_0_Bytes_HwID : UINT := UINT#288;
         plc_device_HwID : UINT := UINT#32;
         plc_device_Rail_0_HwID : UINT := UINT#302;
         plc_device_cpu1516v31_HwID : UINT := UINT#48;

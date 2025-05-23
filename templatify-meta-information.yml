@@ -3,6 +3,7 @@
 # here you can define the content
 
 files:
+  - .vscode
   - certificate
   - docs
   - hwc
@@ -10,9 +11,9 @@ files:
   - SystemConstants
   - test
   - watchlist
-  - apax.yml
+  - .gitignore
   - apax-lock.json
-  - hw_catalog
+  - apax.yml
+  - hw_catalog.txt
   - LICENSE.md
   - README.md
-  - .gitignore
