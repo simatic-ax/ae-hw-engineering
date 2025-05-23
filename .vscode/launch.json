@@ -1,0 +1,29 @@
+{
+    // This is the configuration file for local debugging. This is not needed in a remote environment and can be deleted
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Adam-DebugSession",
+            "type": "plc-debug",
+            "request": "launch",
+            "program": "${workspaceFolder}",
+            "ip": "192.168.0.10",
+            "certificate": "${workspaceFolder}/certificate/reference_x509.crt",
+            "username": "Adam",
+            "password": "A123456z"
+        },
+        {
+            "name": "Otto-DebugSession",
+            "type": "plc-debug",
+            "request": "launch",
+            "program": "${workspaceFolder}",
+            "ip": "192.168.0.10",
+            "certificate": "${workspaceFolder}/certificate/reference_x509.crt",
+            "username": "Otto",
+            "password": "O123456z"
+        }
+    ]
+}
