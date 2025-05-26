@@ -27,9 +27,18 @@ The hardware configuration presented here is highly modular and utilizes the tem
 
 The central apax.yml file contains scripts that exemplify the entire workflow step by step
 
+
+## Usage
+
+If you want to create a new project based on this application example, you may use the provided apax template package. Simply enter the following command in the terminal:
+
+```bash
+apax create @simatic-ax/ae-hw-engineering --registry https://npm.pkg.github.com
+```
+
 ## Contribution
 
-Thanks for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using Merge Requests.
+Thanks for your interest in contributing. Everybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section or, even better, is free to propose any changes to this repository using Merge Requests.
 
 ## License and Legal information
 

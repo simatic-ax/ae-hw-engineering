@@ -8,4 +8,5 @@ CONFIGURATION MyConfiguration
             {OpcUA = ReadWrite}
             set_output : BOOL;
         END_VAR
+        
 END_CONFIGURATION
