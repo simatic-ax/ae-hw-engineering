@@ -10,11 +10,11 @@ targets:
 
 # Catalog:
 catalogs:
-  "@ax/simatic-ax": 2510.0.0
+  "@ax/simatic-ax": ^2510.0.0
 
 # Dependencies
 devDependencies:
-  "@ax/sdk": 2510.0.0
+  "@ax/sdk": ^2510.0.0
   "@ax/hardware-diagnostics": 1.0.0
 
 # Project variables
