@@ -14,9 +14,52 @@
             "Source": "AutoAssigned",
             "SignalLayout": [
               {
-                "Name": "Signals_0",
+                "Name": "Signals_0_0",
                 "Offset": 0,
-                "Length": 8
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_1",
+                "Offset": 1,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_2",
+                "Offset": 2,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_3",
+                "Offset": 3,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_4",
+                "Offset": 4,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_5",
+                "Offset": 5,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_6",
+                "Offset": 6,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_7",
+                "Offset": 7,
+                "Length": 1,
+                "DataType": "Boolean"
               }
             ]
           }
@@ -36,9 +79,52 @@
             "Source": "AutoAssigned",
             "SignalLayout": [
               {
-                "Name": "Signals_0",
+                "Name": "Signals_0_0",
                 "Offset": 0,
-                "Length": 8
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_1",
+                "Offset": 1,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_2",
+                "Offset": 2,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_3",
+                "Offset": 3,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_4",
+                "Offset": 4,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_5",
+                "Offset": 5,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_6",
+                "Offset": 6,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_7",
+                "Offset": 7,
+                "Length": 1,
+                "DataType": "Boolean"
               }
             ]
           }
@@ -58,9 +144,52 @@
             "Source": "AutoAssigned",
             "SignalLayout": [
               {
-                "Name": "Signals_0",
+                "Name": "Signals_0_0",
                 "Offset": 0,
-                "Length": 8
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_1",
+                "Offset": 1,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_2",
+                "Offset": 2,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_3",
+                "Offset": 3,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_4",
+                "Offset": 4,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_5",
+                "Offset": 5,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_6",
+                "Offset": 6,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_7",
+                "Offset": 7,
+                "Length": 1,
+                "DataType": "Boolean"
               }
             ]
           }
@@ -80,9 +209,52 @@
             "Source": "AutoAssigned",
             "SignalLayout": [
               {
-                "Name": "Signals_0",
+                "Name": "Signals_0_0",
                 "Offset": 0,
-                "Length": 8
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_1",
+                "Offset": 1,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_2",
+                "Offset": 2,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_3",
+                "Offset": 3,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_4",
+                "Offset": 4,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_5",
+                "Offset": 5,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_6",
+                "Offset": 6,
+                "Length": 1,
+                "DataType": "Boolean"
+              },
+              {
+                "Name": "Signals_0_7",
+                "Offset": 7,
+                "Length": 1,
+                "DataType": "Boolean"
               }
             ]
           }
@@ -104,42 +276,50 @@
               {
                 "Name": "Signals_0",
                 "Offset": 0,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_1",
                 "Offset": 1,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_2",
                 "Offset": 2,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_3",
                 "Offset": 3,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_4",
                 "Offset": 4,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_5",
                 "Offset": 5,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_6",
                 "Offset": 6,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_7",
                 "Offset": 7,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               }
             ]
           }
@@ -161,42 +341,50 @@
               {
                 "Name": "Signals_0",
                 "Offset": 0,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_1",
                 "Offset": 1,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_2",
                 "Offset": 2,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_3",
                 "Offset": 3,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_4",
                 "Offset": 4,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_5",
                 "Offset": 5,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_6",
                 "Offset": 6,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_7",
                 "Offset": 7,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               }
             ]
           }
@@ -218,42 +406,50 @@
               {
                 "Name": "Signals_0",
                 "Offset": 0,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_1",
                 "Offset": 1,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_2",
                 "Offset": 2,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_3",
                 "Offset": 3,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_4",
                 "Offset": 4,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_5",
                 "Offset": 5,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_6",
                 "Offset": 6,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_7",
                 "Offset": 7,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               }
             ]
           }
@@ -275,42 +471,50 @@
               {
                 "Name": "Signals_0",
                 "Offset": 0,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_1",
                 "Offset": 1,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_2",
                 "Offset": 2,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_3",
                 "Offset": 3,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_4",
                 "Offset": 4,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_5",
                 "Offset": 5,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_6",
                 "Offset": 6,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               },
               {
                 "Name": "Signals_7",
                 "Offset": 7,
-                "Length": 1
+                "Length": 1,
+                "DataType": "Boolean"
               }
             ]
           }
