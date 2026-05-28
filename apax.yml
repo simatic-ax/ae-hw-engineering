@@ -15,7 +15,6 @@ catalogs:
 # Dependencies
 devDependencies:
   "@ax/sdk": ^2510.0.0
-  "@ax/hardware-diagnostics": 1.0.0
 
 # Project variables
 variables:
