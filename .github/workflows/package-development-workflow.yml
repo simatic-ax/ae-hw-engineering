@@ -39,14 +39,14 @@ jobs:
           ref: ${{ inputs.ref != '' && inputs.ref || github.ref }}
 
       - name: Login to required registries
-        uses: simatic-ax/actions/apax-login@v3
+        uses: simatic-ax/actions/apax-login@v4
         with:
           apax-token: ${{ secrets.APAX_TOKEN }}
           registries: |
             https://npm.pkg.github.com/,${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
-        uses: simatic-ax/actions/apax-install@v3
+        uses: simatic-ax/actions/apax-install@v4
         with:
           immutable: true
 
